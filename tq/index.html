@@ -181,6 +181,126 @@ body{margin:0;background:#fff;font-family:'Google Sans Flex',sans-serif}
   <p class="sy">TOTALMEN (M) SDN. BHD. · No. Pendaftaran SSM: 202501019434 (1620847-W)<br>PT 2503, Tingkat 1, Taman Kenangan, Jalan Hospital, 15200 Kota Bharu, Kelantan, Malaysia</p>
   <p class="nt">GERTRIVA ialah produk makanan (minuman campuran protein soya terisolasi, oat dan inulin), bukan ubat. Ia tidak bertujuan untuk mendiagnos, merawat, menyembuh atau mencegah sebarang penyakit. Keputusan berbeza-beza bagi setiap individu.</p>
   <p class="hc">© 2026 TOTALMEN (M) SDN. BHD. Hak Cipta Terpelihara.</p>
+  <div class="tq-kod" id="gtr-tq-skrip"><script>
+/* ============================================================
+   GERTRIVA LADIPAGE (ARIF) — PAGE TERIMA KASIH: PURCHASE + MESEJ WHATSAPP v1   (www.gertriva.com/tqpage)
+   Tempat: page LadiPage "Gertriva Thank You Pages - Arif", dalam elemen HTML (atau Insert Code > Body).
+   URL daripada redirect borang BCL 18666:
+     /tqpage?purchase_value={amount}&order={order_number}&status={status}&method={payment_method}
+   Butiran pelanggan + pakej datang daripada storan pelayar (gtrL_cust, gtrL_order) yang ditulis skrip page jualan
+   (domain sama). Tiada data peribadi dalam URL.
+   Purchase ditembak untuk status berjaya DAN pending (COD kekal pending di BCL; pengguna menganggap pending = jualan),
+   tidak untuk failed. Refresh tidak dikira dua kali (kunci storan gtrL_beli_bcl-<nombor tempahan>; eventID "bcl-<nombor>" bila
+   pixel sandaran dipakai — dengan API LadiPage, LadiPage menetapkan event_id sendiri untuk memadankan pelayar + pelayan).
+   Tidak menembak apa-apa di luar gertriva.com atau bila URL ada ?ujian=1.  Ulang ujian: tambah &fbtest=1.
+   ============================================================ */
+(function () {
+  var PIXEL = "1594526535488062";
+  var AWALAN = "gtrL";
+  var WA = "60147683846";
+  var KIRA_PENDING = true;
+  var PAKEJ = { "5": { nama: "Pakej Paling Jimat", nilai: 299 }, "3": { nama: "Pakej Set Lengkap", nilai: 199 },
+                "2": { nama: "Pakej Lebih Jimat", nilai: 169 }, "1": { nama: "Pakej Percubaan", nilai: 99 } };
+  var EBOOK = [
+    { tajuk: "Makan Luar Tanpa Pedih Ulu Hati", p: "https://platform-bcl.bsb-cdn.com/media/2026/10/01M3TVTM4MDA2K0A24HQX3AGFT.pdf" },
+    { tajuk: "Pelan 30 Hari Perut Selesa", p: "https://platform-bcl.bsb-cdn.com/media/2026/10/01M3TVTKKBV0NB1MV22TTT5TQY.pdf" }
+  ];
+  var q; try { q = new URLSearchParams(location.search); } catch (e) { return; }
+  var teks = function (k) { return String(q.get(k) || "").replace(/[<>]/g, "").trim().slice(0, 80); };
+  var order = teks("order"), status = teks("status").toLowerCase(), method = teks("method");
+  var amount = parseFloat(String(q.get("purchase_value") || q.get("amount") || "").replace(/[^0-9.]/g, "")) || 0;
+  var UJIAN = teks("ujian") === "1";
+  var HIDUP = !UJIAN && (/(^|\.)gertriva\.com$/.test(location.hostname) || window.__GTR_UJI_PIXEL === true);
+  var gagal = /fail|cancel|gagal|batal/.test(status);
+  var cod = /cod|cash/i.test(method);
+
+  function baca(kunci) {
+    var s = null;
+    try { s = sessionStorage.getItem(kunci) || localStorage.getItem(kunci); } catch (e) {}
+    if (!s) return null;
+    try { var o = JSON.parse(s); return (o && o.masa && Date.now() - o.masa < 6 * 3600 * 1000) ? o : null; } catch (e) { return null; }
+  }
+  var CUST = order ? baca(AWALAN + "_cust") : null;
+  var ORD = order ? baca(AWALAN + "_order") : null;
+  var k = "";
+  if (CUST && PAKEJ[String(CUST.kotak)]) k = String(CUST.kotak);
+  else if (ORD && PAKEJ[String(ORD.kotak)]) k = String(ORD.kotak);
+  else for (var x in PAKEJ) if (PAKEJ[x].nilai === Math.round(amount)) k = x;
+  if (!(amount > 0) && k) amount = PAKEJ[k].nilai;
+  try { localStorage.removeItem(AWALAN + "_cust"); } catch (e) {}       /* salinan kekal hanya dalam sesi tab ini */
+  var rm = function (n) { return "RM" + (Math.round(n * 100) / 100); };
+
+  /* ---------- mesej WhatsApp: butiran tempahan siap diisi ---------- */
+  function mesej() {
+    if (!order || gagal) return "";
+    var b = ["Salam, saya nak sahkan tempahan GERTRIVA.", ""];
+    b.push("No. Tempahan: " + order);
+    if (k) b.push("Pakej: " + PAKEJ[k].nama + " (" + k + " Kotak)" + (amount > 0 ? " - " + rm(amount) : ""));
+    else if (amount > 0) b.push("Jumlah: " + rm(amount));
+    if (method) b.push("Bayaran: " + (cod ? "COD (bayar semasa terima)" : method));
+    if (CUST) {
+      b.push("Nama: " + CUST.nama);
+      if (CUST.tel) b.push("No. Tel: " + CUST.tel);
+      if (CUST.alamat) b.push("Alamat: " + CUST.alamat + (CUST.poskod ? ", " + CUST.poskod : ""));
+    }
+    b.push("", "Terima kasih.", "", "Hadiah saya - " + EBOOK.length + " ebook percuma:");
+    for (var i = 0; i < EBOOK.length; i++) b.push((i + 1) + ". " + EBOOK[i].tajuk, EBOOK[i].p);
+    return b.join("\n");
+  }
+  var M = mesej();
+  window.__gtrMesejWA = M;                                                 /* untuk ujian */
+  /* Butang "Sahkan Tempahan di WhatsApp" (elemen Button LadiPage, pautan mesej tetap): bila butiran ada, klik dibawa ke
+     pautan yang sudah diisi. Tiada butiran (page dibuka terus) -> pautan asal LadiPage berjalan seperti biasa. */
+  document.addEventListener("click", function (e) {
+    if (!M) return;
+    var b = e.target;
+    while (b && b !== document && !(/^BUTTON\d+$/.test(b.id || "") || b.tagName === "A")) b = b.parentNode;
+    if (!b || b === document) return;
+    if (String(b.textContent || "").toLowerCase().replace(/\s+/g, " ").indexOf("sahkan tempahan") < 0) return;
+    e.preventDefault(); e.stopPropagation(); if (e.stopImmediatePropagation) e.stopImmediatePropagation();
+    var url = "https://wa.me/" + WA + "?text=" + encodeURIComponent(M);
+    var w = null; try { w = window.open(url, "_blank"); } catch (x) {}
+    if (!w) location.href = url;
+  }, true);
+
+  /* ---------- Meta Pixel: PageView + Purchase ---------- */
+  function pixel() {
+    if (!HIDUP) return;
+    var p = { country: "my" };
+    if (CUST) {
+      var ph = String(CUST.tel || "").replace(/\D/g, ""); if (ph.length >= 10) p.ph = ph;
+      var nm = String(CUST.nama || "").trim().toLowerCase().split(/\s+/); if (nm[0]) p.fn = nm[0]; if (nm.length > 1) p.ln = nm[nm.length - 1];
+      var zp = String(CUST.poskod || "").replace(/\D/g, ""); if (zp.length === 5) p.zp = zp;
+    }
+    /* pixel + API dipasang pengguna dalam Settings LadiPage: PageView / ViewContent ditembak LadiPage; Purchase lalu ladi_fbq
+       (pixel + Conversions API LadiPage, event_id dikongsi). Sandaran tanpa pixel Settings: muat sendiri, pelayar sahaja. */
+    var adaLadi = typeof window.fbq === "function" && typeof window.ladi_fbq === "function";
+    if (!adaLadi && typeof window.fbq !== "function") {
+      !function (f, b, e, v, n, t, s) { if (f.fbq) return; n = f.fbq = function () { n.callMethod ?
+        n.callMethod.apply(n, arguments) : n.queue.push(arguments) }; if (!f._fbq) f._fbq = n;
+        n.push = n; n.loaded = !0; n.version = "2.0"; n.queue = []; t = b.createElement(e); t.async = !0;
+        t.src = v; s = b.getElementsByTagName(e)[0]; s.parentNode.insertBefore(t, s) }
+        (window, document, "script", "https://connect.facebook.net/en_US/fbevents.js");
+      window.fbq("init", PIXEL, p);
+      window.fbq("trackSingle", PIXEL, "PageView");
+    } else {
+      window.fbq("init", PIXEL, p);                                          /* padanan lanjutan untuk event selepas ini */
+    }
+    var beli = !!order && !gagal && amount > 0 && (KIRA_PENDING || /success|paid|berjaya|^3$/.test(status));
+    if (!beli) return;
+    var ref = "bcl-" + order, kg = AWALAN + "_beli_" + ref;
+    if (!/[?&]fbtest=1(&|$)/.test(location.search)) {
+      try { if (localStorage.getItem(kg)) return; localStorage.setItem(kg, "1"); } catch (e) {}
+    }
+    var sku = k ? "gertriva-" + k + "kotak" : "gertriva";
+    var data = { content_type: "product", content_name: k ? "Pakej " + k + " Kotak" : "Pakej GERTRIVA",
+      content_ids: [sku], contents: [{ id: sku, quantity: 1, item_price: amount }], num_items: 1, value: amount, currency: "MYR", order_id: order };
+    if (adaLadi) window.ladi_fbq("track", "Purchase", data, { eventID: ref });
+    else window.fbq("trackSingle", PIXEL, "Purchase", data, { eventID: ref });
+  }
+  try { pixel(); } catch (e) {}
+})();
+</script></div>
 </section>
 </div>
 </body></html>
