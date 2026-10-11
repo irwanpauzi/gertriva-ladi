@@ -497,9 +497,14 @@ body{margin:0;background:#fff;font-family:'Google Sans Flex',sans-serif}
 #gtr .pk.k5 .hadiah .a{color:#ffe14d}
 #gtr .pk.k5 .hadiah .b{color:#f6e6e7}
 #gtr .pk.k5 .b1 p{color:#fff}
-#gtr .tempah{padding:36px 0 28px;background:#fff6f5}
+#gtr .tempah{padding:44px 18px 40px;background:#fff}
 #gtr .tempah .mata{background:#007527;color:#fff}
-#gtr .tempah .bingkai{margin-top:10px}
+#gtr .tp-amanah{display:flex;justify-content:center;gap:10px;margin-top:20px}
+#gtr .tp-amanah .a{display:flex;align-items:center;gap:8px;padding:8px 14px 8px 9px;border-radius:99px;background:#f3faf5;border:1.5px solid #bfe3ca}
+#gtr .tp-amanah img{flex:0 0 30px;width:30px;height:30px}
+#gtr .tp-amanah .kunci{flex:0 0 30px;display:grid;place-items:center;width:30px;height:30px;border-radius:50%;background:#007527;color:#fff}
+#gtr .tp-amanah svg{width:17px;height:17px}
+#gtr .tp-amanah p{font:800 14px/1.2 'Google Sans Flex',sans-serif;color:#0b4a1e}
 #gtr .faq{padding:38px 14px 30px;background-color:#bc2b33;background-image:linear-gradient(180deg,#c9303a 0%,#a3232b 100%)}
 #gtr .fq-kepala{padding:20px 14px 18px;border-radius:18px;background:#8f1a22;box-shadow:0 14px 22px -14px rgba(0,0,0,.6)}
 #gtr .faq .ft{font:900 27px/1.15 'Google Sans Flex',sans-serif;text-transform:uppercase;color:#fff}
@@ -1137,156 +1142,12 @@ body{margin:0;background:#fff;font-family:'Google Sans Flex',sans-serif}
 
 <section class="tempah" id="tempah">
   <p class="mata">Tempahan rasmi &amp; selamat</p>
-  <div class="bingkai" id="gtr-borang"><iframe id="bcl-full" src="https://totalmenhq.com/form/gertriva-ladi-arif" title="Borang Tempahan GERTRIVA" style="width:100%;height:2400px;border:0;display:block;background:#fff6f5" loading="eager"></iframe>
-<script>
-/* ============================================================
-   GERTRIVA LADIPAGE (ARIF) — BORANG BCL DALAM IFRAME + META PIXEL v1   (www.gertriva.com)
-   Tempat: page jualan LadiPage "Gertriva AI", seksyen tempah, dalam elemen HTML bersama iframe #bcl-full di atas.
-   Borang = BCL 18666 (totalmenhq.com/form/gertriva-ladi-arif). Ia menghantar ke page ini melalui postMessage:
-     {type:'bcl-page-height', height}
-     {type:'bcl-event', event:'AddToCart'|'InitiateCheckout'|'Lead', content_name, value, kotak, cust:{nama,tel,alamat,poskod,...}}
-     {type:'bcl-cust', cust:{...}}   (sebelum redirect ke /tqpage)
-   Pixel Arif ditembak DARI PAGE INI (pengguna 2026-10-11: "Dari gertriva.com"); pixel borang BCL dimatikan supaya tiada event berganda.
-   PageView + ViewContent = pixel Settings LadiPage; skrip ini menambah AddToCart + InitiateCheckout (pixel + API melalui ladi_fbq).
-   Hanya pada domain gertriva.com dan tidak bila URL ada ?ujian=1.
-   ============================================================ */
-(function () {
-  var PIXEL = "1594526535488062";
-  var AWALAN = "gtrL";                               /* storan: gtrL_order, gtrL_cust (dibaca oleh skrip /tqpage) */
-  var RE_ASAL = /(^|\.)totalmenhq\.com$/;            /* hanya terima mesej dari domain borang BCL */
-  var PAKEJ = { "5": { nama: "Pakej Paling Jimat", nilai: 299 }, "3": { nama: "Pakej Set Lengkap", nilai: 199 },
-                "2": { nama: "Pakej Lebih Jimat", nilai: 169 }, "1": { nama: "Pakej Percubaan", nilai: 99 } };
-  var f = document.getElementById("bcl-full"); if (!f) return;
-  var UJIAN = /[?&]ujian=1(&|$)/.test(location.search);
-  var HIDUP = !UJIAN && (/(^|\.)gertriva\.com$/.test(location.hostname) || window.__GTR_UJI_PIXEL === true);
-
-  /* ---------- 1. tinggi iframe ikut kandungan borang (seksyen LadiPage bertinggi tetap) ---------- */
-  function seksyen() { return f.closest ? (f.closest(".ladi-section") || f.closest("section")) : null; }
-  function muat(h) {
-    h = Math.ceil(h);
-    f.style.height = h + "px";
-    var el = f.closest(".ladi-element"), sec = f.closest(".ladi-section");
-    if (el) el.style.setProperty("height", h + "px", "important");
-    if (sec) {
-      var atas = el ? el.offsetTop : 0, jumlah = (atas + h + 20) + "px";
-      sec.style.setProperty("height", jumlah, "important");
-      var c = sec.querySelector(".ladi-container"); if (c) c.style.setProperty("height", jumlah, "important");
-    }
-  }
-
-  /* ---------- 2. Meta Pixel ----------
-     Pengguna memasang pixel + Conversions API Arif dalam Settings LadiPage (2026-10-11): LadiPage sendiri menembak PageView +
-     ViewContent dan menyediakan window.ladi_fbq(), yang menghantar event ke pixel DAN ke API LadiPage dengan event_id yang sama.
-     Jadi event di sini lalu ladi_fbq. Sandaran (pixel dibuang daripada Settings): muat pixel sendiri, pelayar sahaja. */
-  var ADA_LADI = typeof window.fbq === "function" && typeof window.ladi_fbq === "function";
-  function muatPixel() {
-    if (typeof window.fbq === "function") return;
-    !function (f, b, e, v, n, t, s) { if (f.fbq) return; n = f.fbq = function () { n.callMethod ?
-      n.callMethod.apply(n, arguments) : n.queue.push(arguments) }; if (!f._fbq) f._fbq = n;
-      n.push = n; n.loaded = !0; n.version = "2.0"; n.queue = []; t = b.createElement(e); t.async = !0;
-      t.src = v; s = b.getElementsByTagName(e)[0]; s.parentNode.insertBefore(t, s) }
-      (window, document, "script", "https://connect.facebook.net/en_US/fbevents.js");
-  }
-  function tembak(nama, data, id) {
-    if (!HIDUP) return;
-    if (ADA_LADI) { window.ladi_fbq("track", nama, data, { eventID: id }); return; }
-    window.fbq("trackSingle", PIXEL, nama, data, { eventID: id });
-  }
-  function dataPakej(k, nilai) {
-    var sku = k ? "gertriva-" + k + "kotak" : "gertriva", v = +nilai || 0;
-    return { content_type: "product", content_name: k ? "Pakej " + k + " Kotak" : "Pakej GERTRIVA", content_ids: [sku],
-             contents: [{ id: sku, quantity: 1, item_price: v }], num_items: 1, value: v, currency: "MYR" };
-  }
-  function rawak() { return Date.now() + "-" + Math.floor(Math.random() * 1e6); }
-  if (HIDUP && !ADA_LADI) {
-    muatPixel();
-    window.fbq("init", PIXEL, { country: "my" });
-    window.fbq("trackSingle", PIXEL, "PageView");
-    window.fbq("trackSingle", PIXEL, "ViewContent", { content_type: "product", content_name: "GERTRIVA", content_ids: ["gertriva"], currency: "MYR" });
-  }
-
-  /* AddToCart: pilih pakej (butang "Pilih Pakej …" di page ini, atau radio dalam borang). Sekali bagi setiap pakej. */
-  var sudahATC = {};
-  function tambahTroli(k) {
-    if (!PAKEJ[k] || sudahATC[k]) return;
-    sudahATC[k] = 1;
-    tembak("AddToCart", dataPakej(k, PAKEJ[k].nilai), AWALAN + "-atc-" + k + "-" + rawak());
-  }
-  /* InitiateCheckout: butang TEMPAH SEKARANG dalam borang. Sekali. Padanan lanjutan daripada butiran yang ditaip pelanggan. */
-  var sudahIC = false;
-  function mulaBayar(k, nilai, cust) {
-    if (sudahIC) return;
-    sudahIC = true;
-    var ref = AWALAN + "-" + rawak();
-    try {
-      var o = JSON.stringify({ ref: ref, kotak: k || "", nilai: +nilai || 0, pkg: (PAKEJ[k] || {}).nama || "", masa: Date.now() });
-      sessionStorage.setItem(AWALAN + "_order", o); localStorage.setItem(AWALAN + "_order", o);
-    } catch (e) {}
-    if (!HIDUP) return;
-    var p = { country: "my" };
-    if (cust) {
-      var ph = String(cust.tel || "").replace(/\D/g, ""); if (ph.length >= 10) p.ph = ph;
-      var nm = String(cust.nama || "").trim().toLowerCase().split(/\s+/); if (nm[0]) p.fn = nm[0]; if (nm.length > 1) p.ln = nm[nm.length - 1];
-      var zp = String(cust.poskod || "").replace(/\D/g, ""); if (zp.length === 5) p.zp = zp;
-    }
-    window.fbq("init", PIXEL, p);
-    tembak("InitiateCheckout", dataPakej(k, nilai), ref + "-ic");
-  }
-  function simpanCust(c) {
-    if (!c || !c.nama) return;
-    try {
-      var s = JSON.stringify({ nama: c.nama, tel: c.tel || "", alamat: c.alamat || "", poskod: c.poskod || "", pkg: c.pkg || "", harga: c.harga || 0, kotak: c.kotak || 0, masa: Date.now() });
-      sessionStorage.setItem(AWALAN + "_cust", s); localStorage.setItem(AWALAN + "_cust", s);
-    } catch (e) {}
-  }
-  function kunciPakej(d) {
-    if (d.kotak && PAKEJ[String(d.kotak)]) return String(d.kotak);
-    for (var k in PAKEJ) if (PAKEJ[k].nilai === +d.value) return k;
-    return "";
-  }
-
-  /* ---------- 3. mesej dari borang BCL ---------- */
-  window.addEventListener("message", function (e) {
-    var d = e && e.data; if (!d || !d.type) return;
-    if (e.source !== f.contentWindow) return;
-    var hos = (e.origin || "").replace(/^https?:\/\//, "").split(":")[0];
-    if (!RE_ASAL.test(hos)) return;
-    if (d.type === "bcl-page-height") { if (d.height > 100) muat(d.height); return; }
-    if (d.cust) simpanCust(d.cust);
-    if (d.type !== "bcl-event") return;
-    var k = kunciPakej(d);
-    if (d.event === "AddToCart") tambahTroli(k);
-    else if (d.event === "InitiateCheckout" || d.event === "Lead") mulaBayar(k, d.value, d.cust);
-  });
-
-  /* ---------- 4. butang "Pilih Pakej …": pilih pakej dalam borang + skrol ke borang ----------
-     Dikesan ikut teks butang (ID elemen LadiPage berubah setiap kali page diimport semula). Delegation pada document,
-     jadi butang yang dirender lewat pun jalan. */
-  function pakejIkutTeks(t) {
-    t = String(t || "").toLowerCase().replace(/\s+/g, " ");
-    if (t.indexOf("pilih pakej") < 0) return "";
-    if (t.indexOf("paling jimat") >= 0) return "5";
-    if (t.indexOf("set lengkap") >= 0) return "3";
-    if (t.indexOf("lebih jimat") >= 0) return "2";
-    if (t.indexOf("percubaan") >= 0) return "1";
-    return "";
-  }
-  document.addEventListener("click", function (e) {
-    var b = e.target;
-    while (b && b !== document && !(/^BUTTON\d+$/.test(b.id || "") || (b.tagName === "A" && /(^|\s)cta(\s|$)/.test(b.className || "")))) b = b.parentNode;
-    if (!b || b === document) return;
-    var k = pakejIkutTeks(b.textContent); if (!k) return;
-    try { f.contentWindow.postMessage({ type: "bcl-pakej", pakej: k }, "*"); } catch (x) {}
-    tambahTroli(k);
-    var s = seksyen() || f; try { s.scrollIntoView({ behavior: "smooth", block: "start" }); } catch (x) {}
-  }, true);
-
-  /* ---------- 5. balik dari bayaran gagal (?status=failed): bawa pelanggan terus ke borang ---------- */
-  if (/[?&]status=failed(&|$)/.test(location.search)) {
-    setTimeout(function () { var s = seksyen() || f; try { s.scrollIntoView({ block: "start" }); } catch (x) {} }, 1200);
-  }
-})();
-</script></div>
+  <h2 class="t2">Isikan maklumat penghantaran anda</h2>
+  <p class="p">Isi borang kurang 1 minit. <b>Barang sampai, baru bayar.</b><br>+ 2 ebook percuma (bernilai RM70) dengan setiap pakej.</p>
+  <div class="tp-amanah">
+    <div class="a"><img src="https://w.ladicdn.com/64d0957e7550bc001218243b/gtr-logo-kkm-20261011013743-teexf.webp" width="96" height="96" alt="Logo KKM"><p>Lulus KKM</p></div>
+    <div class="a"><div class="kunci"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="10.5" width="14" height="10" rx="2"/><path d="M8 10.5V7.5a4 4 0 0 1 8 0v3"/></svg></div><p>Bayaran selamat</p></div>
+  </div>
 </section>
 
 <section class="faq" id="faq">
