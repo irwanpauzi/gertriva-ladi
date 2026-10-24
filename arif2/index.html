@@ -30,15 +30,13 @@ body{margin:0;background:#fff;font-family:'Google Sans Flex',sans-serif}
 #gtr .hiasan{margin-top:8px;font:400 12px/1.4 'Google Sans Flex',sans-serif;color:#8a9893}
 #gtr .koral{color:#e04a35}
 #gtr .hijau{color:#1e7a3c}
-#gtr mark.da{background:linear-gradient(#ffd84d,#ffd84d) no-repeat 0 85%/0% 45%;color:inherit;animation:gtr-da .8s .2s forwards}
-@keyframes gtr-da{to{background-size:100% 45%}}
 
 #gtr .cta{display:block;max-width:440px;margin:28px auto 0;padding:19px 14px 18px;border-radius:99px;background-color:#ef5b45;background-image:linear-gradient(180deg,#f8735c 0%,#e04a35 100%);box-shadow:0 6px 0 #b3361f,0 18px 28px -14px rgba(224,74,53,.7);font:800 19px/1.1 'Google Sans Flex',sans-serif;text-transform:uppercase;text-align:center;color:#fff;transition:transform .2s;animation:gtr-denyut 2.2s ease-in-out infinite}
 #gtr .cta:hover{transform:translateY(-3px)}
 #gtr .cta:active{transform:translateY(3px)}
 #gtr .cta-kecil{margin-top:14px;font:500 14px/1.4 'Google Sans Flex',sans-serif;color:#6b7a74}
 @keyframes gtr-denyut{0%,100%{transform:scale(1)}50%{transform:scale(1.03)}}
-@media (prefers-reduced-motion:reduce){#gtr .cta,#gtr mark.da{animation:none}}
+@media (prefers-reduced-motion:reduce){#gtr .cta{animation:none}}
 
 #gtr .kad{background:#fff;border:1px solid #f0e4dc;border-radius:22px;box-shadow:0 16px 34px -22px rgba(24,58,50,.35)}
 #gtr .foto{border-radius:22px}
@@ -123,8 +121,8 @@ body{margin:0;background:#fff;font-family:'Google Sans Flex',sans-serif}
 #gtr .vid iframe{position:absolute;left:0;top:0;width:100%;height:100%;border:0;border-radius:16px;background:#000}
 #gtr .vid-cap{margin-top:10px;font:600 14px/1.4 'Google Sans Flex',sans-serif;color:#6b7a74}
 #gtr .gerd-kecil{margin-top:14px;font:600 13px/1.3 'Google Sans Flex',sans-serif;text-transform:uppercase;color:#6b7a74}
-#gtr .gerd-media{display:grid;grid-template-columns:1fr 1fr;gap:12px;align-items:center;margin-top:24px}
-#gtr .gerd-media .vid{width:100%;max-width:300px}
+#gtr .gerd-media{display:grid;grid-template-columns:1fr;gap:18px;align-items:center;margin-top:24px}
+#gtr .gerd-media .vid{width:100%;max-width:340px}
 #gtr .gerd-media img{border-radius:18px}
 #gtr .amaran{margin-top:30px;padding:22px 18px 20px;border-radius:22px;background:#fff;border:2px solid #d1342b;text-align:left}
 #gtr .amaran-t{font:800 25px/1.2 'Google Sans Flex',sans-serif;text-transform:uppercase;color:#d1342b}
@@ -306,16 +304,6 @@ body{margin:0;background:#fff;font-family:'Google Sans Flex',sans-serif}
 #gtr .tutup-desak{margin-top:20px;font:800 19px/1.45 'Google Sans Flex',sans-serif;color:#e04a35}
 #gtr .tutup-sambung{margin-top:8px;font:italic 600 17px/1.45 'Google Sans Flex',sans-serif;color:#183a32}
 
-@media (min-width:900px){
-  #gtr .testi-grid{grid-template-columns:1fr 1fr;gap:28px;align-items:start;max-width:1000px;margin:44px auto 0}
-  #gtr .tutup-dua{display:grid;grid-template-columns:1.1fr 1fr;gap:56px;align-items:center;max-width:1100px;margin:0 auto}
-  #gtr .tutup-teks{margin-top:0}
-  #gtr .tutup-h{font-size:48px;line-height:1.1}
-  #gtr .tutup-sub{font-size:22px}
-  #gtr .tutup-besar{margin-top:64px;font-size:42px}
-  #gtr .tutup-kotak{font-size:19px}
-  #gtr .tutup-desak{font-size:22px}
-}
 #gtr .ebook-dua{display:grid;gap:18px;margin-top:22px}
 #gtr .ebook-foto{max-width:420px;margin:0 auto}
 #gtr .ebook-teks{text-align:left}
@@ -325,6 +313,38 @@ body{margin:0;background:#fff;font-family:'Google Sans Flex',sans-serif}
 #gtr .ebook-desc{margin-top:4px;font:400 14.5px/1.45 'Google Sans Flex',sans-serif;color:#3c4a45}
 #gtr .ebook-kecil{margin-top:12px;font:400 13px/1.5 'Google Sans Flex',sans-serif;color:#6b7a74}
 
+@media (min-width:900px){
+  #gtr .ebook-dua{grid-template-columns:1fr 1fr;gap:56px;align-items:center;max-width:1000px;margin:40px auto 0}
+  #gtr .ebook-harga{font-size:24px}
+  #gtr .testi-grid{grid-template-columns:1fr 1fr;gap:28px;align-items:start;max-width:1000px;margin:44px auto 0}
+  #gtr .tutup-dua{display:grid;grid-template-columns:1.1fr 1fr;gap:56px;align-items:center;max-width:1100px;margin:0 auto}
+  #gtr .tutup-teks{margin-top:0}
+  #gtr .tutup-h{font-size:48px;line-height:1.1}
+  #gtr .tutup-sub{font-size:22px}
+  #gtr .tutup-besar{margin-top:64px;font-size:42px}
+  #gtr .tutup-kotak{font-size:19px}
+  #gtr .tutup-desak{font-size:22px}
+}
+#gtr .vid-video{width:62%;max-width:300px;margin-top:20px}
+#gtr .vid-dua{display:grid;gap:22px;max-width:340px;margin:18px auto 0}
+#gtr .vid-dua .vid{width:100%}
+#gtr .ingat{display:grid;gap:18px;max-width:720px;margin:30px auto 0;padding:24px 20px 22px;border-radius:26px;background:#edf5ef;text-align:left}
+#gtr .ingat-t{font:800 22px/1.25 'Google Sans Flex',sans-serif;color:#183a32}
+#gtr .ingat-baris{display:flex;align-items:center;gap:14px;margin-top:14px}
+#gtr .ingat-ikon{flex:0 0 40px;height:40px;padding:9px;border-radius:50%;background:#1e7a3c;color:#fff}
+#gtr .ingat-baris-t{flex:1;font:600 16px/1.4 'Google Sans Flex',sans-serif;color:#183a32}
+#gtr .ingat-foto{max-width:300px;margin:0 auto}
+#gtr .ingat-foto img{border-radius:18px}
+#gtr .beza-foto{max-width:345px;margin:22px auto 0}
+
+@media (min-width:900px){
+  #gtr .vid-dua{grid-template-columns:1fr 1fr;gap:40px;max-width:680px;margin-top:28px}
+  #gtr .ingat{grid-template-columns:1.3fr 1fr;gap:40px;align-items:center;max-width:900px;margin-top:56px;padding:40px 44px}
+  #gtr .ingat-t{font-size:30px}
+  #gtr .ingat-baris-t{font-size:18px}
+  #gtr .ingat-foto{max-width:260px}
+  #gtr .beza-foto{max-width:680px;margin-top:36px}
+}
 #gtr .pakej-nota{margin-top:12px;font:500 16px/1.5 'Google Sans Flex',sans-serif;color:#3c4a45}
 #gtr .pakej-nota b{font-weight:700;color:#183a32}
 #gtr .pakej-grid{display:grid;gap:20px;margin-top:24px}
@@ -366,16 +386,8 @@ body{margin:0;background:#fff;font-family:'Google Sans Flex',sans-serif}
 #gtr .pilih{display:flex;align-items:flex-start;gap:10px;margin-top:10px;padding:12px 12px;border:1.5px solid #cfd9d4;border-radius:12px;font:500 15.5px/1.4 'Google Sans Flex',sans-serif;color:#183a32}
 #gtr .pilih input{margin-top:3px}
 #gtr form button{display:block;width:100%;margin-top:22px;padding:18px 12px;border:0;border-radius:99px;background-color:#ef5b45;background-image:linear-gradient(180deg,#f8735c 0%,#e04a35 100%);box-shadow:0 6px 0 #b3361f;font:800 20px/1.1 'Google Sans Flex',sans-serif;text-transform:uppercase;color:#fff}
-#gtr .tempah-info{margin-top:20px;padding:22px 20px 20px;border-radius:26px;background:#edf5ef;text-align:left}
-#gtr .tempah-info-t{font:800 22px/1.25 'Google Sans Flex',sans-serif;color:#183a32}
-#gtr .tempah-baris{display:flex;align-items:center;gap:14px;margin-top:14px}
-#gtr .tempah-ikon{flex:0 0 40px;height:40px;padding:9px;border-radius:50%;background:#1e7a3c;color:#fff}
-#gtr .tempah-baris-t{flex:1;font:600 16px/1.4 'Google Sans Flex',sans-serif;color:#183a32}
-#gtr .tempah-info-foto{max-width:200px;margin:20px auto 0}
 
 @media (min-width:900px){
-  #gtr .ebook-dua{grid-template-columns:1fr 1fr;gap:56px;align-items:center;max-width:1000px;margin:40px auto 0}
-  #gtr .ebook-harga{font-size:24px}
   #gtr .pakej-nota{font-size:18px}
   #gtr .pakej-grid{grid-template-columns:1fr 1.12fr 1fr;gap:26px;align-items:center;max-width:1120px;margin:48px auto 0}
   #gtr .kp.utama{order:2;padding:30px 22px 28px}
@@ -384,15 +396,9 @@ body{margin:0;background:#fff;font-family:'Google Sans Flex',sans-serif}
   #gtr .kp.utama .kp-harga{font-size:68px}
   #gtr .berdua{padding:24px 28px 22px}
   #gtr .berdua-t{font-size:17px}
-  #gtr .tempah-dua{display:grid;grid-template-columns:1fr 1.15fr;gap:44px;align-items:start;max-width:1080px;margin:44px auto 0}
-  #gtr .tempah-info{order:1;margin-top:0;padding:34px 32px 30px}
-  #gtr .tempah-kad{order:2;padding:34px 36px 34px}
-  #gtr .tempah-info-t{font-size:28px}
-  #gtr .tempah-baris-t{font-size:17px}
-  #gtr .tempah-info-foto{max-width:220px;margin-top:28px}
+  #gtr .tempah-dua{max-width:720px;margin:44px auto 0}
+  #gtr .tempah-kad{padding:40px 44px 40px}
 }
-#gtr .vid-video{width:62%;max-width:300px;margin-top:20px}
-#gtr .beza-foto{max-width:560px;margin:22px auto 0}
 #gtr .doa-kad{max-width:640px;margin:0 auto;padding:24px 18px 22px;border-radius:18px;background:#fff;border:2px solid #f3c7b9}
 #gtr .doa-t{font:700 22px/1.3 'Google Sans Flex',sans-serif;color:#e04a35}
 #gtr .doa-arab{margin-top:16px;font:600 26px/1.9 'Google Sans Flex',serif;color:#183a32}
@@ -426,7 +432,6 @@ body{margin:0;background:#fff;font-family:'Google Sans Flex',sans-serif}
 
 @media (min-width:900px){
   #gtr .doa-arab{font-size:30px}
-  #gtr .beza-foto{max-width:680px;margin-top:36px}
   #gtr .faq summary{font-size:18px}
   #gtr .faq details p{font-size:16.5px}
   #gtr .kaki-p{font-size:14px}
@@ -442,7 +447,7 @@ body{margin:0;background:#fff;font-family:'Google Sans Flex',sans-serif}
   <div class="hero-w">
     <div class="hero-atas">
       <p class="label">Kisah dari sebelah katil</p>
-      <h1 class="hero-h1">Kita Jaga Lauk Dia Setiap Hari. Tapi <mark class="da">Perut Dia</mark>, Siapa Jaga?</h1>
+      <h1 class="hero-h1">Kita Jaga Lauk Dia Setiap Hari. Tapi <span class="koral">Perut Dia</span>, Siapa Jaga?</h1>
       <p class="hero-p">Dah masak kurang pedas. Kopi dia dah sorok. Bantal dah tinggi. <b>Tapi pukul 3 pagi, dia masih duduk tegak, pegang dada.</b></p>
     </div>
     <div class="hero-foto"><img src="https://cdn.jsdelivr.net/gh/irwanpauzi/gertriva-ladi@d5bab229280d56aa63093eca9e1b439521c06137/arif2/gambar/arif2-rutin-pagi.webp" width="1100" height="880" alt="Isteri menghulur segelas minuman suam kepada suami waktu sarapan"><p class="hiasan">Gambar hiasan</p></div>
@@ -481,7 +486,7 @@ body{margin:0;background:#fff;font-family:'Google Sans Flex',sans-serif}
     </div>
     <p class="hiasan">Gambar hiasan</p>
     <div class="punch">
-      <p class="punch-t">Dia pegang dada. <mark class="da">Jantung kita</mark> yang berhenti sekejap.</p>
+      <p class="punch-t">Dia pegang dada. <span class="koral">Jantung kita</span> yang berhenti sekejap.</p>
       <p class="punch-p">Lama-lama, bukan kita yang atur hidup. GERD yang atur. Padahal kita cuma nak satu benda:</p>
       <p class="punch-besar">"Makan dengan tenang semula"</p>
     </div>
@@ -550,7 +555,7 @@ body{margin:0;background:#fff;font-family:'Google Sans Flex',sans-serif}
 <section class="s putih" id="luar-dalam">
   <div class="w">
     <p class="label">Kenapa ia datang balik?</p>
-    <h2 class="t1">Kita Jaga Apa Yang Masuk. Siapa Jaga <mark class="da">Perut?</mark></h2>
+    <h2 class="t1">Kita Jaga Apa Yang Masuk. Siapa Jaga <span class="koral">Perut?</span></h2>
     <div class="sempit"><p class="p">Kita jaga lauk dia setiap hari. <b>Tapi perut dia… siapa yang jaga?</b></p></div>
     <div class="ld-dua">
       <div class="ld luar">
@@ -624,7 +629,7 @@ body{margin:0;background:#fff;font-family:'Google Sans Flex',sans-serif}
     <p class="label">Memperkenalkan</p>
     <div class="kenal-logo"><img src="https://cdn.jsdelivr.net/gh/irwanpauzi/gertriva-ladi@d5bab229280d56aa63093eca9e1b439521c06137/arif2/gambar/arif2-logo-gertriva.webp" width="640" height="77" alt="GERTRIVA"></div>
     <p class="lencana-reset">30-Day Gut Reset</p>
-    <h2 class="t1">Kali Ni, <mark class="da">Tangan Kita</mark> Yang Hulur.</h2>
+    <h2 class="t1">Kali Ni, <span class="koral">Tangan Kita</span> Yang Hulur.</h2>
     <div class="sempit"><p class="p">Satu sachet sehari, bancuh dengan air suam. Hulur pada dia waktu sarapan. <b>Rutin harian untuk jaga perut dia, dan perut kita, dari dalam.</b></p></div>
     <div class="kenal-dua">
       <div class="kenal-foto"><img src="https://w.ladicdn.com/64d0957e7550bc001218243b/gertriva-premium-gut-support-render-20261012071821-_uvke.png" width="1312" height="1199" alt="Kotak dan sachet GERTRIVA bersama bahan-bahannya"></div>
@@ -725,7 +730,7 @@ body{margin:0;background:#fff;font-family:'Google Sans Flex',sans-serif}
       </div>
     </div>
     <div class="sempit">
-      <p class="tutup-besar">Bukan sekadar <mark class="da">melegakan</mark> simptom, tapi <mark class="da">merawat</mark> masalah dari akar.</p>
+      <p class="tutup-besar">Bukan sekadar <span class="koral">melegakan</span> simptom, tapi <span class="koral">merawat</span> masalah dari akar.</p>
       <p class="tutup-kotak">Dan tolong <b>JANGAN TANGGUH</b> apabila sesuatu perkara tu melibatkan kesihatan kita…</p>
       <p class="tutup-kotak">GERD yang dibiar hari ini, lagi susah nak dirawat esok. <b>CUKUP-CUKUPLAH TAHAN.</b></p>
       <p class="tutup-desak">Tolong, tolong dan tolong BERTINDAK SEKARANG demi kesihatan anda, untuk keluarga anda…</p>
@@ -750,6 +755,45 @@ body{margin:0;background:#fff;font-family:'Google Sans Flex',sans-serif}
         <p class="ebook-kecil">Ebook dibuka terus sebaik tempahan disahkan di WhatsApp. Baca dalam telefon atau muat turun PDF. Perkongsian maklumat umum, bukan nasihat perubatan.</p>
       </div>
     </div>
+  </div>
+</section>
+
+<section class="s putih" id="testimoni-lagi">
+  <div class="w">
+    <p class="label">Masih ragu?</p>
+    <h2 class="t1">Lagi Testimoni Oleh Pengguna Kami!</h2>
+    <p class="p">Dari pedih ulu hati, sebu, sampai kembung. <b>Ini kata mereka sendiri.</b></p>
+    <div class="testi-grid">
+      <div class="testi"><p class="testi-cap">Perut Rasa Lebih Selesa, Tak Terlalu "Penuh"</p><p class="testi-sub">Dan sedap diminum.</p><img class="testi-foto" src="https://w.ladicdn.com/64d0957e7550bc001218243b/gtr-testi-atas-2-20261011013809-1mqzv.webp" width="600" height="372" alt="Testimoni WhatsApp: perut lebih selesa"></div>
+      <div class="testi"><p class="testi-cap">Kembung &amp; Angin "Ada Sedikit Berkurang"</p><p class="testi-sub">Rasa sedap, cara bancuh pun mudah.</p><img class="testi-foto" src="https://w.ladicdn.com/64d0957e7550bc001218243b/gtr-testi-t3-20261011013809-oys9a.webp" width="600" height="165" alt="Testimoni WhatsApp: kembung dan angin berkurang"></div>
+      <div class="testi"><p class="testi-cap">"Rasa Macam Berkesan"</p><p class="testi-sub">Sendawa dan buang angin.</p><img class="testi-foto" src="https://w.ladicdn.com/64d0957e7550bc001218243b/gtr-testi-atas-3-20261011013809-1xcly.webp" width="540" height="244" alt="Testimoni WhatsApp: rasa macam berkesan"></div>
+      <div class="testi"><p class="testi-cap">"Rasa Memang Sedap, Boleh Rekomen"</p><p class="testi-sub">Dah habis 3 sachet.</p><img class="testi-foto" src="https://w.ladicdn.com/64d0957e7550bc001218243b/gtr-testi-t2-20261011013809-pdo8o.webp" width="600" height="282" alt="Testimoni WhatsApp: sedap dan boleh rekomen"></div>
+    </div>
+    <h3 class="t2">Testimoni Video</h3>
+    <div class="vid-dua">
+      <div><div class="vid"><iframe src="https://www.youtube.com/embed/iie_0UIBUmU?rel=0&amp;playsinline=1" title="Video testimoni pengguna GERTRIVA 1" allow="accelerometer; autoplay; encrypted-media; picture-in-picture" allowfullscreen></iframe></div><p class="vid-cap">Ikhtiar awal dengan GERTRIVA</p></div>
+      <div><div class="vid"><iframe src="https://www.youtube.com/embed/iie_0UIBUmU?rel=0&amp;playsinline=1" title="Video testimoni pengguna GERTRIVA 2" allow="accelerometer; autoplay; encrypted-media; picture-in-picture" allowfullscreen></iframe></div><p class="vid-cap">Ikhtiar awal dengan GERTRIVA</p></div>
+    </div>
+    <p class="penafian">Disclaimer: Video/testimoni ini dikongsikan dengan kebenaran pelanggan. Pengalaman setiap individu mungkin berbeza bergantung kepada keadaan badan, gaya hidup, pemakanan dan penggunaan produk secara konsisten. Produk ini bukan bertujuan untuk mendiagnos, merawat, menyembuhkan atau mencegah sebarang penyakit.</p>
+    <div class="ingat">
+      <div class="ingat-teks">
+        <p class="ingat-t">Tinggal satu langkah je lagi.</p>
+          <div class="ingat-baris"><div class="ingat-ikon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2.500" y="6" width="19" height="12" rx="2"/><circle cx="12" cy="12" r="2.600"/><path d="M6 9.500v5M18 9.500v5"/></svg></div><p class="ingat-baris-t">Bayar bila barang sampai (COD)</p></div>
+          <div class="ingat-baris"><div class="ingat-ikon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2.500 6.500h11v9.500h-11z"/><path d="M13.500 9.500h4l3.500 3.500v3h-7.500z"/><circle cx="7" cy="17.500" r="1.800"/><circle cx="17" cy="17.500" r="1.800"/></svg></div><p class="ingat-baris-t">Free postage seluruh Malaysia</p></div>
+          <div class="ingat-baris"><div class="ingat-ikon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="8" width="18" height="13" rx="2"/><path d="M3 12h18M12 8v13M12 8S10.500 3 7.500 4 9 8 12 8zM12 8s1.500-5 4.500-4S15 8 12 8z"/></svg></div><p class="ingat-baris-t">2 ebook percuma (bernilai RM70)</p></div>
+          <div class="ingat-baris"><div class="ingat-ikon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l7.500 2.800v5.700c0 4.500-3 7.800-7.500 9.500-4.500-1.700-7.500-5-7.500-9.500V5.800z"/><path d="M8.700 12l2.300 2.300 4.300-4.600"/></svg></div><p class="ingat-baris-t">Label lulus semakan KKM</p></div>
+      </div>
+      <div class="ingat-foto"><img src="https://w.ladicdn.com/64d0957e7550bc001218243b/img_8309-20261018045922-mwrb0.jpg" width="1440" height="2560" alt="Bungkusan GERTRIVA sedia untuk dihantar"></div>
+    </div>
+  </div>
+</section>
+
+<section class="s krim" id="perbezaan">
+  <div class="w">
+    <p class="label">Kebanyakan produk fokus lega sekejap</p>
+    <h2 class="t1">Perbezaan Antara <span class="hijau">GERTRIVA</span> &amp; Produk Lain</h2>
+    <div class="sempit"><p class="p">GERTRIVA dibuat untuk diamalkan setiap hari, <b>jaga perut dari dalam.</b></p></div>
+    <div class="beza-foto"><img src="https://w.ladicdn.com/s750x850/64d0957e7550bc001218243b/gertriva-comparison-infographic-20261020072002-dz2st.png" width="750" height="937" alt="Jadual perbezaan GERTRIVA dengan sachet lain dan tablet"></div>
   </div>
 </section>
 
@@ -837,42 +881,7 @@ body{margin:0;background:#fff;font-family:'Google Sans Flex',sans-serif}
           <button type="submit">TEMPAH SEKARANG</button>
         </form>
       </div>
-      <div class="tempah-info">
-        <p class="tempah-info-t">Tinggal satu langkah je lagi.</p>
-        <div class="tempah-baris"><div class="tempah-ikon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2.500" y="6" width="19" height="12" rx="2"/><circle cx="12" cy="12" r="2.600"/><path d="M6 9.500v5M18 9.500v5"/></svg></div><p class="tempah-baris-t">Bayar bila barang sampai (COD)</p></div>
-        <div class="tempah-baris"><div class="tempah-ikon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2.500 6.500h11v9.500h-11z"/><path d="M13.500 9.500h4l3.500 3.500v3h-7.500z"/><circle cx="7" cy="17.500" r="1.800"/><circle cx="17" cy="17.500" r="1.800"/></svg></div><p class="tempah-baris-t">Free postage seluruh Malaysia</p></div>
-        <div class="tempah-baris"><div class="tempah-ikon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="8" width="18" height="13" rx="2"/><path d="M3 12h18M12 8v13M12 8S10.500 3 7.500 4 9 8 12 8zM12 8s1.500-5 4.500-4S15 8 12 8z"/></svg></div><p class="tempah-baris-t">2 ebook percuma (bernilai RM70)</p></div>
-        <div class="tempah-baris"><div class="tempah-ikon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l7.500 2.800v5.700c0 4.500-3 7.800-7.500 9.500-4.500-1.700-7.500-5-7.500-9.500V5.800z"/><path d="M8.700 12l2.300 2.300 4.300-4.600"/></svg></div><p class="tempah-baris-t">Label lulus semakan KKM</p></div>
-        <div class="tempah-info-foto"><img src="https://w.ladicdn.com/64d0957e7550bc001218243b/img_8309-20261018045922-mwrb0.jpg" width="1440" height="2560" alt="Bungkusan GERTRIVA sedia untuk dihantar"></div>
-      </div>
     </div>
-  </div>
-</section>
-
-<section class="s putih" id="testimoni-lagi">
-  <div class="w">
-    <p class="label">Masih ragu?</p>
-    <h2 class="t1">Lagi Testimoni Oleh Pengguna Kami!</h2>
-    <p class="p">Dari pedih ulu hati, sebu, sampai kembung. <b>Ini kata mereka sendiri.</b></p>
-    <div class="testi-grid">
-      <div class="testi"><p class="testi-cap">Perut Rasa Lebih Selesa, Tak Terlalu "Penuh"</p><p class="testi-sub">Dan sedap diminum.</p><img class="testi-foto" src="https://w.ladicdn.com/64d0957e7550bc001218243b/gtr-testi-atas-2-20261011013809-1mqzv.webp" width="600" height="372" alt="Testimoni WhatsApp: perut lebih selesa"></div>
-      <div class="testi"><p class="testi-cap">Kembung &amp; Angin "Ada Sedikit Berkurang"</p><p class="testi-sub">Rasa sedap, cara bancuh pun mudah.</p><img class="testi-foto" src="https://w.ladicdn.com/64d0957e7550bc001218243b/gtr-testi-t3-20261011013809-oys9a.webp" width="600" height="165" alt="Testimoni WhatsApp: kembung dan angin berkurang"></div>
-      <div class="testi"><p class="testi-cap">"Rasa Macam Berkesan"</p><p class="testi-sub">Sendawa dan buang angin.</p><img class="testi-foto" src="https://w.ladicdn.com/64d0957e7550bc001218243b/gtr-testi-atas-3-20261011013809-1xcly.webp" width="540" height="244" alt="Testimoni WhatsApp: rasa macam berkesan"></div>
-      <div class="testi"><p class="testi-cap">"Rasa Memang Sedap, Boleh Rekomen"</p><p class="testi-sub">Dah habis 3 sachet.</p><img class="testi-foto" src="https://w.ladicdn.com/64d0957e7550bc001218243b/gtr-testi-t2-20261011013809-pdo8o.webp" width="600" height="282" alt="Testimoni WhatsApp: sedap dan boleh rekomen"></div>
-    </div>
-    <h3 class="t2">Testimoni Video</h3>
-    <div class="vid vid-video"><iframe src="https://www.youtube.com/embed/iie_0UIBUmU?rel=0&amp;playsinline=1" title="Video testimoni pengguna GERTRIVA" allow="accelerometer; autoplay; encrypted-media; picture-in-picture" allowfullscreen></iframe></div>
-    <p class="vid-cap">Ikhtiar awal dengan GERTRIVA</p>
-    <p class="penafian">Disclaimer: Video/testimoni ini dikongsikan dengan kebenaran pelanggan. Pengalaman setiap individu mungkin berbeza bergantung kepada keadaan badan, gaya hidup, pemakanan dan penggunaan produk secara konsisten. Produk ini bukan bertujuan untuk mendiagnos, merawat, menyembuhkan atau mencegah sebarang penyakit.</p>
-  </div>
-</section>
-
-<section class="s krim" id="perbezaan">
-  <div class="w">
-    <p class="label">Kebanyakan produk fokus lega sekejap</p>
-    <h2 class="t1">Perbezaan Antara <span class="hijau">GERTRIVA</span> &amp; Produk Lain</h2>
-    <div class="sempit"><p class="p">GERTRIVA dibuat untuk diamalkan setiap hari, <b>jaga perut dari dalam.</b></p></div>
-    <div class="beza-foto"><img src="https://w.ladicdn.com/s750x850/64d0957e7550bc001218243b/gertriva-comparison-infographic-20261020072002-dz2st.png" width="750" height="937" alt="Jadual perbezaan GERTRIVA dengan sachet lain dan tablet"></div>
   </div>
 </section>
 
