@@ -6,7 +6,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800&amp;family=Anton&amp;display=swap">
 <style>
-body{margin:0;background:#070d09;font-family:'Be Vietnam Pro',sans-serif}
+body{margin:0;background:#fff;font-family:'Be Vietnam Pro',sans-serif}
 #gtr{background:#fff;color:#0e2a18;font-family:'Be Vietnam Pro',system-ui,sans-serif;-webkit-font-smoothing:antialiased;-webkit-text-size-adjust:100%}
 #gtr *{box-sizing:border-box;margin:0;padding:0}
 #gtr img{display:block;max-width:100%;height:auto}
@@ -90,6 +90,7 @@ body{margin:0;background:#070d09;font-family:'Be Vietnam Pro',sans-serif}
 #gtr .hero-hiasan{margin-top:7px;font:500 12px/1.3 'Be Vietnam Pro',sans-serif;color:#bfe9cc}
 #gtr .hero-sub{margin-top:16px;font:400 17px/1.6 'Be Vietnam Pro',sans-serif;color:#eaf8ee}
 #gtr .hero-petik{font-weight:800;color:#d7ef3c}
+#gtr .hero-sub2 b{font-weight:800;color:#0e2a18}
 #gtr .hero-sub2{margin-top:12px;font:400 17px/1.6 'Be Vietnam Pro',sans-serif;color:#eaf8ee}
 #gtr .hero-amaran{margin-top:16px;padding:13px 16px 14px;border-radius:14px;background:#073d17;border:1.5px solid #ff8a5c;font:800 17px/1.4 'Be Vietnam Pro',sans-serif;color:#fff}
 #gtr .hero-abang{margin-top:14px;font:600 16px/1.5 'Be Vietnam Pro',sans-serif;color:#d7ef3c}
@@ -137,7 +138,7 @@ body{margin:0;background:#070d09;font-family:'Be Vietnam Pro',sans-serif}
 #gtr .kecemasan{margin-top:20px;padding:14px 16px 15px;border-radius:14px;background:#fff1ec;border:1.5px solid #f29a7a;font:600 15px/1.55 'Be Vietnam Pro',sans-serif;color:#9c2a0a}
 
 @media (min-width:900px){
-  #gtr .bukti-awal{grid-template-columns:1fr 1fr;gap:24px;margin-top:30px}
+  #gtr .bukti-awal{grid-template-columns:repeat(3,1fr);max-width:1080px;gap:24px;margin-top:30px}
   #gtr .bukti-tajuk{font-size:18px}
   #gtr .bukti-kap{font-size:16.5px}
   #gtr .cerita-p{font-size:18.5px}
@@ -234,6 +235,16 @@ body{margin:0;background:#070d09;font-family:'Be Vietnam Pro',sans-serif}
 #gtr .antasid-p{font:500 15.5px/1.6 'Be Vietnam Pro',sans-serif;color:#eaf8ee}
 #gtr .gad .kad-aril{max-width:280px}
 
+#gtr .kekal{max-width:1080px;margin:34px auto 0}
+#gtr .kekal-h{font:800 25px/1.25 'Be Vietnam Pro',sans-serif;color:#0e2a18}
+#gtr .kekal-p{max-width:760px;margin:12px auto 0;font:400 17px/1.6 'Be Vietnam Pro',sans-serif;color:#33443b}
+#gtr .kekal-dua{display:grid;gap:14px;margin-top:20px;text-align:left}
+#gtr .kekal-kad{padding:18px 16px 18px;border-radius:18px}
+#gtr .kekal-kad.sementara{background:#fff4f0;border:1.5px solid #f6c0ad}
+#gtr .kekal-kad.berkekalan{background:#eefaf2;border:1.5px solid #8fdca8}
+#gtr .kekal-tajuk{font:800 15px/1.3 'Be Vietnam Pro',sans-serif;text-transform:uppercase;color:#c4320c}
+#gtr .berkekalan .kekal-tajuk{color:#0b6a2e}
+#gtr .kekal-besar{max-width:860px;margin:22px auto 0;padding:18px 18px 19px;border-radius:16px;background:#0e7d37;font:800 20px/1.4 'Be Vietnam Pro',sans-serif;color:#fff}
 #gtr .carta{max-width:760px;margin:30px auto 0;padding:20px 14px 18px}
 #gtr .carta-h{font:800 21px/1.3 'Be Vietnam Pro',sans-serif;color:#0e2a18}
 #gtr .carta-sub{margin-top:8px;font:400 15px/1.55 'Be Vietnam Pro',sans-serif;color:#4a5a51}
@@ -270,6 +281,12 @@ body{margin:0;background:#070d09;font-family:'Be Vietnam Pro',sans-serif}
   #gtr .gad-grid{grid-template-columns:1.3fr .7fr;gap:44px}
   #gtr .gad-p{font-size:17px}
   #gtr .antasid-p{font-size:16.5px}
+  #gtr .kekal{margin-top:56px}
+  #gtr .kekal-h{font-size:34px}
+  #gtr .kekal-p{font-size:18.5px}
+  #gtr .kekal-dua{grid-template-columns:1fr 1fr;gap:24px;margin-top:28px}
+  #gtr .kekal-kad{padding:24px 24px 24px}
+  #gtr .kekal-besar{font-size:26px;padding:24px 30px}
   #gtr .carta{padding:30px 40px 26px;margin-top:48px}
   #gtr .carta-h{font-size:26px}
   #gtr .bar{width:58px}
@@ -387,92 +404,43 @@ body{margin:0;background:#070d09;font-family:'Be Vietnam Pro',sans-serif}
   #gtr .kaki{padding:60px 40px 50px}
   #gtr .kaki-p{font-size:13.5px}
 }
-#gtr{background:#070d09;color:#c9d8ce}
-#gtr .s.putih{background:#0a120d}
-#gtr .s.klinik{background-color:#0c1710;background-image:linear-gradient(180deg,#0e1b13 0%,#08110b 100%)}
-#gtr .s.mint{background-color:#0b1a11;background-image:linear-gradient(180deg,#0d2116 0%,#07120b 100%)}
-#gtr .s.hijau{background-color:#082414;background-image:linear-gradient(180deg,#0b3a1d 0%,#061a0d 100%)}
-#gtr .s.desak{background-color:#160a06;background-image:linear-gradient(180deg,#1f0d07 0%,#0c0604 100%)}
-#gtr .kepala{background-color:#040805;background-image:linear-gradient(90deg,#040805 0%,#0a2412 100%)}
+#gtr .s.putih,#gtr .s.mint,#gtr .s.hijau{background-color:#fff;background-image:none}
+#gtr .s.klinik{background-color:#f7faf8;background-image:none}
+#gtr .s.desak{background-color:#fff;background-image:none}
 
-#gtr .t1,#gtr .t2,#gtr .t3{color:#fff}
-#gtr .hj{color:#5fe08d}
-#gtr .hijau .hj{color:#d7ef3c}
-#gtr .oren{color:#ff6a3d}
-#gtr .p{color:#c9d8ce}
-#gtr .p b{color:#fff}
-#gtr .nota{color:#7f978a}
-#gtr .penafian{color:#6f8579}
-#gtr .vid-cap{color:#8fa597}
-#gtr .label{background-color:#0f2a18;background-image:none;border-color:#2f6b43;color:#9ff0bb}
-#gtr .hijau .label{background-color:#d7ef3c;border-color:#d7ef3c;color:#0a2a12}
-#gtr .jambatan{background:#0d2416;border-color:#2b5a3b;color:#d4f5df}
-#gtr .kad{background:#0f1c14;border-color:#1f3a28;box-shadow:0 18px 34px -22px rgba(0,0,0,.8)}
-#gtr .ikon{background:#163a24;color:#5fe08d}
-#gtr .kad-kepala{background:#0f1c14;border-color:#1f3a28}
-#gtr .faq details{background:#0f1c14;border-color:#1f3a28}
-#gtr .faq summary{color:#fff}
-#gtr .faq details p{color:#c9d8ce}
+#gtr .hero .t1{color:#0e2a18}
+#gtr .hero .hj{color:#149443}
+#gtr .hero .label{background-color:#e3f8ea;border-color:#8fdca8;color:#0b6a2e}
+#gtr .hero-sub,#gtr .hero-sub2{color:#33443b}
+#gtr .hero-petik{color:#e8461c}
+#gtr .hero-amaran{background:#fff1ec;border-color:#f29a7a;color:#9c2a0a}
+#gtr .hero-abang{color:#0b6a2e}
+#gtr .hero-produk{color:#4a5a51}
+#gtr .hero-hiasan{color:#8a9893}
 
-#gtr .hero-foto{background:#1a2b20;box-shadow:0 26px 44px -20px rgba(0,0,0,.9)}
-#gtr .hero-amaran{background:#2a0d05;border-color:#ff6a3d}
+#gtr .hero-foto,#gtr .jalan-foto,#gtr .cara-foto{padding:0;border-radius:0;background:none;box-shadow:none}
+#gtr .hero-foto img,#gtr .jalan-foto img,#gtr .cara-foto img,#gtr .cerita-foto img,#gtr .isteri-foto img,#gtr .gerd-sinki img,#gtr .desak-foto img{border-radius:0}
 
-#gtr .bukti-tajuk{color:#fff}
-#gtr .bukti-kap{color:#5fe08d}
-#gtr .cerita-p{color:#c9d8ce}
-#gtr .cerita-p b{color:#fff}
-#gtr .senarai-t{color:#fff}
-#gtr .baris-t{color:#dfe9e2}
-#gtr .baris-ikon{background:#163a24;color:#5fe08d}
-#gtr .baris-ikon.merah{background:#3a160b;color:#ff7a4d}
-#gtr .penegas{color:#ff7a4d}
-#gtr .kecemasan{background:#2a0d05;border-color:#ff6a3d;color:#ffd2c2}
-#gtr .cerita-kap{color:#7f978a}
+#gtr .kad-aril{padding:0;border-radius:0;background:none;box-shadow:none}
+#gtr .kad-aril img{border-radius:0}
+#gtr .kad-aril-kecil{color:#149443}
+#gtr .kad-aril-besar{color:#0e2a18}
 
-#gtr .gerd-t,#gtr .gerd-p{color:#dfe9e2}
-#gtr .gerd-no{background:#3a160b;border-color:#ff6a3d;color:#ff7a4d}
-#gtr .gerd-tegas{background:#2a0d05;border-color:#ff6a3d;color:#ffb59c}
-#gtr .gerd-punca{background:#0f1c14;border-color:#1f3a28;color:#c9d8ce}
-#gtr .gerd-kap{color:#7f978a}
+#gtr .gad{background-color:#eefaf2;background-image:none;border:1px solid #bfeccb}
+#gtr .gad .t3{color:#0e2a18}
+#gtr .gad-p{color:#33443b}
+#gtr .gad .baris-t{color:#0e2a18}
+#gtr .gad .baris-ikon{background:#169a46;color:#fff}
+#gtr .antasid{background:#fff;border-color:#bfeccb}
+#gtr .antasid-p{color:#33443b}
 
-#gtr .bukti{background:#f4f1ec}
-
-#gtr .jalan-foto{background:#1a2b20;box-shadow:0 22px 38px -22px rgba(0,0,0,.9)}
-#gtr .jalan-kap{color:#7f978a}
-#gtr .jalan-p{color:#c9d8ce}
-#gtr .jalan-p b{color:#ff7a4d}
-#gtr .gad{background-color:#0b2a16;background-image:linear-gradient(180deg,#0f3a1e 0%,#082010 100%);border:1px solid #23573a}
-#gtr .carta-h{color:#fff}
-#gtr .carta-sub,#gtr .carta-t,#gtr .legenda-t,#gtr .bar-label-t{color:#c9d8ce}
-#gtr .bar-nilai{color:#fff}
-#gtr .bar-nilai.plasebo{color:#8fa597}
-#gtr .bar.plasebo,#gtr .petak.plasebo{background:#4a5b51}
-#gtr .bar-kawasan{border-bottom-color:#2a4734}
-#gtr .bacaan{color:#fff}
-#gtr .p-tanda{background:#3a160b;color:#ffb59c}
-
-#gtr .aril-p{color:#c9d8ce}
-#gtr .aril-p b{color:#fff}
-#gtr .dr-intro{color:#fff}
-#gtr .dr-baris{background:#0f1c14;border-color:#1f3a28}
-#gtr .dr-baris-t{color:#dfe9e2}
-#gtr .testi-sub{color:#8fa597}
-#gtr .testi-kap{color:#5fe08d}
-
-#gtr .cara-t{color:#fff}
-#gtr .cara-nota{background:#0f1c14;border-color:#1f3a28}
-#gtr .cara-nota-t{color:#dfe9e2}
-#gtr .cara-foto{background:#1a2b20;box-shadow:0 22px 38px -22px rgba(0,0,0,.9)}
-#gtr .tahap-no{background:#0a120d;border-color:#5fe08d;color:#5fe08d}
-#gtr .tahap-t{color:#dfe9e2}
-#gtr .tahap-bahan{background:#163a24;color:#9ff0bb}
-#gtr .desak .t2{color:#ff6a3d}
+#gtr .desak .t2{color:#c4320c}
 </style>
 </head><body>
 <div id="gtr">
 <section class="kepala" id="kepala">
   <div class="kepala-dalam">
-    <div class="kepala-logo"><img src="https://cdn.jsdelivr.net/gh/irwanpauzi/gertriva-ladi@9f74546fe942c9b8290c765ece878e46d90b09b4/baru/gambar/baru-logo-gertriva-perak.webp" width="560" height="68" alt="GERTRIVA"></div>
+    <div class="kepala-logo"><img src="https://cdn.jsdelivr.net/gh/irwanpauzi/gertriva-ladi@8fa4bebfc60ce36cd772717a606b0eb447a633e5/baru/gambar/baru-logo-gertriva-perak.webp" width="560" height="68" alt="GERTRIVA"></div>
     <p class="kepala-t">Minuman Nutrisi Untuk Perut &amp; Penghadaman</p>
   </div>
 </section>
@@ -481,15 +449,15 @@ body{margin:0;background:#070d09;font-family:'Be Vietnam Pro',sans-serif}
   <div class="w hero-grid">
     <div class="hero-kepala">
       <p class="label">Untuk isteri yang risau setiap kali suami pegang dada</p>
-      <h1 class="t1">Suami Selalu <span class="hj">Pedih Ulu Hati</span>, Tapi Tak Nak Jumpa Doktor?</h1>
+      <h1 class="t1">Suami Kata "Angin Je", Tahu-Tahu <span class="hj">Masuk Wad Kecemasan</span></h1>
     </div>
     <div class="hero-kanan">
-      <div class="hero-foto"><img src="https://cdn.jsdelivr.net/gh/irwanpauzi/gertriva-ladi@9f74546fe942c9b8290c765ece878e46d90b09b4/baru/gambar/baru-hero-kecemasan.webp" width="760" height="950" alt="Suami di zon kecemasan hospital memegang dada, isteri menangis memegang tangannya"></div>
+      <div class="hero-foto"><img src="https://cdn.jsdelivr.net/gh/irwanpauzi/gertriva-ladi@8fa4bebfc60ce36cd772717a606b0eb447a633e5/baru/gambar/baru-hero-kecemasan.webp" width="760" height="950" alt="Suami di zon kecemasan hospital memegang dada, isteri menangis memegang tangannya"></div>
       <p class="hero-hiasan">Gambar hiasan</p>
     </div>
     <div class="hero-isi">
       <p class="hero-sub">Pukul 3 pagi, suami duduk tegak di tepi katil sambil pegang dada. Bila anda tanya, jawapannya sama: <span class="hero-petik">"Angin je ni. Tidurlah."</span></p>
-      <p class="hero-sub2">Pedih ulu hati yang datang berulang kali selalunya berkait dengan GERD, iaitu asid perut naik ke dada dan tekak. GERD yang dibiar bertahun-tahun boleh jadi makin teruk.</p>
+      <p class="hero-sub2">Pedih ulu hati yang datang berulang kali selalunya berkait dengan GERD, iaitu asid perut naik ke dada dan tekak. <b>Dibiar bertahun-tahun, asid tu menghakis saluran makan suami sikit demi sikit.</b></p>
       <p class="hero-amaran">Jangan tunggu sampai doktor kena masukkan kamera.</p>
       <p class="hero-abang">Abang, kalau abang sendiri yang baca page ni, ini untuk abang juga.</p>
       <p class="hero-produk">GERTRIVA ialah minuman sachet dengan Gastro-AD® yang bantu kurangkan rembesan asid dan lindungi dinding perut.</p>
@@ -501,6 +469,7 @@ body{margin:0;background:#070d09;font-family:'Be Vietnam Pro',sans-serif}
   <div class="w">
     <h2 class="t2">Mesej Pengguna Yang Dah Bertahun Ada <span class="hj">GERD</span></h2>
     <div class="bukti-awal">
+      <div class="kad bukti-kad"><img src="https://cdn.jsdelivr.net/gh/irwanpauzi/gertriva-ladi@57b4daf56aad3cd54e118302a0e4d3e3baa92b95/gambar/gtr-testi-b1.webp" width="589" height="243" alt="Mesej WhatsApp pengguna GERTRIVA: rasa pedih di ulu hati terus hilang"><p class="bukti-tajuk">Lepas Minum, Pedih Ulu Hati Hilang</p><p class="bukti-kap">"rasa pedih di ulu hati terus hilang"</p></div>
       <div class="kad bukti-kad"><img src="https://w.ladicdn.com/64d0957e7550bc001218243b/gtr-testi-t5-20261011013810-u07di.webp" width="600" height="784" alt="Mesej WhatsApp pengguna GERTRIVA yang ada GERD 2 tahun"><p class="bukti-tajuk">Dah 2 Tahun Ada Masalah GERD/Angin</p><p class="bukti-kap">"perut rasa selesa pada keesokan hari"</p></div>
       <div class="kad bukti-kad"><img src="https://w.ladicdn.com/64d0957e7550bc001218243b/gtr-testi-t6-20261011013816-pjuwm.webp" width="600" height="312" alt="Mesej WhatsApp pengguna GERTRIVA yang ada GERD 9 tahun"><p class="bukti-tajuk">9 Tahun GERD, Dah Cuba Banyak Produk</p><p class="bukti-kap">"sy dh try minum malam tadi,rasanya mmg sedap"</p></div>
     </div>
@@ -512,7 +481,7 @@ body{margin:0;background:#070d09;font-family:'Be Vietnam Pro',sans-serif}
   <div class="cerita">
     <h2 class="t2">Bila Suami Ada GERD, Isteri Pun <span class="hj">Tak Boleh Tidur Lena</span></h2>
     <p class="cerita-p">Lepas kata "angin je", suami turun ke dapur, minum air suam dan duduk tegak sampai dada reda. Ada malam, sampai subuh. Anda pun tak boleh lelap.</p>
-    <div class="cerita-foto"><img src="https://cdn.jsdelivr.net/gh/irwanpauzi/gertriva-ladi@9f74546fe942c9b8290c765ece878e46d90b09b4/baru/gambar/baru-malam-lantai.webp" width="760" height="950" alt="Suami jatuh ke lantai pukul 3 pagi memegang dada, isteri menelefon minta tolong"></div>
+    <div class="cerita-foto"><img src="https://cdn.jsdelivr.net/gh/irwanpauzi/gertriva-ladi@8fa4bebfc60ce36cd772717a606b0eb447a633e5/baru/gambar/baru-malam-lantai.webp" width="760" height="950" alt="Suami jatuh ke lantai pukul 3 pagi memegang dada, isteri menelefon minta tolong"></div>
     <p class="cerita-p">Pagi esok, kopi lagi. Makan tengah hari ikut bila kerja reda, selalunya dah petang. Balik lewat, makan berat, terus baring.</p>
     <p class="cerita-p"><b>Yang paling buat anda risau, suami tak nak jumpa doktor.</b> Katanya gastrik biasa, semua orang kerja pun kena.</p>
     <div class="senarai-dua">
@@ -532,7 +501,7 @@ body{margin:0;background:#070d09;font-family:'Be Vietnam Pro',sans-serif}
         <div class="baris"><div class="baris-ikon merah"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6.5 6.5l11 11M17.500 6.500l-11 11"/></svg></div><p class="baris-t">Loya nak muntah</p></div>
       </div>
     </div>
-    <div class="cerita-foto"><img src="https://cdn.jsdelivr.net/gh/irwanpauzi/gertriva-ladi@9f74546fe942c9b8290c765ece878e46d90b09b4/baru/gambar/baru-pejabat-rebah.webp" width="900" height="600" alt="Suami rebah di meja pejabat menahan sakit dada, rakan sekerja meluru"></div>
+    <div class="cerita-foto"><img src="https://cdn.jsdelivr.net/gh/irwanpauzi/gertriva-ladi@8fa4bebfc60ce36cd772717a606b0eb447a633e5/baru/gambar/baru-pejabat-rebah.webp" width="900" height="600" alt="Suami rebah di meja pejabat menahan sakit dada, rakan sekerja meluru"></div>
     <p class="kecemasan">Sakit dada yang teruk, rasa dihimpit, menjalar ke lengan, leher atau rahang, atau berpeluh sejuk? Terus telefon 999 atau pergi ke unit kecemasan.</p>
     <p class="nota">Gambar hiasan. Tanda GERD ringan dan berat daripada infografik Dr Ely Fauziani (MBBS). Maklumat umum, bukan diagnosis.</p>
   </div>
@@ -551,7 +520,7 @@ body{margin:0;background:#070d09;font-family:'Be Vietnam Pro',sans-serif}
         <div class="kad gerd-kad"><p class="gerd-no">1</p><div><p class="gerd-p">Dalam perut ada asid. Kerjanya hadam makanan.</p></div></div>
         <div class="kad gerd-kad"><p class="gerd-no">2</p><div><p class="gerd-p">Di hujung bawah esofagus (saluran makan) ada injap yang dipanggil LES. Tugasnya tutup rapat lepas makanan masuk ke perut.</p></div></div>
         <div class="kad gerd-kad"><p class="gerd-no">3</p><div><p class="gerd-p">Bila injap ni longgar atau terbuka pada waktu yang salah, asid naik semula ke esofagus. Itulah rasa pedih, panas dan masam sampai ke tekak, selalunya bila baring.</p></div></div>
-        <div class="gerd-sinki"><img src="https://cdn.jsdelivr.net/gh/irwanpauzi/gertriva-ladi@9f74546fe942c9b8290c765ece878e46d90b09b4/baru/gambar/baru-sinki.webp" width="900" height="600" alt="Suami muntah di sinki dapur waktu malam, isteri mengusap belakangnya"><p class="gerd-kap">Gambar hiasan</p></div>
+        <div class="gerd-sinki"><img src="https://cdn.jsdelivr.net/gh/irwanpauzi/gertriva-ladi@8fa4bebfc60ce36cd772717a606b0eb447a633e5/baru/gambar/baru-sinki.webp" width="900" height="600" alt="Suami muntah di sinki dapur waktu malam, isteri mengusap belakangnya"><p class="gerd-kap">Gambar hiasan</p></div>
         <p class="gerd-tegas">Sekali-sekala, biasa. Kalau jadi selalu, itulah GERD.</p>
         <p class="gerd-punca">Dalam infografik Dr Ely, antara punca GERD ialah skip makan, makan lambat, makan lewat malam dan terus baring lepas makan. Semua tu rutin biasa suami yang sibuk kerja. Kopi waktu perut kosong pula buat sesetengah orang rasa dada pedih dan masam naik ke tekak.</p>
       </div>
@@ -564,13 +533,13 @@ body{margin:0;background:#070d09;font-family:'Be Vietnam Pro',sans-serif}
   <div class="w">
     <h2 class="t2">GERD &amp; Gastrik Yang <span class="oren">Tak Dirawat</span> Boleh Menyebabkan:</h2>
     <p class="p sempit">Esofagus tak dibuat untuk tahan asid. Setiap kali asid naik, lapisan dalamnya yang terkena. <b>Semakin lama dibiarkan, semakin kerap lapisan esofagus terdedah kepada refluks.</b></p>
-    <div class="bahaya-visual"><img src="https://cdn.jsdelivr.net/gh/irwanpauzi/gertriva-ladi@9f74546fe942c9b8290c765ece878e46d90b09b4/baru/gambar/baru-bahaya-asid.webp" width="760" height="950" alt="Ilustrasi asid perut naik dan membakar dinding esofagus"></div>
-    <div class="menurut-baris"><div class="menurut-muka"><img src="https://cdn.jsdelivr.net/gh/irwanpauzi/gertriva-ladi@9f74546fe942c9b8290c765ece878e46d90b09b4/baru/gambar/baru-drely-muka.webp" width="200" height="200" alt="Dr Ely Fauziani"></div><p class="menurut">Menurut Dr Ely Fauziani (MBBS):</p></div>
+    <div class="bahaya-visual"><img src="https://cdn.jsdelivr.net/gh/irwanpauzi/gertriva-ladi@8fa4bebfc60ce36cd772717a606b0eb447a633e5/baru/gambar/baru-bahaya-asid.webp" width="760" height="950" alt="Ilustrasi asid perut naik dan membakar dinding esofagus"></div>
+    <div class="menurut-baris"><div class="menurut-muka"><img src="https://cdn.jsdelivr.net/gh/irwanpauzi/gertriva-ladi@8fa4bebfc60ce36cd772717a606b0eb447a633e5/baru/gambar/baru-drely-muka.webp" width="200" height="200" alt="Dr Ely Fauziani"></div><p class="menurut">Menurut Dr Ely Fauziani (MBBS):</p></div>
     <div class="risiko-grid">
-      <div class="risiko-kad"><img src="https://cdn.jsdelivr.net/gh/irwanpauzi/gertriva-ladi@9f74546fe942c9b8290c765ece878e46d90b09b4/baru/gambar/baru-risiko-ulser.webp" width="480" height="480" alt="Ilustrasi ulser pada dinding perut"><div class="risiko-isi"><p class="risiko-no">01</p><p class="risiko-t">Ulcer perut</p><p class="risiko-p">Luka terbuka pada dinding perut. Bila teruk, ia boleh berdarah: <b>muntah darah, najis jadi hitam.</b></p></div></div>
-      <div class="risiko-kad"><img src="https://cdn.jsdelivr.net/gh/irwanpauzi/gertriva-ladi@9f74546fe942c9b8290c765ece878e46d90b09b4/baru/gambar/baru-risiko-perut.webp" width="480" height="480" alt="Ilustrasi ketumbuhan pada dinding perut"><div class="risiko-isi"><p class="risiko-no">02</p><p class="risiko-t">Kanser perut</p><p class="risiko-p">Tanda awalnya boleh sama macam gastrik biasa. Sebab itu ia <b>selalu dikesan bila dah lewat.</b></p></div></div>
-      <div class="risiko-kad"><img src="https://cdn.jsdelivr.net/gh/irwanpauzi/gertriva-ladi@9f74546fe942c9b8290c765ece878e46d90b09b4/baru/gambar/baru-risiko-esofagus.webp" width="480" height="480" alt="Ilustrasi esofagus yang rosak dan menyempit"><div class="risiko-isi"><p class="risiko-no">03</p><p class="risiko-t">Kanser esofagus</p><p class="risiko-p">Esofagus ialah saluran makan. Tanda biasanya, <b>makin lama makin susah nak menelan.</b></p></div></div>
-      <div class="risiko-kad"><img src="https://cdn.jsdelivr.net/gh/irwanpauzi/gertriva-ladi@9f74546fe942c9b8290c765ece878e46d90b09b4/baru/gambar/baru-risiko-anxiety.webp" width="480" height="480" alt="Lelaki terjaga pukul 3 pagi memegang dada"><div class="risiko-isi"><p class="risiko-no">04</p><p class="risiko-t">Anxiety</p><p class="risiko-p">Dada berdebar, tidur tak lena, <b>takut nak makan.</b></p></div></div>
+      <div class="risiko-kad"><img src="https://cdn.jsdelivr.net/gh/irwanpauzi/gertriva-ladi@8fa4bebfc60ce36cd772717a606b0eb447a633e5/baru/gambar/baru-risiko-ulser.webp" width="480" height="480" alt="Ilustrasi ulser pada dinding perut"><div class="risiko-isi"><p class="risiko-no">01</p><p class="risiko-t">Ulcer perut</p><p class="risiko-p">Luka terbuka pada dinding perut. Bila teruk, ia boleh berdarah: <b>muntah darah, najis jadi hitam.</b></p></div></div>
+      <div class="risiko-kad"><img src="https://cdn.jsdelivr.net/gh/irwanpauzi/gertriva-ladi@8fa4bebfc60ce36cd772717a606b0eb447a633e5/baru/gambar/baru-risiko-perut.webp" width="480" height="480" alt="Ilustrasi ketumbuhan pada dinding perut"><div class="risiko-isi"><p class="risiko-no">02</p><p class="risiko-t">Kanser perut</p><p class="risiko-p">Tanda awalnya boleh sama macam gastrik biasa. Sebab itu ia <b>selalu dikesan bila dah lewat.</b></p></div></div>
+      <div class="risiko-kad"><img src="https://cdn.jsdelivr.net/gh/irwanpauzi/gertriva-ladi@8fa4bebfc60ce36cd772717a606b0eb447a633e5/baru/gambar/baru-risiko-esofagus.webp" width="480" height="480" alt="Ilustrasi esofagus yang rosak dan menyempit"><div class="risiko-isi"><p class="risiko-no">03</p><p class="risiko-t">Kanser esofagus</p><p class="risiko-p">Esofagus ialah saluran makan. Tanda biasanya, <b>makin lama makin susah nak menelan.</b></p></div></div>
+      <div class="risiko-kad"><img src="https://cdn.jsdelivr.net/gh/irwanpauzi/gertriva-ladi@8fa4bebfc60ce36cd772717a606b0eb447a633e5/baru/gambar/baru-risiko-anxiety.webp" width="480" height="480" alt="Lelaki terjaga pukul 3 pagi memegang dada"><div class="risiko-isi"><p class="risiko-no">04</p><p class="risiko-t">Anxiety</p><p class="risiko-p">Dada berdebar, tidur tak lena, <b>takut nak makan.</b></p></div></div>
     </div>
     <div class="bukti">
       <p class="bukti-label">Kajian seluruh Sweden, New England Journal of Medicine</p>
@@ -586,7 +555,7 @@ body{margin:0;background:#070d09;font-family:'Be Vietnam Pro',sans-serif}
         <p class="endo-t">Suami Tak Nampak Apa Yang Asid Dah Buat Di Dalam</p>
         <p class="endo-p"><b>Prosedur endoskopi</b> akan dilakukan untuk check perut yang terhakis disebabkan asid terlalu banyak.</p>
         <p class="endo-p">Yang suami rasa cuma pedih. Nak tahu apa jadi di dalam, tiub kamera kena masuk ikut mulut, terus ke perut.</p>
-        <div class="endo-foto"><img src="https://cdn.jsdelivr.net/gh/irwanpauzi/gertriva-ladi@9f74546fe942c9b8290c765ece878e46d90b09b4/baru/gambar/baru-endo-prosedur.webp" width="900" height="600" alt="Pesakit menjalani prosedur endoskopi dengan tiub kamera melalui mulut"><p class="endo-cap">Gambar hiasan: prosedur endoskopi.</p></div>
+        <div class="endo-foto"><img src="https://cdn.jsdelivr.net/gh/irwanpauzi/gertriva-ladi@8fa4bebfc60ce36cd772717a606b0eb447a633e5/baru/gambar/baru-endo-prosedur.webp" width="900" height="600" alt="Pesakit menjalani prosedur endoskopi dengan tiub kamera melalui mulut"><p class="endo-cap">Gambar hiasan: prosedur endoskopi.</p></div>
       </div>
       <div class="endo-foto"><img src="https://w.ladicdn.com/64d0957e7550bc001218243b/esafogus-rosak-20261008082721-1hybq.jpg" width="1920" height="1482" alt="Gambar endoskopi esofagus yang rosak akibat GERD teruk"><p class="endo-cap">Gambar endoskopi: tahap kerosakan saluran esofagus yang mengalami GERD yang teruk.</p></div>
     </div>
@@ -602,7 +571,7 @@ body{margin:0;background:#070d09;font-family:'Be Vietnam Pro',sans-serif}
     <div class="jalan-tiga">
       <div class="jalan-grid">
         <div>
-          <div class="jalan-foto"><img src="https://cdn.jsdelivr.net/gh/irwanpauzi/gertriva-ladi@9f74546fe942c9b8290c765ece878e46d90b09b4/baru/gambar/baru-doktor-keputusan.webp" width="900" height="600" alt="Doktor menunjukkan gambar endoskopi esofagus yang rosak kepada suami isteri"></div>
+          <div class="jalan-foto"><img src="https://cdn.jsdelivr.net/gh/irwanpauzi/gertriva-ladi@8fa4bebfc60ce36cd772717a606b0eb447a633e5/baru/gambar/baru-doktor-keputusan.webp" width="900" height="600" alt="Doktor menunjukkan gambar endoskopi esofagus yang rosak kepada suami isteri"></div>
           <p class="jalan-kap">Gambar hiasan</p>
         </div>
         <div>
@@ -623,8 +592,29 @@ body{margin:0;background:#070d09;font-family:'Be Vietnam Pro',sans-serif}
           <div class="baris"><div class="baris-ikon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.500l4.500 4.500L19 7.500"/></svg></div><p class="baris-t">Sokong fungsi bakteria baik dalam usus.</p></div>
           <div class="antasid"><p class="antasid-p">Beza dengan antasid: antasid cuma neutralkan asid yang dah ada. Bila kesannya habis, perut hasilkan asid semula, sebab tu pedih datang balik. Gastro-AD® pula bantu kurangkan rembesan asid itu sendiri.</p></div>
         </div>
-        <div class="kad-aril"><img src="https://cdn.jsdelivr.net/gh/irwanpauzi/gertriva-ladi@9f74546fe942c9b8290c765ece878e46d90b09b4/baru/gambar/baru-aril-kad-hulur.webp" width="720" height="900" alt="Aril Pilus menghulur kotak GERTRIVA"><p class="kad-aril-kecil">Pilihan Aril Pilus</p><p class="kad-aril-besar">GERTRIVA</p></div>
+        <div class="kad-aril"><img src="https://cdn.jsdelivr.net/gh/irwanpauzi/gertriva-ladi@8fa4bebfc60ce36cd772717a606b0eb447a633e5/baru/gambar/baru-aril-sut-hitam.webp" width="760" height="1097" alt="Aril Pilus memegang kotak GERTRIVA"><p class="kad-aril-kecil">Pilihan Aril Pilus</p><p class="kad-aril-besar">GERTRIVA</p></div>
       </div>
+    </div>
+
+    <div class="kekal">
+      <h3 class="kekal-h">Solusi <span class="hj">Berkekalan</span>, Bukan Solusi <span class="oren">Sementara</span></h3>
+      <p class="kekal-p">Selama ni suami cuba lega cepat. Pedih datang, telan antasid. Esok malam, ulang lagi. Bertahun-tahun macam tu, asid tetap naik.</p>
+      <div class="kekal-dua">
+        <div class="kekal-kad sementara">
+          <p class="kekal-tajuk">Solusi sementara</p>
+          <div class="baris"><div class="baris-ikon merah"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6.5 6.5l11 11M17.500 6.500l-11 11"/></svg></div><p class="baris-t"><b>Antasid:</b> neutralkan asid yang dah ada. Bila kesannya habis, asid keluar semula dan pedih datang balik.</p></div>
+          <div class="baris"><div class="baris-ikon merah"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6.5 6.5l11 11M17.500 6.500l-11 11"/></svg></div><p class="baris-t"><b>Halia atau pudina:</b> susah nak ambil konsisten setiap hari, hasilnya tak menentu.</p></div>
+          <div class="baris"><div class="baris-ikon merah"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6.5 6.5l11 11M17.500 6.500l-11 11"/></svg></div><p class="baris-t"><b>Jaga makan je:</b> elak pedas, kurang kopi. Bagus, tapi perut dan usus sendiri tak pernah dijaga.</p></div>
+        </div>
+        <div class="kekal-kad berkekalan">
+          <p class="kekal-tajuk">Jagaan berkekalan dengan GERTRIVA</p>
+          <div class="baris"><div class="baris-ikon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.500l4.500 4.500L19 7.500"/></svg></div><p class="baris-t"><b>Setiap hari,</b> bukan bila pedih datang je. 1 sachet sehari.</p></div>
+          <div class="baris"><div class="baris-ikon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.500l4.500 4.500L19 7.500"/></svg></div><p class="baris-t"><b>Gastro-AD®</b> bantu kurangkan rembesan asid itu sendiri dan lindungi dinding perut.</p></div>
+          <div class="baris"><div class="baris-ikon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.500l4.500 4.500L19 7.500"/></svg></div><p class="baris-t"><b>Prebiotik + postbiotik</b> jaga bakteria baik dalam usus.</p></div>
+          <div class="baris"><div class="baris-ikon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.500l4.500 4.500L19 7.500"/></svg></div><p class="baris-t"><b>Protein soya + serat oat</b> untuk nutrisi harian.</p></div>
+        </div>
+      </div>
+      <p class="kekal-besar ayat-pengguna">Bukan sekadar MELEGAKAN simptom, tapi MERAWAT masalah dari akar.</p>
     </div>
 
     <div class="kad carta">
@@ -671,7 +661,7 @@ body{margin:0;background:#070d09;font-family:'Be Vietnam Pro',sans-serif}
     <p class="aril-p">Dalam videonya sendiri, Aril Pilus kongsi pengalaman pernah lalui anxiety dan perut sentiasa kembung.</p>
     <p class="aril-p"><b>Kadang-kadang suami lebih senang dengar cakap lelaki lain.</b> Tonton sama-sama.</p>
     <div class="aril-grid">
-      <div class="kad-aril"><img src="https://cdn.jsdelivr.net/gh/irwanpauzi/gertriva-ladi@9f74546fe942c9b8290c765ece878e46d90b09b4/baru/gambar/baru-aril-kad-senyum.webp" width="720" height="900" alt="Aril Pilus memegang kotak GERTRIVA"><p class="kad-aril-kecil">Produk pilihan utama</p><p class="kad-aril-besar">Aril Pilus</p></div>
+      <div class="kad-aril"><img src="https://cdn.jsdelivr.net/gh/irwanpauzi/gertriva-ladi@8fa4bebfc60ce36cd772717a606b0eb447a633e5/baru/gambar/baru-aril-sut-putih.webp" width="760" height="828" alt="Aril Pilus memegang dua kotak GERTRIVA"><p class="kad-aril-kecil">Produk pilihan utama</p><p class="kad-aril-besar">Aril Pilus</p></div>
       <div>
         <div class="vid"><iframe src="https://www.youtube.com/embed/7frjRqKGQkc?rel=0&amp;playsinline=1" title="Aril Pilus kongsi kisahnya sendiri" allow="accelerometer; autoplay; encrypted-media; picture-in-picture" allowfullscreen></iframe></div>
         <p class="vid-cap">Aril Pilus kongsi kisahnya sendiri</p>
@@ -685,7 +675,7 @@ body{margin:0;background:#070d09;font-family:'Be Vietnam Pro',sans-serif}
     <h2 class="t2">Dr Ely Fauziani Terangkan Tentang <span class="hj">GERTRIVA</span></h2>
     <div class="dr-grid">
       <div>
-        <div class="dr-foto"><img class="foto" src="https://cdn.jsdelivr.net/gh/irwanpauzi/gertriva-ladi@9f74546fe942c9b8290c765ece878e46d90b09b4/baru/gambar/baru-drely-utama.webp" width="760" height="950" alt="Dr Ely Fauziani dengan kotak GERTRIVA"></div>
+        <div class="dr-foto"><img class="foto" src="https://cdn.jsdelivr.net/gh/irwanpauzi/gertriva-ladi@8fa4bebfc60ce36cd772717a606b0eb447a633e5/baru/gambar/baru-drely-utama.webp" width="760" height="950" alt="Dr Ely Fauziani dengan kotak GERTRIVA"></div>
         <p class="dr-nama">Dr Ely Fauziani, MBBS</p>
       </div>
       <div class="dr-kanan">
@@ -728,7 +718,7 @@ body{margin:0;background:#070d09;font-family:'Be Vietnam Pro',sans-serif}
     <p class="cerita-p">Pagi cuma sempat minum kopi sebelum ke tempat kerja. Balik kerja, masak dan uruskan anak, lepas tu baru anda makan, kadang-kadang berdiri je di dapur habiskan lauk yang tinggal.</p>
   </div>
   <div class="cerita">
-    <div class="isteri-foto"><img src="https://cdn.jsdelivr.net/gh/irwanpauzi/gertriva-ladi@9f74546fe942c9b8290c765ece878e46d90b09b4/baru/gambar/baru-isteri-lantai.webp" width="900" height="600" alt="Isteri terduduk di lantai dapur menahan pedih ulu hati"></div>
+    <div class="isteri-foto"><img src="https://cdn.jsdelivr.net/gh/irwanpauzi/gertriva-ladi@8fa4bebfc60ce36cd772717a606b0eb447a633e5/baru/gambar/baru-isteri-lantai.webp" width="900" height="600" alt="Isteri terduduk di lantai dapur menahan pedih ulu hati"></div>
   </div>
   <div class="cerita">
     <p class="cerita-p">Kalau anda pun selalu rasa mulut masam bila bangun pagi, dada tak selesa waktu malam atau perut kembung lepas makan, tanda tu sama macam yang suami rasa. <b>Risiko kalau dibiar pun sama.</b></p>
@@ -750,7 +740,7 @@ body{margin:0;background:#070d09;font-family:'Be Vietnam Pro',sans-serif}
     </div>
     <div class="cara-grid">
       <div>
-        <div class="cara-foto"><img src="https://cdn.jsdelivr.net/gh/irwanpauzi/gertriva-ladi@9f74546fe942c9b8290c765ece878e46d90b09b4/baru/gambar/baru-isteri-hulur.webp" width="900" height="600" alt="Isteri menghulur segelas GERTRIVA kepada suami sebelum ke tempat kerja"></div>
+        <div class="cara-foto"><img src="https://cdn.jsdelivr.net/gh/irwanpauzi/gertriva-ladi@8fa4bebfc60ce36cd772717a606b0eb447a633e5/baru/gambar/baru-isteri-hulur.webp" width="900" height="600" alt="Isteri menghulur segelas GERTRIVA kepada suami sebelum ke tempat kerja"></div>
         <div class="cara-nota"><div class="ikon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3.500" y="5" width="17" height="15.500" rx="2"/><path d="M3.500 9.500h17M8 3v4M16 3v4"/><path d="M8.500 14.500l2 2 4-4"/></svg></div><p class="cara-nota-t">Minum 1 sachet sehari, sebelum atau selepas makan. Yang penting konsisten setiap hari.</p></div>
         <div class="cara-nota"><div class="ikon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l7.500 2.800v5.700c0 4.500-3 7.800-7.500 9.500-4.500-1.700-7.500-5-7.500-9.500V5.800z"/><path d="M8.700 12l2.300 2.300 4.300-4.600"/></svg></div><p class="cara-nota-t">Kalau suami sedang makan ubat doktor, teruskan seperti biasa.</p></div>
       </div>
@@ -775,10 +765,11 @@ body{margin:0;background:#070d09;font-family:'Be Vietnam Pro',sans-serif}
   <div class="cerita">
     <h2 class="t2">Tangguh Hari Ini, Malam Ni Asid Naik Lagi</h2>
     <p class="cerita-p">Esok pun sama, lusa pun sama. <b>Sampai bila suami nak tahan?</b></p>
+    <p class="cerita-p"><b>Hari ni cuma pedih.</b> Dibiar bertahun-tahun, salah satu risiko dalam senarai Dr Ely ialah kanser esofagus, yang tandanya makin lama makin susah nak menelan.</p>
     <p class="cerita-p">Kajian tadi jelas: makin kerap, makin teruk dan makin lama simptom refluks, makin tinggi risikonya. Setiap bulan yang ditangguh, sebulan lagi esofagus suami terkena asid.</p>
     <p class="cerita-p"><b>Abang, kalau isteri yang suruh abang baca page ni, maknanya isteri dah lama risau.</b></p>
     <p class="cerita-p">Dan kalau anda sendiri pun rasa benda yang sama, mula sekali dengan suami.</p>
-    <div class="desak-foto"><img src="https://cdn.jsdelivr.net/gh/irwanpauzi/gertriva-ladi@9f74546fe942c9b8290c765ece878e46d90b09b4/baru/gambar/baru-koridor.webp" width="760" height="950" alt="Isteri menangis seorang diri di koridor wad hospital"></div>
+    <div class="desak-foto"><img src="https://cdn.jsdelivr.net/gh/irwanpauzi/gertriva-ladi@8fa4bebfc60ce36cd772717a606b0eb447a633e5/baru/gambar/baru-koridor.webp" width="760" height="950" alt="Isteri menangis seorang diri di koridor wad hospital"></div>
     <p class="cerita-p">Mula dengan yang paling senang: 1 sachet GERTRIVA sehari. Kalau ada tanda berat, jumpa doktor dulu.</p>
     <p class="desak-akhir">Jangan tunggu sampai doktor kena masukkan kamera.</p>
   </div>
@@ -790,7 +781,7 @@ body{margin:0;background:#070d09;font-family:'Be Vietnam Pro',sans-serif}
       <div class="kad-kepala">
         <h2 class="t2">Soalan Biasa Sebelum <span class="hj">Belikan Untuk Suami</span></h2>
       </div>
-      <div class="kad-aril faq-aril"><img src="https://cdn.jsdelivr.net/gh/irwanpauzi/gertriva-ladi@9f74546fe942c9b8290c765ece878e46d90b09b4/baru/gambar/baru-aril-kad-gelas.webp" width="720" height="960" alt="Aril Pilus dengan segelas GERTRIVA, sachet dan kotak"><p class="kad-aril-kecil">1 sachet sehari</p><p class="kad-aril-besar">Aril Pilus</p></div>
+      <div class="kad-aril faq-aril"><img src="https://cdn.jsdelivr.net/gh/irwanpauzi/gertriva-ladi@8fa4bebfc60ce36cd772717a606b0eb447a633e5/baru/gambar/baru-aril-kafe-minum.webp" width="720" height="900" alt="Aril Pilus minum segelas GERTRIVA di kafe"><p class="kad-aril-kecil">1 sachet sehari</p><p class="kad-aril-besar">Aril Pilus</p></div>
     </div>
     <div class="faq">
       <details><summary>Suami degil, tak nak jumpa doktor. Macam mana?</summary><p>Kalau suami ada tanda berat seperti sesak nafas, loya nak muntah, susah menelan, muntah darah, najis hitam, sakit dada atau berat badan turun tanpa sebab, bawa juga jumpa doktor. Yang ini tak boleh tunggu. GERTRIVA ialah minuman nutrisi, bukan ganti pemeriksaan doktor.</p></details>
@@ -812,7 +803,7 @@ body{margin:0;background:#070d09;font-family:'Be Vietnam Pro',sans-serif}
 
 <section class="s gelap kaki" id="kaki">
   <div class="kaki-dalam">
-    <div class="kaki-logo"><img src="https://cdn.jsdelivr.net/gh/irwanpauzi/gertriva-ladi@9f74546fe942c9b8290c765ece878e46d90b09b4/baru/gambar/baru-logo-gertriva-perak.webp" width="560" height="68" alt="GERTRIVA"></div>
+    <div class="kaki-logo"><img src="https://cdn.jsdelivr.net/gh/irwanpauzi/gertriva-ladi@8fa4bebfc60ce36cd772717a606b0eb447a633e5/baru/gambar/baru-logo-gertriva-perak.webp" width="560" height="68" alt="GERTRIVA"></div>
     <p class="kaki-tag">Minuman nutrisi untuk perut &amp; penghadaman</p>
     <div class="kaki-syarikat">
       <p class="kaki-nama">TOTALMEN (M) SDN. BHD.</p>
@@ -827,7 +818,7 @@ body{margin:0;background:#070d09;font-family:'Be Vietnam Pro',sans-serif}
     <p class="kaki-p">Kandungan kajian dan penerangan doktor di laman ini adalah untuk maklumat umum sahaja dan bukan pengganti nasihat perubatan profesional. Kajian Gastro-AD® dijalankan ke atas bahan, bukan ke atas produk GERTRIVA.</p>
     <p class="kaki-p">Label produk telah melalui semakan pelabelan makanan oleh Program Keselamatan dan Kualiti Makanan, Kementerian Kesihatan Malaysia (No. Permohonan: FLS0826233-0).</p>
     <p class="kaki-p">Laman ini tidak berkaitan dengan, dan tidak ditaja atau disahkan oleh, Facebook, Instagram, Google, YouTube, TikTok atau mana-mana platform media sosial. Facebook dan Instagram ialah tanda dagangan Meta Platforms, Inc.; Google dan YouTube ialah tanda dagangan Google LLC.</p>
-    <div class="kaki-logo2"><img src="https://cdn.jsdelivr.net/gh/irwanpauzi/gertriva-ladi@9f74546fe942c9b8290c765ece878e46d90b09b4/baru/gambar/baru-logo-totalmen.webp" width="440" height="64" alt="TOTALMEN"></div>
+    <div class="kaki-logo2"><img src="https://cdn.jsdelivr.net/gh/irwanpauzi/gertriva-ladi@8fa4bebfc60ce36cd772717a606b0eb447a633e5/baru/gambar/baru-logo-totalmen.webp" width="440" height="64" alt="TOTALMEN"></div>
     <p class="kaki-bawah">© 2026 TOTALMEN (M) SDN. BHD. Hak Cipta Terpelihara.</p>
   </div>
 </section>
