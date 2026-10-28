@@ -4,7 +4,7 @@
 <title>GERTRIVA | Minuman Gastrik & GERD 3-dalam-1</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,800&amp;display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,800&amp;display=swap">
 <style>
 body{margin:0;background:#fff;font-family:'Be Vietnam Pro',sans-serif}
 #gtr{background:#fff;color:#13241a;font-family:'Be Vietnam Pro',system-ui,sans-serif;-webkit-font-smoothing:antialiased;-webkit-text-size-adjust:100%}
@@ -40,14 +40,14 @@ body{margin:0;background:#fff;font-family:'Be Vietnam Pro',sans-serif}
 #gtr .cta:hover{background:#15803d}
 @keyframes gtr-denyut{0%,100%{transform:scale(1)}50%{transform:scale(1.035)}}
 @media (prefers-reduced-motion:reduce){#gtr .cta{animation:none}}
-#gtr .bintang-baris{display:flex;align-items:center;justify-content:center;gap:10px;margin-top:14px}
+#gtr .bintang-baris{display:flex;flex-direction:column;align-items:center;gap:5px;margin-top:14px}
 #gtr .bintang{display:flex;gap:2px;color:#f59e0b}
 #gtr .bintang svg{width:16px;height:16px}
-#gtr .bintang-t{font:500 12.5px/1.4 'Be Vietnam Pro',sans-serif;color:#5d6b62;text-align:left}
+#gtr .bintang-t{font:500 12.5px/1.4 'Be Vietnam Pro',sans-serif;color:#5d6b62;text-align:center}
 
 #gtr .kad{background:#fff;border:1px solid #d5eacb;border-radius:16px;box-shadow:0 12px 28px -18px rgba(11,59,36,.3)}
 #gtr .dua{margin-top:28px}
-#gtr .dua .teks{text-align:left}
+#gtr .dua .teks{text-align:center}
 #gtr .dua .teks .t1{margin-top:8px}
 
 #gtr .faq{max-width:780px;margin:22px auto 0;text-align:left}
@@ -78,13 +78,14 @@ body{margin:0;background:#fff;font-family:'Be Vietnam Pro',sans-serif}
 #gtr .hero-foto{max-width:420px;margin:0 auto}
 #gtr .tx{width:max-content;max-width:100%;margin:10px auto 0}
 #gtr .tx-atas{display:flex;align-items:flex-end;gap:10px}
-#gtr .tx-n{font:italic 800 96px/0.9 'Be Vietnam Pro',sans-serif;color:#e9a21b}
+#gtr .tx-n{font:italic 800 88px/0.9 'Be Vietnam Pro',sans-serif;color:#e9a21b}
 #gtr .tx-kanan{padding-bottom:4px;text-align:left}
 #gtr .tx-pil{width:max-content;padding:5px 14px 5px;border-radius:99px;background:#c62828;font:italic 800 14px/1.25 'Be Vietnam Pro',sans-serif;text-transform:uppercase;color:#fff}
-#gtr .tx-lebih{margin-top:4px;font:italic 800 44px/1 'Be Vietnam Pro',sans-serif;text-transform:uppercase;color:#1e7a3c}
-#gtr .tx-serap{margin-top:2px;font:italic 800 50px/1.05 'Be Vietnam Pro',sans-serif;text-transform:uppercase;color:#1e7a3c;text-align:left}
-#gtr .hero-t{margin-top:14px;font:800 28px/1.24 'Be Vietnam Pro',sans-serif;color:#13241a}
-#gtr .hero-sub{margin-top:14px;font:700 16.5px/1.5 'Be Vietnam Pro',sans-serif;color:#2f3f35}
+#gtr .tx-lebih{margin-top:4px;font:italic 800 40px/1 'Be Vietnam Pro',sans-serif;text-transform:uppercase;color:#16a34a}
+#gtr .tx-serap{margin-top:2px;font:italic 800 46px/1.05 'Be Vietnam Pro',sans-serif;text-transform:uppercase;color:#16a34a;text-align:left}
+#gtr .hero-t{margin-top:18px;font:900 27px/1.25 'Be Vietnam Pro',sans-serif;color:#13241a}
+#gtr .hero .m{color:#16b14c}
+#gtr .hero-sub{margin-top:12px;font:700 16px/1.5 'Be Vietnam Pro',sans-serif;color:#2f3f35}
 #gtr .jamin{display:grid;grid-template-columns:1fr 1fr;gap:10px;max-width:420px;margin:24px auto 0}
 #gtr .jamin-i{display:flex;align-items:center;gap:8px;padding:10px 10px 10px;border-radius:10px;background:#fff;border:1px solid #d5eacb}
 #gtr .jamin-ikon{flex:none;width:20px;height:20px;color:#1e7a3c}
@@ -101,18 +102,16 @@ body{margin:0;background:#fff;font-family:'Be Vietnam Pro',sans-serif}
 @media (min-width:900px){
   #gtr .atas-t{font-size:13.5px}
   #gtr .hero{padding:44px 40px 72px}
-  #gtr .hero-grid{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center;text-align:left}
+  #gtr .hero-grid{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center;text-align:center}
   #gtr .hero-foto{order:2;max-width:none}
-  #gtr .tx{margin:0 0 6px}
-  #gtr .tx-n{font-size:118px}
+  #gtr .tx{margin:0 auto 6px}
+  #gtr .tx-n{font-size:104px}
   #gtr .tx-pil{font-size:16px}
-  #gtr .tx-lebih{font-size:56px}
-  #gtr .tx-serap{font-size:64px}
-  #gtr .hero-t{font-size:46px;line-height:1.1}
-  #gtr .hero-sub{font-size:19px}
-  #gtr .hero .cta{margin-left:0}
-  #gtr .hero .bintang-baris{justify-content:flex-start}
-  #gtr .jamin{margin-left:0;max-width:460px}
+  #gtr .tx-lebih{font-size:48px}
+  #gtr .tx-serap{font-size:56px}
+  #gtr .hero-t{margin-top:22px;font-size:40px;line-height:1.18}
+  #gtr .hero-sub{font-size:18px}
+  #gtr .jamin{max-width:460px}
   #gtr .vid-grid{grid-template-columns:1fr 1fr;gap:28px;margin-top:40px}
   #gtr .vid-kad{padding:16px 16px 18px}
   #gtr .slogan{font-size:24px}
@@ -248,10 +247,9 @@ body{margin:0;background:#fff;font-family:'Be Vietnam Pro',sans-serif}
   #gtr .tc-grid{grid-template-columns:repeat(3,1fr);gap:22px;margin-top:40px}
   #gtr .tc{padding:22px 22px 20px}
   #gtr .tc-isi{font-size:15.5px}
-  #gtr .cod-baris{display:flex;align-items:center;gap:40px;text-align:left}
-  #gtr .cod-bulat{flex:none;width:168px;height:168px;padding:50px 0 0;margin:0;text-align:center}
+  #gtr .cod-bulat{width:168px;height:168px;padding:50px 0 0}
   #gtr .cod-n{font-size:42px}
-  #gtr .cod-teks .t1{margin-top:0;font-size:30px}
+  #gtr .cod-teks .t1{margin-top:24px;font-size:30px}
 }
 #gtr .kira-label{margin-top:22px;font:700 15px/1.3 'Be Vietnam Pro',sans-serif;color:#fff}
 #gtr .kira-besar{display:flex;align-items:flex-start;justify-content:center;gap:8px;margin-top:12px}
@@ -354,7 +352,7 @@ body{margin:0;background:#fff;font-family:'Be Vietnam Pro',sans-serif}
 </section>
 <section class="s hero pink-turun" id="hero">
   <div class="w hero-grid">
-    <div class="hero-foto"><img src="https://cdn.jsdelivr.net/gh/irwanpauzi/gertriva-ladi@453b18c58e26631a33ce87eae2420d9bd1e80f4d/zizan/gambar/zz-hero-duta.webp" width="900" height="1100" alt="Aril Pilus dan Dr. Ely Fauziani bersama kotak GERTRIVA"></div>
+    <div class="hero-foto"><img src="https://cdn.jsdelivr.net/gh/irwanpauzi/gertriva-ladi@94abb43bb785d4214c2a1fa997f8a6aa546883b3/zizan/gambar/zz-hero-duta.webp" width="900" height="1040" alt="Aril Pilus dan Dr. Ely Fauziani bersama kotak GERTRIVA"></div>
     <div class="hero-teks">
       <div class="tx">
         <div class="tx-atas">
@@ -363,12 +361,12 @@ body{margin:0;background:#fff;font-family:'Be Vietnam Pro',sans-serif}
         </div>
         <p class="tx-serap">Penyerapan</p>
       </div>
-      <h1 class="hero-t">Atasi <span class="m">Pedih Ulu Hati</span> dan <span class="m">Asid Naik</span> dengan Formula <span class="m">3-dalam-1</span> yang Mudah Diamalkan</h1>
-      <p class="hero-sub">Jaga Perut Sebelum Gastrik Jadi GERD, dan GERD Rosakkan Esofagus.</p>
+      <h1 class="hero-t">Atasi <span class="m">PEDIH ULU HATI</span><br>&amp; <span class="m">GERD</span> Dengan<br>Formula <span class="m">3-dalam-1</span></h1>
+      <p class="hero-sub">Mudah diamalkan setiap hari. Jaga perut sebelum gastrik jadi GERD.</p>
       <a class="cta" href="#pakej" role="button">Dapatkan GERTRIVA Sekarang</a>
       <div class="bintang-baris"><div class="bintang"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.8l2.85 5.78 6.38.93-4.62 4.5 1.09 6.35L12 17.36 6.3 20.36l1.09-6.35-4.62-4.5 6.38-.93z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.8l2.85 5.78 6.38.93-4.62 4.5 1.09 6.35L12 17.36 6.3 20.36l1.09-6.35-4.62-4.5 6.38-.93z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.8l2.85 5.78 6.38.93-4.62 4.5 1.09 6.35L12 17.36 6.3 20.36l1.09-6.35-4.62-4.5 6.38-.93z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.8l2.85 5.78 6.38.93-4.62 4.5 1.09 6.35L12 17.36 6.3 20.36l1.09-6.35-4.62-4.5 6.38-.93z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.8l2.85 5.78 6.38.93-4.62 4.5 1.09 6.35L12 17.36 6.3 20.36l1.09-6.35-4.62-4.5 6.38-.93z"/></svg></div><p class="bintang-t">Pilihan ramai yang berpuas hati dengan GERTRIVA</p></div>
       <div class="jamin">
-        <div class="jamin-i"><div class="jamin-ikon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2.500 6.500h11v9.500h-11z"/><path d="M13.500 9.500h4l3.500 3.500v3h-7.500z"/><circle cx="7" cy="17.500" r="1.800"/><circle cx="17" cy="17.500" r="1.800"/></svg></div><p class="jamin-t">Hantar seluruh Malaysia</p></div>
+        <div class="jamin-i"><div class="jamin-ikon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2.500 6.500h11v9.500h-11z"/><path d="M13.500 9.500h4l3.500 3.500v3h-7.500z"/><circle cx="7" cy="17.500" r="1.800"/><circle cx="17" cy="17.500" r="1.800"/></svg></div><p class="jamin-t">Seluruh Malaysia</p></div>
         <div class="jamin-i"><div class="jamin-ikon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2.500" y="6" width="19" height="12" rx="2"/><circle cx="12" cy="12" r="2.600"/><path d="M6 9.500v5M18 9.500v5"/></svg></div><p class="jamin-t">COD tersedia</p></div>
         <div class="jamin-i"><div class="jamin-ikon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 4h2.500l2.200 10.500h10.300l2-7.500H6.600"/><circle cx="9.500" cy="19" r="1.500"/><circle cx="17" cy="19" r="1.500"/></svg></div><p class="jamin-t">Postage percuma</p></div>
         <div class="jamin-i"><div class="jamin-ikon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l7.500 2.800v5.700c0 4.500-3 7.800-7.500 9.500-4.500-1.700-7.500-5-7.500-9.500V5.800z"/><path d="M8.700 12l2.300 2.300 4.300-4.600"/></svg></div><p class="jamin-t">Lulus KKM</p></div>
@@ -437,7 +435,7 @@ body{margin:0;background:#fff;font-family:'Be Vietnam Pro',sans-serif}
     <h2 class="nama-besar">GERTRIVA®</h2>
     <p class="p">Minuman 3-dalam-1: <b>Postbiotik + Prebiotik + Protein Soya.</b> Bancuh &amp; terus minum, sesuai untuk lelaki dan wanita dewasa.</p>
     <div class="aril-kad">
-      <img class="aril-foto" src="https://cdn.jsdelivr.net/gh/irwanpauzi/gertriva-ladi@453b18c58e26631a33ce87eae2420d9bd1e80f4d/zizan/gambar/zz-aril.webp" width="720" height="786" alt="Aril Pilus memegang dua kotak GERTRIVA">
+      <img class="aril-foto" src="https://cdn.jsdelivr.net/gh/irwanpauzi/gertriva-ladi@94abb43bb785d4214c2a1fa997f8a6aa546883b3/zizan/gambar/zz-aril.webp" width="720" height="786" alt="Aril Pilus memegang dua kotak GERTRIVA">
       <p class="aril-nama">Aril Pilus bersama GERTRIVA</p>
     </div>
     <div class="stat">
