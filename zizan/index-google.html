@@ -436,16 +436,19 @@ body{margin:0;background:#fff;font-family:'Be Vietnam Pro',sans-serif}
 #gtr .gl-cara-t{margin-left:4px;font:700 18px/1.4 'Be Vietnam Pro',sans-serif;color:#bd0101}
 #gtr .gl-cara-p{margin:11px 0 0 4px;font:400 16px/1.5 'Be Vietnam Pro',sans-serif;color:#1b1c1e}
 #gtr .gl-cara-p b{font-weight:700}
-#gtr .gl-borang form{margin-top:12px}
-#gtr .gl-langkah-no{display:flex;align-items:center;gap:9px;margin:14px 0 16px}
+#gtr .gl-borang form{margin-top:20px}
+#gtr .gl-langkah-no{display:flex;align-items:center;gap:9px;margin:18px 0 16px}
+#gtr .gl-langkah-no.satu{margin:16px 0 0}
 #gtr .gl-no{flex:none;width:30px;height:30px;border-radius:50%;font:700 18px/30px 'Be Vietnam Pro',sans-serif;color:#fff;text-align:center}
 #gtr .gl-no.hijau{background:#58b331}
 #gtr .gl-no.biru{background:#5271ff}
 #gtr .gl-no-t{font:700 18px/1.2 'Be Vietnam Pro',sans-serif;color:#bd0101}
-#gtr .gl-pilih{display:flex;align-items:flex-start;gap:10px;padding:10px 12px 10px;border:1px solid #a6a6a6;border-radius:10px;font:400 18px/1.6 'Be Vietnam Pro',sans-serif;color:#1a1a1a}
-#gtr .gl-pilih input{flex:none;width:24px;height:24px;margin-top:4px}
+#gtr .gl-pilih{display:flex;align-items:flex-start;gap:4px;margin:5px 15px;font:400 18px/1.3 'Be Vietnam Pro',sans-serif;color:#1a1a1a}
+#gtr .gl-pilih.p1{margin-top:10px}
+#gtr .gl-pilih.p3{margin-bottom:10px}
+#gtr .gl-pilih input{flex:none;width:13px;height:13px;margin-top:5px}
 #gtr .gl-borang form label[for]{display:block;margin-top:14px;font:700 12px/1.6 'Be Vietnam Pro',sans-serif;color:#bd0101}
-#gtr .gl-borang form input[type=text],#gtr .gl-borang form input[type=tel]{display:block;width:100%;height:48px;margin-top:4px;padding:0 12px;border:1px solid #a6a6a6;border-radius:9px;background:#fff;font:400 16px/1.3 'Be Vietnam Pro',sans-serif;color:#1b1c1e}
+#gtr .gl-borang form input[type=text],#gtr .gl-borang form input[type=tel]{display:block;width:100%;height:48px;margin-top:4px;padding:0 12px;border:1px solid #a6a6a6;border-radius:9px;background:#fff;font:400 18px/1.3 'Be Vietnam Pro',sans-serif;color:#1b1c1e}
 #gtr .gl-borang form button{display:block;width:100%;margin-top:22px;padding:17px 12px 17px;border:2px solid #fff;border-radius:10px;background:#1799e4;box-shadow:0 15px 20px -15px rgba(1,1,1,.3);font:700 26px/1.6 'Be Vietnam Pro',sans-serif;color:#fff}
 @media (min-width:900px){
   #gtr .gl-langkah{padding:64px 40px 66px}
@@ -953,11 +956,11 @@ body{margin:0;background:#fff;font-family:'Be Vietnam Pro',sans-serif}
   <div class="gl-kad">
     <p class="gl-cara-t">Cara Untuk Buat Tempahan/Pesanan</p>
     <p class="gl-cara-p">1. Masukkan maklumat anda dan alamat pada borang dibawah.<br>2. Pilih <b>PAKEJ</b><br>3. Tekan button <b>"TEMPAH SEKARANG"</b><br>4. Tempahan/Pesanan anda akan diproses secepat mungkin. Runner akan hubungi anda untuk buat penghantaran.</p>
+    <div class="gl-langkah-no satu"><p class="gl-no hijau">1</p><p class="gl-no-t">Pilih Pakej Pilihan Anda</p></div>
     <form>
-      <div class="gl-langkah-no"><p class="gl-no hijau">1</p><p class="gl-no-t">Pilih Pakej Pilihan Anda</p></div>
-      <label class="gl-pilih"><input type="radio" name="pakej" value="Pakej Rawatan Penuh -  [RM199]  : 3 Kotak Gertriva +  Free 2 Ebook + Free Delivery" checked required> Pakej Rawatan Penuh -  [RM199]  : 3 Kotak Gertriva +  Free 2 Ebook + Free Delivery</label>
+      <label class="gl-pilih p1"><input type="radio" name="pakej" value="Pakej Rawatan Penuh -  [RM199]  : 3 Kotak Gertriva +  Free 2 Ebook + Free Delivery" checked required> Pakej Rawatan Penuh -  [RM199]  : 3 Kotak Gertriva +  Free 2 Ebook + Free Delivery</label>
       <label class="gl-pilih"><input type="radio" name="pakej" value="Pakej Melegakan -  [RM169]  : 2 Kotak Gertriva +  Free 2 Ebook + Free Delivery"> Pakej Melegakan -  [RM169]  : 2 Kotak Gertriva +  Free 2 Ebook + Free Delivery</label>
-      <label class="gl-pilih"><input type="radio" name="pakej" value="Pakej Percubaan -  [RM99]  : 1 Kotak Gertriva +  Free 2 Ebook + Free Delivery"> Pakej Percubaan -  [RM99]  : 1 Kotak Gertriva +  Free 2 Ebook + Free Delivery</label>
+      <label class="gl-pilih p3"><input type="radio" name="pakej" value="Pakej Percubaan -  [RM99]  : 1 Kotak Gertriva +  Free 2 Ebook + Free Delivery"> Pakej Percubaan -  [RM99]  : 1 Kotak Gertriva +  Free 2 Ebook + Free Delivery</label>
       <div class="gl-langkah-no"><p class="gl-no biru">2</p><p class="gl-no-t">Maklumat Penghantaran</p></div>
       <label for="nama">Nama*</label>
       <input id="nama" name="name" type="text" required>
