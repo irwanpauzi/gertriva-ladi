@@ -317,8 +317,8 @@ body{margin:0;background:#fff;font-family:'Be Vietnam Pro',sans-serif}
   #gtr .tv-t{margin-top:56px;font-size:26px}
   #gtr .tv-grid{margin-top:24px}
 }
+#gtr .wa-grid{display:grid;gap:18px;max-width:400px;margin:26px auto 0}
 #gtr .wa-desk{display:none}
-#gtr .wa-atas{display:grid;gap:18px;max-width:400px;margin:26px auto 0}
 #gtr .wa-kad{padding:12px 12px 12px}
 #gtr .wa-cap{margin:2px 4px 12px;font:800 17px/1.35 'Be Vietnam Pro',sans-serif;color:#13241a}
 #gtr .wa-img{display:block;width:100%;height:auto;border-radius:10px}
@@ -333,9 +333,11 @@ body{margin:0;background:#fff;font-family:'Be Vietnam Pro',sans-serif}
 #gtr .wa-ke svg{width:22px;height:22px}
 #gtr .wa-nav-t{font:700 14px/1.3 'Be Vietnam Pro',sans-serif;color:#46564c}
 @media (min-width:900px){
-  #gtr .wa-mob{display:none}
-  #gtr .wa-desk{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:22px;max-width:1120px;margin:40px auto 0;align-items:start}
+  #gtr #testimoni>.w{display:flex;flex-direction:column}
+  #gtr .wa-grid{max-width:1120px;grid-template-columns:repeat(4,minmax(0,1fr));gap:22px;margin-top:40px;align-items:start}
+  #gtr .wa-desk{display:block}
   #gtr .wa-cap{font-size:16px}
+  #gtr .wa-mob{order:9;margin-top:40px}
 }
 #gtr .kira-label{margin-top:22px;font:700 15px/1.3 'Be Vietnam Pro',sans-serif;color:#fff}
 #gtr .kira-besar{display:flex;align-items:flex-start;justify-content:center;gap:8px;margin-top:12px}
@@ -778,15 +780,25 @@ body{margin:0;background:#fff;font-family:'Be Vietnam Pro',sans-serif}
     <p class="lbl">Maklum Balas Pengguna</p>
     <h2 class="t1">Apa Kata Pengguna GERTRIVA?</h2>
     <div class="sempit"><p class="p">Pengalaman sebenar pelanggan, terus dari WhatsApp.</p></div>
-    <div class="wa-mob">
-<div class="wa-atas">
+    <div class="wa-grid">
   <div class="wa-kad kad"><p class="wa-cap">Pedih Ulu Hati Terus Hilang</p><img class="wa-img" src="https://cdn.jsdelivr.net/gh/irwanpauzi/gertriva-ladi@35f284b0ae5d2256896b703203300bb74960146b/zizan/gambar/zz-wa-01.webp" width="589" height="1280" alt="Testimoni WhatsApp: rasa pedih di ulu hati terus hilang"></div>
   <div class="wa-kad kad"><p class="wa-cap">Isteri Ada GERD, Lebih Baik Lepas 2 Sachet</p><img class="wa-img" src="https://cdn.jsdelivr.net/gh/irwanpauzi/gertriva-ladi@35f284b0ae5d2256896b703203300bb74960146b/zizan/gambar/zz-wa-02.webp" width="720" height="905" alt="Testimoni WhatsApp: isteri ada masalah GERD, lebih baik selepas dua sachet"></div>
   <div class="wa-kad kad"><p class="wa-cap">Gastrik Teruk, Banyak Membantu</p><img class="wa-img" src="https://cdn.jsdelivr.net/gh/irwanpauzi/gertriva-ladi@35f284b0ae5d2256896b703203300bb74960146b/zizan/gambar/zz-wa-03.webp" width="600" height="1304" alt="Testimoni WhatsApp: masalah gastrik yang agak teruk, banyak membantu"></div>
   <div class="wa-kad kad"><p class="wa-cap">GERD 9 Tahun, Anak Saudara Yang Syorkan</p><img class="wa-img" src="https://cdn.jsdelivr.net/gh/irwanpauzi/gertriva-ladi@35f284b0ae5d2256896b703203300bb74960146b/zizan/gambar/zz-wa-04.webp" width="600" height="1067" alt="Testimoni WhatsApp: masalah GERD sudah 9 tahun"></div>
   <div class="wa-kad kad"><p class="wa-cap">Perut Selesa Esok Hari, Nak Repeat</p><img class="wa-img" src="https://cdn.jsdelivr.net/gh/irwanpauzi/gertriva-ladi@35f284b0ae5d2256896b703203300bb74960146b/zizan/gambar/zz-wa-05.webp" width="600" height="1067" alt="Testimoni WhatsApp: perut rasa selesa keesokan hari, nak repeat"></div>
   <div class="wa-kad kad"><p class="wa-cap">Dah Takde Sebu Perut Lepas Makan</p><img class="wa-img" src="https://cdn.jsdelivr.net/gh/irwanpauzi/gertriva-ladi@35f284b0ae5d2256896b703203300bb74960146b/zizan/gambar/zz-wa-06.webp" width="576" height="1280" alt="Testimoni WhatsApp: dah takde sebu perut walau makan banyak"></div>
+  <div class="wa-kad kad wa-desk"><p class="wa-cap">Angin Dalam Perut Hilang</p><img class="wa-img" src="https://cdn.jsdelivr.net/gh/irwanpauzi/gertriva-ladi@35f284b0ae5d2256896b703203300bb74960146b/zizan/gambar/zz-wa-07.webp" width="720" height="1280" alt="Testimoni WhatsApp: masalah angin dalam perut hilang"></div>
+  <div class="wa-kad kad wa-desk"><p class="wa-cap">Rasa Lega Sikit Perut</p><img class="wa-img" src="https://cdn.jsdelivr.net/gh/irwanpauzi/gertriva-ladi@35f284b0ae5d2256896b703203300bb74960146b/zizan/gambar/zz-wa-08.webp" width="720" height="1280" alt="Testimoni WhatsApp: rasa lega sikit perut"></div>
+  <div class="wa-kad kad wa-desk"><p class="wa-cap">Angin Kuat, Rasa Ringan Sikit</p><img class="wa-img" src="https://cdn.jsdelivr.net/gh/irwanpauzi/gertriva-ladi@35f284b0ae5d2256896b703203300bb74960146b/zizan/gambar/zz-wa-09.webp" width="720" height="1280" alt="Testimoni WhatsApp: angin kuat, minum semalam rasa ringan sikit"></div>
+  <div class="wa-kad kad wa-desk"><p class="wa-cap">Malam Kedua Baru Selesa Perut</p><img class="wa-img" src="https://cdn.jsdelivr.net/gh/irwanpauzi/gertriva-ladi@35f284b0ae5d2256896b703203300bb74960146b/zizan/gambar/zz-wa-10.webp" width="720" height="1280" alt="Testimoni WhatsApp: malam kedua baru selesa perut"></div>
+  <div class="wa-kad kad wa-desk"><p class="wa-cap">Perut Rasa Lebih Selesa</p><img class="wa-img" src="https://cdn.jsdelivr.net/gh/irwanpauzi/gertriva-ladi@35f284b0ae5d2256896b703203300bb74960146b/zizan/gambar/zz-wa-11.webp" width="720" height="1280" alt="Testimoni WhatsApp: perut rasa lebih selesa"></div>
+  <div class="wa-kad kad wa-desk"><p class="wa-cap">Kembung &amp; Angin Berkurang</p><img class="wa-img" src="https://cdn.jsdelivr.net/gh/irwanpauzi/gertriva-ladi@35f284b0ae5d2256896b703203300bb74960146b/zizan/gambar/zz-wa-12.webp" width="720" height="1280" alt="Testimoni WhatsApp: kembung dan angin berkurang"></div>
+  <div class="wa-kad kad wa-desk"><p class="wa-cap">Kembung Perut Kurang</p><img class="wa-img" src="https://cdn.jsdelivr.net/gh/irwanpauzi/gertriva-ladi@35f284b0ae5d2256896b703203300bb74960146b/zizan/gambar/zz-wa-13.webp" width="720" height="1280" alt="Testimoni WhatsApp: kembung perut kurang"></div>
+  <div class="wa-kad kad wa-desk"><p class="wa-cap">Sendawa &amp; Buang Angin</p><img class="wa-img" src="https://cdn.jsdelivr.net/gh/irwanpauzi/gertriva-ladi@35f284b0ae5d2256896b703203300bb74960146b/zizan/gambar/zz-wa-14.webp" width="720" height="1280" alt="Testimoni WhatsApp: sendawa dan buang angin"></div>
+  <div class="wa-kad kad wa-desk"><p class="wa-cap">Buang Air Besar Lebih Lancar</p><img class="wa-img" src="https://cdn.jsdelivr.net/gh/irwanpauzi/gertriva-ladi@35f284b0ae5d2256896b703203300bb74960146b/zizan/gambar/zz-wa-15.webp" width="720" height="1280" alt="Testimoni WhatsApp: buang air besar lebih lancar"></div>
+  <div class="wa-kad kad wa-desk"><p class="wa-cap">Rasa Sedap, Dah Habis 3 Sachet</p><img class="wa-img" src="https://cdn.jsdelivr.net/gh/irwanpauzi/gertriva-ladi@35f284b0ae5d2256896b703203300bb74960146b/zizan/gambar/zz-wa-16.webp" width="720" height="1280" alt="Testimoni WhatsApp: rasa memang sedap, dah habis 3 sachet"></div>
 </div>
+<div class="wa-mob">
 <p class="wa-lagi">Lagi 10 Testimoni Pelanggan</p>
 <div class="wa-karusel" aria-roledescription="carousel">
   <div id="wa-trek" class="wa-trek">
@@ -807,24 +819,6 @@ body{margin:0;background:#fff;font-family:'Be Vietnam Pro',sans-serif}
   <p class="wa-nav-t">Leret untuk lagi testimoni</p>
   <button type="button" class="wa-ke" aria-controls="wa-trek" data-slide="next" aria-label="Next"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 5l7 7-7 7"/></svg></button>
 </div>
-</div>
-<div class="wa-desk">
-  <div class="wa-kad kad"><p class="wa-cap">Pedih Ulu Hati Terus Hilang</p><img class="wa-img" src="https://cdn.jsdelivr.net/gh/irwanpauzi/gertriva-ladi@35f284b0ae5d2256896b703203300bb74960146b/zizan/gambar/zz-wa-01.webp" width="589" height="1280" alt="Testimoni WhatsApp: rasa pedih di ulu hati terus hilang"></div>
-  <div class="wa-kad kad"><p class="wa-cap">Isteri Ada GERD, Lebih Baik Lepas 2 Sachet</p><img class="wa-img" src="https://cdn.jsdelivr.net/gh/irwanpauzi/gertriva-ladi@35f284b0ae5d2256896b703203300bb74960146b/zizan/gambar/zz-wa-02.webp" width="720" height="905" alt="Testimoni WhatsApp: isteri ada masalah GERD, lebih baik selepas dua sachet"></div>
-  <div class="wa-kad kad"><p class="wa-cap">Gastrik Teruk, Banyak Membantu</p><img class="wa-img" src="https://cdn.jsdelivr.net/gh/irwanpauzi/gertriva-ladi@35f284b0ae5d2256896b703203300bb74960146b/zizan/gambar/zz-wa-03.webp" width="600" height="1304" alt="Testimoni WhatsApp: masalah gastrik yang agak teruk, banyak membantu"></div>
-  <div class="wa-kad kad"><p class="wa-cap">GERD 9 Tahun, Anak Saudara Yang Syorkan</p><img class="wa-img" src="https://cdn.jsdelivr.net/gh/irwanpauzi/gertriva-ladi@35f284b0ae5d2256896b703203300bb74960146b/zizan/gambar/zz-wa-04.webp" width="600" height="1067" alt="Testimoni WhatsApp: masalah GERD sudah 9 tahun"></div>
-  <div class="wa-kad kad"><p class="wa-cap">Perut Selesa Esok Hari, Nak Repeat</p><img class="wa-img" src="https://cdn.jsdelivr.net/gh/irwanpauzi/gertriva-ladi@35f284b0ae5d2256896b703203300bb74960146b/zizan/gambar/zz-wa-05.webp" width="600" height="1067" alt="Testimoni WhatsApp: perut rasa selesa keesokan hari, nak repeat"></div>
-  <div class="wa-kad kad"><p class="wa-cap">Dah Takde Sebu Perut Lepas Makan</p><img class="wa-img" src="https://cdn.jsdelivr.net/gh/irwanpauzi/gertriva-ladi@35f284b0ae5d2256896b703203300bb74960146b/zizan/gambar/zz-wa-06.webp" width="576" height="1280" alt="Testimoni WhatsApp: dah takde sebu perut walau makan banyak"></div>
-  <div class="wa-kad kad"><p class="wa-cap">Angin Dalam Perut Hilang</p><img class="wa-img" src="https://cdn.jsdelivr.net/gh/irwanpauzi/gertriva-ladi@35f284b0ae5d2256896b703203300bb74960146b/zizan/gambar/zz-wa-07.webp" width="720" height="1280" alt="Testimoni WhatsApp: masalah angin dalam perut hilang"></div>
-  <div class="wa-kad kad"><p class="wa-cap">Rasa Lega Sikit Perut</p><img class="wa-img" src="https://cdn.jsdelivr.net/gh/irwanpauzi/gertriva-ladi@35f284b0ae5d2256896b703203300bb74960146b/zizan/gambar/zz-wa-08.webp" width="720" height="1280" alt="Testimoni WhatsApp: rasa lega sikit perut"></div>
-  <div class="wa-kad kad"><p class="wa-cap">Angin Kuat, Rasa Ringan Sikit</p><img class="wa-img" src="https://cdn.jsdelivr.net/gh/irwanpauzi/gertriva-ladi@35f284b0ae5d2256896b703203300bb74960146b/zizan/gambar/zz-wa-09.webp" width="720" height="1280" alt="Testimoni WhatsApp: angin kuat, minum semalam rasa ringan sikit"></div>
-  <div class="wa-kad kad"><p class="wa-cap">Malam Kedua Baru Selesa Perut</p><img class="wa-img" src="https://cdn.jsdelivr.net/gh/irwanpauzi/gertriva-ladi@35f284b0ae5d2256896b703203300bb74960146b/zizan/gambar/zz-wa-10.webp" width="720" height="1280" alt="Testimoni WhatsApp: malam kedua baru selesa perut"></div>
-  <div class="wa-kad kad"><p class="wa-cap">Perut Rasa Lebih Selesa</p><img class="wa-img" src="https://cdn.jsdelivr.net/gh/irwanpauzi/gertriva-ladi@35f284b0ae5d2256896b703203300bb74960146b/zizan/gambar/zz-wa-11.webp" width="720" height="1280" alt="Testimoni WhatsApp: perut rasa lebih selesa"></div>
-  <div class="wa-kad kad"><p class="wa-cap">Kembung &amp; Angin Berkurang</p><img class="wa-img" src="https://cdn.jsdelivr.net/gh/irwanpauzi/gertriva-ladi@35f284b0ae5d2256896b703203300bb74960146b/zizan/gambar/zz-wa-12.webp" width="720" height="1280" alt="Testimoni WhatsApp: kembung dan angin berkurang"></div>
-  <div class="wa-kad kad"><p class="wa-cap">Kembung Perut Kurang</p><img class="wa-img" src="https://cdn.jsdelivr.net/gh/irwanpauzi/gertriva-ladi@35f284b0ae5d2256896b703203300bb74960146b/zizan/gambar/zz-wa-13.webp" width="720" height="1280" alt="Testimoni WhatsApp: kembung perut kurang"></div>
-  <div class="wa-kad kad"><p class="wa-cap">Sendawa &amp; Buang Angin</p><img class="wa-img" src="https://cdn.jsdelivr.net/gh/irwanpauzi/gertriva-ladi@35f284b0ae5d2256896b703203300bb74960146b/zizan/gambar/zz-wa-14.webp" width="720" height="1280" alt="Testimoni WhatsApp: sendawa dan buang angin"></div>
-  <div class="wa-kad kad"><p class="wa-cap">Buang Air Besar Lebih Lancar</p><img class="wa-img" src="https://cdn.jsdelivr.net/gh/irwanpauzi/gertriva-ladi@35f284b0ae5d2256896b703203300bb74960146b/zizan/gambar/zz-wa-15.webp" width="720" height="1280" alt="Testimoni WhatsApp: buang air besar lebih lancar"></div>
-  <div class="wa-kad kad"><p class="wa-cap">Rasa Sedap, Dah Habis 3 Sachet</p><img class="wa-img" src="https://cdn.jsdelivr.net/gh/irwanpauzi/gertriva-ladi@35f284b0ae5d2256896b703203300bb74960146b/zizan/gambar/zz-wa-16.webp" width="720" height="1280" alt="Testimoni WhatsApp: rasa memang sedap, dah habis 3 sachet"></div>
 </div>
     <p class="tv-t">Tonton Testimoni Video</p>
     <div class="vid-grid tv-grid">
