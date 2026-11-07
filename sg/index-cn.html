@@ -131,6 +131,15 @@ body{margin:0;background:#fff;font-family:'Be Vietnam Pro',sans-serif}
 #gtr .wa-cap{margin:2px 4px 12px;font:800 17px/1.35 'Be Vietnam Pro',sans-serif;color:#13241a}
 #gtr .wa-img{display:block;width:100%;height:auto;border-radius:10px}
 @media (min-width:900px){#gtr .ta-grid{max-width:1120px;grid-template-columns:repeat(4,minmax(0,1fr));gap:22px;margin-top:40px;align-items:start}#gtr .wa-cap{font-size:16px}}
+#gtr .tb{padding:18px 18px 18px;border-radius:18px;background:#ffffff;border:1px solid #e2e5ec;box-shadow:0 8px 24px rgba(22,24,27,.06);text-align:left}
+#gtr .tb-atas{display:flex;align-items:center;gap:10px}
+#gtr .tb-av{flex:none;width:40px;height:40px;padding:9px;border-radius:50%;background:#e9f6e5;color:#138a3e}
+#gtr .tb-n{font:800 14.5px/1.3 'Be Vietnam Pro',sans-serif;color:#16181b}
+#gtr .tb-v{margin-top:1px;font:600 12px/1.3 'Be Vietnam Pro',sans-serif;color:#138a3e}
+#gtr .tb-t{margin-top:14px;font:800 17px/1.35 'Be Vietnam Pro',sans-serif;color:#16181b}
+#gtr .tb-q{margin-top:8px;font:400 15px/1.6 'Be Vietnam Pro',sans-serif;color:#3d434b}
+#gtr .tb-k{width:max-content;max-width:100%;margin-top:14px;padding:5px 11px 5px;border-radius:99px;background:#f1f3f8;font:700 12.5px/1.3 'Be Vietnam Pro',sans-serif;color:#16181b}
+#gtr .wa-slaid.tb{flex:0 0 300px;padding:18px 18px 18px;scroll-snap-align:start}
 #gtr .kit{background-color:#0b0f0c;background-image:linear-gradient(180deg,#0b0f0c 0%,#1a0a0a 100%);color:#fff}
 #gtr .kit-khas{width:max-content;max-width:100%;margin:0 auto;padding:7px 16px 7px;border-radius:99px;background:#e3ec4a;font:800 13px/1.3 'Be Vietnam Pro',sans-serif;color:#0b0f0c}
 #gtr .kit-t{margin-top:18px;font:800 26px/1.3 'Be Vietnam Pro',sans-serif;color:#fff}
@@ -669,19 +678,50 @@ body{margin:0;background:#fff;font-family:'Be Vietnam Pro',sans-serif}
 #gtr .ck-m{color:#e11d48}
 #gtr .ck-sub{margin-top:10px;font:400 15.5px/1.55 'Be Vietnam Pro',sans-serif;color:#3d434b;text-align:center}
 #gtr .ck-sub b{font-weight:800;color:#16181b}
-#gtr .tempah-kad .lencana-t{margin:18px auto 0;background:#16181b;color:#c9ec3c}
-#gtr .ck-step{display:flex;align-items:center;gap:10px;margin-top:22px}
+#gtr .ck-kotak{margin-top:22px;padding:20px 16px 20px;border-radius:22px;background:#f1f3f8;text-align:left}
+#gtr .ck-step{display:flex;align-items:center;gap:10px;margin-top:4px}
 #gtr .ck-no{flex:none;width:28px;height:28px;border-radius:50%;background:#16181b;font:800 14px/28px 'Be Vietnam Pro',sans-serif;color:#ffffff;text-align:center}
-#gtr .ck-st{font:800 18px/1.3 'Be Vietnam Pro',sans-serif;color:#16181b}
-#gtr .pilih{border:1.5px solid #e2e5ec;border-radius:14px;background:#ffffff}
-#gtr form input[type=text],#gtr form input[type=tel]{border:1.5px solid #e2e5ec;border-radius:12px;background:#ffffff}
-#gtr form button{background:#16181b;box-shadow:0 10px 22px rgba(22,24,27,.25)}
-#gtr .lt-ringkas{margin-top:8px;padding:2px 16px 14px;border-radius:16px;background:#f1f3f8;border:0}
-#gtr .lt-ringkas .ck-step{margin-top:14px}
-#gtr .lt-v{color:#138a3e}
-#gtr .lt-total{color:#16181b}
-#gtr .lt-cip{margin-top:14px}
-#gtr .lt-cip-i{background:#f1f3f8;border:0;color:#16181b}
+#gtr .ck-st{font:800 19px/1.3 'Be Vietnam Pro',sans-serif;color:#16181b}
+#gtr .ck-garis{height:1px;margin:22px 0 20px;background:#dfe2e8}
+#gtr .pilih{display:flex;align-items:center;gap:12px;height:78px;margin-top:12px;padding:0 16px 0;border:1.5px solid #e2e5ec;border-radius:14px;background:#ffffff;font:700 16px/1.3 'Be Vietnam Pro',sans-serif;color:#16181b}
+#gtr form label{display:block;margin-top:16px;font:800 15px/1.3 'Be Vietnam Pro',sans-serif;color:#16181b}
+#gtr form .ck-kecil{font-weight:500;color:#6b7280}
+#gtr form input[type=text],#gtr form input[type=tel],#gtr form textarea{box-sizing:border-box;width:100%;height:52px;margin-top:8px;padding:0 16px 0;border:1.5px solid #dfe2e8;border-radius:12px;background:#ffffff;font:400 16px/1.3 'Be Vietnam Pro',sans-serif;color:#16181b}
+#gtr form textarea{height:88px;padding:14px 16px 14px;resize:vertical}
+#gtr .ck-tel{display:flex;gap:0;margin-top:8px}
+#gtr .ck-65{flex:none;width:76px;height:52px;border:1.5px solid #dfe2e8;border-radius:12px 0 0 12px;background:#ffffff;font:800 16px/49px 'Be Vietnam Pro',sans-serif;color:#16181b;text-align:center}
+#gtr .ck-tel input[type=tel]{flex:1;min-width:0;margin-top:0;border-left:0;border-radius:0 12px 12px 0}
+#gtr .ck-dua{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+#gtr .lt-ringkas{margin-top:14px;padding:6px 18px 16px;border-radius:14px;background:#ffffff;border:0}
+#gtr .lt-baris{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-top:12px}
+#gtr .lt-k{font:500 15px/1.4 'Be Vietnam Pro',sans-serif;color:#3d434b;text-align:left}
+#gtr .lt-v{font:700 15px/1.4 'Be Vietnam Pro',sans-serif;color:#16181b;text-align:right}
+#gtr .lt-v.lt-hijau{color:#138a3e}
+#gtr .lt-jumlah{padding-top:12px;border-top:1px dashed #d4d7de}
+#gtr .lt-jumlah .lt-k{font-weight:800;color:#16181b}
+#gtr .lt-total{font:900 26px/1.2 'Be Vietnam Pro',sans-serif;color:#16181b}
+#gtr form button{display:block;width:100%;height:58px;margin-top:20px;border:0;border-radius:99px;background:#16181b;box-shadow:0 10px 22px rgba(22,24,27,.25);font:800 17px/1.2 'Be Vietnam Pro',sans-serif;color:#ffffff}
+#gtr .tempah-bawah{margin-top:12px;font:500 13px/1.5 'Be Vietnam Pro',sans-serif;color:#6b7280;text-align:center}
+
+#gtr .galeri-s{padding:14px 16px 8px;background:#ffffff}
+#gtr .gl-w{max-width:560px;margin:0 auto}
+#gtr .gl-remah{margin-bottom:12px;font:500 14px/1.3 'Be Vietnam Pro',sans-serif;color:#6b7280;text-align:left}
+#gtr .gl-remah b{font-weight:800;color:#16181b}
+#gtr .gl-kotak{border-radius:18px;overflow:hidden}
+#gtr .gl-trek{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none}
+#gtr .gl-trek::-webkit-scrollbar{display:none}
+#gtr .gl-slaid{position:relative;flex:0 0 100%;aspect-ratio:1/1;scroll-snap-align:start;background:#f1f3f8}
+#gtr .gl-img{display:block;width:100%;height:100%;object-fit:cover}
+#gtr .gl-teks{position:absolute;left:20px;top:22px;width:56%;text-align:left}
+#gtr .gl-h{font:900 31px/1.04 'Be Vietnam Pro',sans-serif;text-transform:uppercase;color:#ffffff;text-align:left}
+#gtr .gl-l{color:#c9ec3c}
+#gtr .gl-k{margin-top:12px;font:700 15px/1.35 'Be Vietnam Pro',sans-serif;color:#ffe4ea;text-align:left}
+#gtr .gl-bawah{position:absolute;left:20px;bottom:20px;width:46%;text-align:left}
+#gtr .gl-cb{font:800 12.5px/1.4 'Be Vietnam Pro',sans-serif;text-transform:uppercase;color:#c9ec3c}
+#gtr .gl-c{margin-top:3px;font:500 13.5px/1.4 'Be Vietnam Pro',sans-serif;color:#ffffff}
+#gtr .gl-nav{display:flex;align-items:center;justify-content:center;gap:14px;margin-top:12px}
+#gtr .gl-b{width:40px;height:40px;padding:0;border:0;border-radius:50%;background:#f1f3f8;font:800 24px/38px 'Be Vietnam Pro',sans-serif;color:#16181b;cursor:pointer}
+#gtr .gl-leret{font:600 13px/1.3 'Be Vietnam Pro',sans-serif;color:#6b7280}
 
 @media (min-width:900px){
   #gtr .s{padding:72px 40px 76px}
@@ -694,6 +734,12 @@ body{margin:0;background:#fff;font-family:'Be Vietnam Pro',sans-serif}
   #gtr .bl-desk{font-size:17px}
   #gtr .ck-h{font-size:42px}
   #gtr .tempah-kad{max-width:640px}
+  #gtr .ck-kotak{padding:28px 28px 26px}
+  #gtr .gl-teks{left:30px;top:32px}
+  #gtr .gl-h{font-size:44px}
+  #gtr .gl-k{font-size:18px}
+  #gtr .gl-bawah{left:30px;bottom:28px}
+  #gtr .gl-c{font-size:15px}
 }
 </style>
 </head><body>
@@ -719,34 +765,36 @@ body{margin:0;background:#fff;font-family:'Be Vietnam Pro',sans-serif}
     <p class="atas-pos">全新加坡免费送货</p>
   </div>
 </section>
-<section class="s hero pink-turun" id="hero">
-  <div class="w hero-grid">
-    <div class="hero-foto"><img src="https://cdn.jsdelivr.net/gh/irwanpauzi/gertriva-ladi@3b0ff5eae42a5410871dc059c7bf11720a77cb37/zizan/gambar/zz-hero-duta.webp" width="900" height="1040" alt="Aril Pilus 与 Dr. Ely Fauziani 手持 GERTRIVA 产品盒"></div>
-    <div class="hero-teks">
-      <div class="tx">
-        <div class="tx-atas">
-          <p class="tx-n">3X</p>
-          <div class="tx-kanan"><p class="tx-pil">临床证实</p><p class="tx-lebih">吸收力</p></div>
+<section class="s galeri-s" id="hero">
+  <div class="gl-w">
+    <p class="gl-remah">消化健康 / <b>GERTRIVA™</b></p>
+    <div class="gl-kotak" aria-roledescription="carousel">
+      <div class="gl-trek" id="gl-trek">
+        <div class="gl-slaid gl-poster" aria-roledescription="slide">
+          <img class="gl-img" src="https://cdn.jsdelivr.net/gh/irwanpauzi/gertriva-ladi@634a7d405cdda94eab85ea6ef17df2341c57936c/sg/gambar/poster-aril.webp" width="900" height="900" alt="Aril Pilus 手持 GERTRIVA">
+          <div class="gl-teks"><h1 class="gl-h">胸口灼热，<br><span class="gl-l">胃酸涌上喉咙。</span></h1>
+          <p class="gl-k">试过各种方法，还是反复发作？</p></div>
+          <div class="gl-bawah"><p class="gl-cb">专为胃灼热与胃酸倒流</p><p class="gl-c">每天1杯，帮助舒缓灼热感。</p></div>
         </div>
-        <p class="tx-serap">大提升</p>
+        <div class="gl-slaid" aria-roledescription="slide"><img class="gl-img" src="https://cdn.jsdelivr.net/gh/irwanpauzi/gertriva-ladi@5d92148552ba69f5159fc2499254fff8603c4a4d/sg/gambar/produk-podium.webp" width="900" height="900" alt="GERTRIVA 包装与小包"></div>
+        <div class="gl-slaid" aria-roledescription="slide"><img class="gl-img" src="https://cdn.jsdelivr.net/gh/irwanpauzi/gertriva-ladi@634a7d405cdda94eab85ea6ef17df2341c57936c/sg/gambar/galeri-aril.webp" width="720" height="720" alt="Aril Pilus 与 GERTRIVA"></div>
+        <div class="gl-slaid" aria-roledescription="slide"><img class="gl-img" src="https://cdn.jsdelivr.net/gh/irwanpauzi/gertriva-ladi@634a7d405cdda94eab85ea6ef17df2341c57936c/sg/gambar/galeri-kotak.webp" width="720" height="720" alt="GERTRIVA 包装与成分"></div>
+        <div class="gl-slaid" aria-roledescription="slide"><img class="gl-img" src="https://cdn.jsdelivr.net/gh/irwanpauzi/gertriva-ladi@634a7d405cdda94eab85ea6ef17df2341c57936c/sg/gambar/galeri-manfaat.webp" width="720" height="720" alt="GERTRIVA 的好处"></div>
+        <div class="gl-slaid" aria-roledescription="slide"><img class="gl-img" src="https://cdn.jsdelivr.net/gh/irwanpauzi/gertriva-ladi@634a7d405cdda94eab85ea6ef17df2341c57936c/sg/gambar/galeri-formula.webp" width="720" height="720" alt="GERTRIVA 配方亮点"></div>
+        <div class="gl-slaid" aria-roledescription="slide"><img class="gl-img" src="https://cdn.jsdelivr.net/gh/irwanpauzi/gertriva-ladi@634a7d405cdda94eab85ea6ef17df2341c57936c/sg/gambar/galeri-bahan.webp" width="720" height="720" alt="GERTRIVA 主要成分"></div>
+        <div class="gl-slaid" aria-roledescription="slide"><img class="gl-img" src="https://cdn.jsdelivr.net/gh/irwanpauzi/gertriva-ladi@634a7d405cdda94eab85ea6ef17df2341c57936c/sg/gambar/galeri-cara.webp" width="720" height="720" alt="GERTRIVA 冲泡方法"></div>
       </div>
-      <h1 class="hero-t">告别<span class="m">胸口灼热</span>与<br><span class="m">胃酸倒流</span>（GERD）<br><span class="m">3合1</span>配方</h1>
-      <p class="hero-sub">各种方法都试过，烧心还是反复发作？别等到食道受损才后悔。今天就开始护胃！</p>
-      <a class="cta" href="#beli" role="button">立即购买 GERTRIVA</a>
-      <div class="bintang-baris"><div class="bintang"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.8l2.85 5.78 6.38.93-4.62 4.5 1.09 6.35L12 17.36 6.3 20.36l1.09-6.35-4.62-4.5 6.38-.93z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.8l2.85 5.78 6.38.93-4.62 4.5 1.09 6.35L12 17.36 6.3 20.36l1.09-6.35-4.62-4.5 6.38-.93z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.8l2.85 5.78 6.38.93-4.62 4.5 1.09 6.35L12 17.36 6.3 20.36l1.09-6.35-4.62-4.5 6.38-.93z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.8l2.85 5.78 6.38.93-4.62 4.5 1.09 6.35L12 17.36 6.3 20.36l1.09-6.35-4.62-4.5 6.38-.93z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.8l2.85 5.78 6.38.93-4.62 4.5 1.09 6.35L12 17.36 6.3 20.36l1.09-6.35-4.62-4.5 6.38-.93z"/></svg></div><p class="bintang-t">GERTRIVA，众多顾客的满意之选</p></div>
-      <div class="jamin">
-        <div class="jamin-i"><div class="jamin-ikon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2.500 6.500h11v9.500h-11z"/><path d="M13.500 9.500h4l3.500 3.500v3h-7.500z"/><circle cx="7" cy="17.500" r="1.800"/><circle cx="17" cy="17.500" r="1.800"/></svg></div><p class="jamin-t">全新加坡送达</p></div>
-        <div class="jamin-i"><div class="jamin-ikon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2.500" y="6" width="19" height="12" rx="2"/><circle cx="12" cy="12" r="2.600"/><path d="M6 9.500v5M18 9.500v5"/></svg></div><p class="jamin-t">可货到付款</p></div>
-        <div class="jamin-i"><div class="jamin-ikon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 4h2.500l2.200 10.500h10.300l2-7.500H6.600"/><circle cx="9.500" cy="19" r="1.500"/><circle cx="17" cy="19" r="1.500"/></svg></div><p class="jamin-t">免费送货</p></div>
-        <div class="jamin-i"><div class="jamin-ikon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l7.500 2.800v5.700c0 4.500-3 7.800-7.500 9.500-4.500-1.700-7.500-5-7.500-9.500V5.800z"/><path d="M8.700 12l2.300 2.300 4.300-4.600"/></svg></div><p class="jamin-t">马来西亚卫生部认可</p></div>
-      </div>
+    </div>
+    <div class="gl-nav">
+      <button type="button" class="gl-b" aria-controls="gl-trek" data-slide="prev" aria-label="上一张">‹</button>
+      <p class="gl-leret">左右滑动查看更多</p>
+      <button type="button" class="gl-b" aria-controls="gl-trek" data-slide="next" aria-label="下一张">›</button>
     </div>
   </div>
 </section>
 <section class="s putih" id="beli">
   <div class="w bl-dua">
     <div class="bl-kiri">
-      <p class="bl-remah">消化健康 / <b>GERTRIVA™</b></p>
       <div class="bl-tajuk"><h2 class="bl-h1">GERTRIVA™</h2><p class="bl-sg">新加坡现已上市</p></div>
       <p class="bl-desk">针对<b>胸口灼热、胃酸倒流与胀气</b>的每日饮品。<b>Gastro-AD®</b> 帮助缓解灼热感，<b>菊粉 + 燕麦纤维</b>帮助排便顺畅，<b>大豆蛋白</b>让您饱足更久。</p>
       <div class="bl-cipcip"><p class="bl-cip">减少烧心</p><p class="bl-cip">减少胃酸倒流</p><p class="bl-cip">减少胀气</p><p class="bl-cip">排便顺畅</p><p class="bl-cip">不含乳糖</p></div>
@@ -761,20 +809,20 @@ body{margin:0;background:#fff;font-family:'Be Vietnam Pro',sans-serif}
       <div class="bl-kepala"><p class="bl-k-t">买越多，省越多</p><p class="bl-k-s">所有价格以新币 SGD 计算</p></div>
       <div class="bl-baris">
         <div class="bl-r"></div>
-        <div class="bl-foto"><img src="https://w.ladicdn.com/64d0957e7550bc001218243b/gtr-pakej-1-20261011013758-lxtra.webp" width="392" height="374" alt="1盒 GERTRIVA"></div>
+        <div class="bl-foto"><img src="https://cdn.jsdelivr.net/gh/irwanpauzi/gertriva-ladi@5d92148552ba69f5159fc2499254fff8603c4a4d/sg/gambar/pakej-baru-1.webp" width="231" height="300" alt="1盒 GERTRIVA"></div>
         <div class="bl-n"><p class="bl-nama">1盒</p><p class="bl-sub">先试试看</p></div>
         <div class="bl-h"><p class="bl-harga">$69.00</p><p class="bl-asal">$119.00</p><p class="bl-save">省42%</p></div>
       </div>
       <div class="bl-baris">
         <div class="bl-r"></div>
-        <div class="bl-foto"><img src="https://w.ladicdn.com/64d0957e7550bc001218243b/gtr-pakej-2-20261011013758-j_czx.webp" width="534" height="364" alt="2盒 GERTRIVA"></div>
+        <div class="bl-foto"><img src="https://cdn.jsdelivr.net/gh/irwanpauzi/gertriva-ladi@5d92148552ba69f5159fc2499254fff8603c4a4d/sg/gambar/pakej-baru-2.webp" width="295" height="300" alt="2盒 GERTRIVA"></div>
         <div class="bl-n"><p class="bl-nama">2盒</p><p class="bl-sub">每盒 $59.50</p></div>
         <div class="bl-h"><p class="bl-harga">$119.00</p><p class="bl-asal">$238.00</p><p class="bl-save">省50%</p></div>
       </div>
       <p class="bl-tag">最划算</p>
       <div class="bl-baris bl-top">
         <div class="bl-r bl-on"></div>
-        <div class="bl-foto"><img src="https://w.ladicdn.com/64d0957e7550bc001218243b/gtr-pakej-3-20261011013758-qylbh.webp" width="618" height="343" alt="3盒 GERTRIVA"></div>
+        <div class="bl-foto"><img src="https://cdn.jsdelivr.net/gh/irwanpauzi/gertriva-ladi@5d92148552ba69f5159fc2499254fff8603c4a4d/sg/gambar/pakej-baru-3.webp" width="356" height="300" alt="3盒 GERTRIVA"></div>
         <div class="bl-n"><p class="bl-nama">3盒</p><p class="bl-sub">每盒只需 $46.33</p></div>
         <div class="bl-h"><p class="bl-harga">$139.00</p><p class="bl-asal">$357.00</p><p class="bl-save">省61%</p></div>
       </div>
@@ -794,12 +842,12 @@ body{margin:0;background:#fff;font-family:'Be Vietnam Pro',sans-serif}
     <p class="lbl">顾客见证</p>
     <h2 class="t1">听听<br>用过的人怎么说</h2>
     <div class="ta-grid">
-      <div class="wa-kad kad"><p class="wa-cap">烧心马上消失</p><img class="wa-img" src="https://cdn.jsdelivr.net/gh/irwanpauzi/gertriva-ladi@3b0ff5eae42a5410871dc059c7bf11720a77cb37/zizan/gambar/zz-wa-01.webp" width="589" height="1280" alt="WhatsApp 见证：胸口灼热感马上消失"></div>
-      <div class="wa-kad kad"><p class="wa-cap">隔天肚子就舒服，要回购</p><img class="wa-img" src="https://cdn.jsdelivr.net/gh/irwanpauzi/gertriva-ladi@3b0ff5eae42a5410871dc059c7bf11720a77cb37/zizan/gambar/zz-wa-05.webp" width="720" height="1280" alt="GERTRIVA 顾客 WhatsApp 见证"></div>
-      <div class="wa-kad kad"><p class="wa-cap">胃病严重，帮助很大</p><img class="wa-img" src="https://cdn.jsdelivr.net/gh/irwanpauzi/gertriva-ladi@3b0ff5eae42a5410871dc059c7bf11720a77cb37/zizan/gambar/zz-wa-03.webp" width="600" height="1304" alt="WhatsApp 见证：胃病相当严重，帮助很大"></div>
-      <div class="wa-kad kad"><p class="wa-cap">GERD 九年，侄儿推荐的</p><img class="wa-img" src="https://cdn.jsdelivr.net/gh/irwanpauzi/gertriva-ladi@3b0ff5eae42a5410871dc059c7bf11720a77cb37/zizan/gambar/zz-wa-04.webp" width="600" height="1067" alt="WhatsApp 见证：胃食道逆流问题已有9年"></div>
+      <div class="tb"><div class="tb-atas"><div class="tb-av"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="8.500"/><path d="M8.700 10h.01M15.300 10h.01M8.300 14c1 1.700 2.300 2.500 3.700 2.500s2.700-.8 3.700-2.500"/></svg></div><div class="tb-sp"><p class="tb-n">GERTRIVA 顾客</p><p class="tb-v">来自真实 WhatsApp 讯息</p></div></div><p class="tb-t">“第二天肠胃就舒服了”</p><p class="tb-q">我昨天试了Gertriva，感谢真主，第二天肠胃感觉舒服了。我有胃酸倒流/胀气的问题已经2年了。喝完了我还要再买。</p><p class="tb-k">胃酸倒流与胀气2年</p></div>
+      <div class="tb"><div class="tb-atas"><div class="tb-av"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="8.500"/><path d="M8.700 10h.01M15.300 10h.01M8.300 14c1 1.700 2.300 2.500 3.700 2.500s2.700-.8 3.700-2.500"/></svg></div><div class="tb-sp"><p class="tb-n">GERTRIVA 顾客</p><p class="tb-v">来自真实 WhatsApp 讯息</p></div></div><p class="tb-t">“GERD九年，味道真的好”</p><p class="tb-q">昨天收到，昨晚已经喝了，味道真的很好。我胃酸倒流已经9年了，想试试看，一直没有真正适合又有效的办法。</p><p class="tb-k">胃酸倒流9年</p></div>
+      <div class="tb"><div class="tb-atas"><div class="tb-av"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="8.500"/><path d="M8.700 10h.01M15.300 10h.01M8.300 14c1 1.700 2.300 2.500 3.700 2.500s2.700-.8 3.700-2.500"/></svg></div><div class="tb-sp"><p class="tb-n">GERTRIVA 顾客</p><p class="tb-v">来自真实 WhatsApp 讯息</p></div></div><p class="tb-t">“胃病严重，肠胃舒服多了”</p><p class="tb-q">我之前胃病相当严重，感谢真主，我觉得这款燕麦饮品对让肠胃舒服帮助很大。</p><p class="tb-k">之前胃病严重</p></div>
+      <div class="tb"><div class="tb-atas"><div class="tb-av"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="8.500"/><path d="M8.700 10h.01M15.300 10h.01M8.300 14c1 1.700 2.300 2.500 3.700 2.500s2.700-.8 3.700-2.500"/></svg></div><div class="tb-sp"><p class="tb-n">GERTRIVA 顾客</p><p class="tb-v">来自真实 WhatsApp 讯息</p></div></div><p class="tb-t">“饭后不再胃胀”</p><p class="tb-q">非常好，已经好几天没有胃胀闷了。以前每次吃完饭肚子都不舒服，现在就算吃很多也没事。</p><p class="tb-k">以前饭后总不舒服</p></div>
     </div>
-    <p class="nota">真实 WhatsApp 截图（马来语），标题为翻译。姓名与号码已模糊处理。效果因人而异。</p>
+    <p class="nota">摘自马来西亚顾客的真实 WhatsApp 讯息，由马来语翻译。不公开姓名。效果因人而异。</p>
   </div>
 </section>
 <section class="s kit" id="kitaran">
@@ -1061,21 +1109,17 @@ body{margin:0;background:#fff;font-family:'Be Vietnam Pro',sans-serif}
     <div class="sempit"><p class="p">顾客真实体验，直接来自 WhatsApp。左右滑动查看更多。</p></div>
     <div class="wa-karusel" aria-roledescription="carousel">
       <div class="wa-trek" id="wa-trek">
-        <div class="wa-slaid kad" aria-roledescription="slide"><p class="wa-cap">饭后不再胃胀</p><img class="wa-img" src="https://cdn.jsdelivr.net/gh/irwanpauzi/gertriva-ladi@3b0ff5eae42a5410871dc059c7bf11720a77cb37/zizan/gambar/zz-wa-06.webp" width="720" height="1280" alt="GERTRIVA 顾客 WhatsApp 见证"></div>
-        <div class="wa-slaid kad" aria-roledescription="slide"><p class="wa-cap">肚子里的风消失了</p><img class="wa-img" src="https://cdn.jsdelivr.net/gh/irwanpauzi/gertriva-ladi@3b0ff5eae42a5410871dc059c7bf11720a77cb37/zizan/gambar/zz-wa-07.webp" width="720" height="1280" alt="GERTRIVA 顾客 WhatsApp 见证"></div>
-        <div class="wa-slaid kad" aria-roledescription="slide"><p class="wa-cap">肚子舒服了一点</p><img class="wa-img" src="https://cdn.jsdelivr.net/gh/irwanpauzi/gertriva-ladi@3b0ff5eae42a5410871dc059c7bf11720a77cb37/zizan/gambar/zz-wa-08.webp" width="720" height="1280" alt="GERTRIVA 顾客 WhatsApp 见证"></div>
-        <div class="wa-slaid kad" aria-roledescription="slide"><p class="wa-cap">胀风严重，现在轻松些</p><img class="wa-img" src="https://cdn.jsdelivr.net/gh/irwanpauzi/gertriva-ladi@3b0ff5eae42a5410871dc059c7bf11720a77cb37/zizan/gambar/zz-wa-09.webp" width="720" height="1280" alt="GERTRIVA 顾客 WhatsApp 见证"></div>
-        <div class="wa-slaid kad" aria-roledescription="slide"><p class="wa-cap">第二晚肚子就舒服了</p><img class="wa-img" src="https://cdn.jsdelivr.net/gh/irwanpauzi/gertriva-ladi@3b0ff5eae42a5410871dc059c7bf11720a77cb37/zizan/gambar/zz-wa-10.webp" width="720" height="1280" alt="GERTRIVA 顾客 WhatsApp 见证"></div>
-        <div class="wa-slaid kad" aria-roledescription="slide"><p class="wa-cap">肚子感觉更舒服</p><img class="wa-img" src="https://cdn.jsdelivr.net/gh/irwanpauzi/gertriva-ladi@3b0ff5eae42a5410871dc059c7bf11720a77cb37/zizan/gambar/zz-wa-11.webp" width="720" height="1280" alt="GERTRIVA 顾客 WhatsApp 见证"></div>
-        <div class="wa-slaid kad" aria-roledescription="slide"><p class="wa-cap">胀气和风都减少了</p><img class="wa-img" src="https://cdn.jsdelivr.net/gh/irwanpauzi/gertriva-ladi@3b0ff5eae42a5410871dc059c7bf11720a77cb37/zizan/gambar/zz-wa-12.webp" width="720" height="1280" alt="GERTRIVA 顾客 WhatsApp 见证"></div>
-        <div class="wa-slaid kad" aria-roledescription="slide"><p class="wa-cap">肚胀减轻了</p><img class="wa-img" src="https://cdn.jsdelivr.net/gh/irwanpauzi/gertriva-ladi@3b0ff5eae42a5410871dc059c7bf11720a77cb37/zizan/gambar/zz-wa-13.webp" width="720" height="1280" alt="GERTRIVA 顾客 WhatsApp 见证"></div>
-        <div class="wa-slaid kad" aria-roledescription="slide"><p class="wa-cap">会打嗝，也会排气</p><img class="wa-img" src="https://cdn.jsdelivr.net/gh/irwanpauzi/gertriva-ladi@3b0ff5eae42a5410871dc059c7bf11720a77cb37/zizan/gambar/zz-wa-14.webp" width="720" height="1280" alt="GERTRIVA 顾客 WhatsApp 见证"></div>
-        <div class="wa-slaid kad" aria-roledescription="slide"><p class="wa-cap">排便更顺畅</p><img class="wa-img" src="https://cdn.jsdelivr.net/gh/irwanpauzi/gertriva-ladi@3b0ff5eae42a5410871dc059c7bf11720a77cb37/zizan/gambar/zz-wa-15.webp" width="720" height="1280" alt="GERTRIVA 顾客 WhatsApp 见证"></div>
-        <div class="wa-slaid kad" aria-roledescription="slide"><p class="wa-cap">好喝，已喝完3包</p><img class="wa-img" src="https://cdn.jsdelivr.net/gh/irwanpauzi/gertriva-ladi@3b0ff5eae42a5410871dc059c7bf11720a77cb37/zizan/gambar/zz-wa-16.webp" width="720" height="1280" alt="GERTRIVA 顾客 WhatsApp 见证"></div>
+        <div class="wa-slaid tb" aria-roledescription="slide"><div class="tb-atas"><div class="tb-av"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="8.500"/><path d="M8.700 10h.01M15.300 10h.01M8.300 14c1 1.700 2.300 2.500 3.700 2.500s2.700-.8 3.700-2.500"/></svg></div><div class="tb-sp"><p class="tb-n">GERTRIVA 顾客</p><p class="tb-v">来自真实 WhatsApp 讯息</p></div></div><p class="tb-t">“心窝刺痛马上消失”</p><p class="tb-q">喝了这个产品后，心窝的刺痛感马上就消失了，味道也很好。已经喝了3包。</p></div>
+        <div class="wa-slaid tb" aria-roledescription="slide"><div class="tb-atas"><div class="tb-av"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="8.500"/><path d="M8.700 10h.01M15.300 10h.01M8.300 14c1 1.700 2.300 2.500 3.700 2.500s2.700-.8 3.700-2.500"/></svg></div><div class="tb-sp"><p class="tb-n">GERTRIVA 顾客</p><p class="tb-v">来自真实 WhatsApp 讯息</p></div></div><p class="tb-t">“胀气消失，喝不腻”</p><p class="tb-q">味道很好，喝不腻。喝了以后，肚子里的胀气消失了，就算吃了番薯之类容易胀气的食物也一样。</p></div>
+        <div class="wa-slaid tb" aria-roledescription="slide"><div class="tb-atas"><div class="tb-av"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="8.500"/><path d="M8.700 10h.01M15.300 10h.01M8.300 14c1 1.700 2.300 2.500 3.700 2.500s2.700-.8 3.700-2.500"/></svg></div><div class="tb-sp"><p class="tb-n">GERTRIVA 顾客</p><p class="tb-v">来自真实 WhatsApp 讯息</p></div></div><p class="tb-t">“第二晚肠胃就舒服了”</p><p class="tb-q">我喝了3天。第一天没什么感觉，第二晚肠胃才舒服，也不再常常跑厕所了。</p><p class="tb-k">喝了3天</p></div>
+        <div class="wa-slaid tb" aria-roledescription="slide"><div class="tb-atas"><div class="tb-av"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="8.500"/><path d="M8.700 10h.01M15.300 10h.01M8.300 14c1 1.700 2.300 2.500 3.700 2.500s2.700-.8 3.700-2.500"/></svg></div><div class="tb-sp"><p class="tb-n">GERTRIVA 顾客</p><p class="tb-v">来自真实 WhatsApp 讯息</p></div></div><p class="tb-t">“胀气减少了”</p><p class="tb-q">感谢真主，喝了Gertriva后，我的胀气减少了，也感觉更舒服了。以前我常常肚子胀。</p><p class="tb-k">常常胀气</p></div>
+        <div class="wa-slaid tb" aria-roledescription="slide"><div class="tb-atas"><div class="tb-av"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="8.500"/><path d="M8.700 10h.01M15.300 10h.01M8.300 14c1 1.700 2.300 2.500 3.700 2.500s2.700-.8 3.700-2.500"/></svg></div><div class="tb-sp"><p class="tb-n">GERTRIVA 顾客</p><p class="tb-v">来自真实 WhatsApp 讯息</p></div></div><p class="tb-t">“好喝又容易冲泡”</p><p class="tb-q">就我所察觉的，肠胃感觉比较舒服了，胀气好像也减少了一点。味道我觉得好喝，冲泡也很方便。</p></div>
+        <div class="wa-slaid tb" aria-roledescription="slide"><div class="tb-atas"><div class="tb-av"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="8.500"/><path d="M8.700 10h.01M15.300 10h.01M8.300 14c1 1.700 2.300 2.500 3.700 2.500s2.700-.8 3.700-2.500"/></svg></div><div class="tb-sp"><p class="tb-n">GERTRIVA 顾客</p><p class="tb-v">来自真实 WhatsApp 讯息</p></div></div><p class="tb-t">“肚子轻松了一点”</p><p class="tb-q">是的，已经喝过了。肚子感觉轻松了一点。平时只要晚吃饭，肚子就一定不舒服。</p><p class="tb-k">晚吃饭就不舒服</p></div>
+        <div class="wa-slaid tb" aria-roledescription="slide"><div class="tb-atas"><div class="tb-av"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="8.500"/><path d="M8.700 10h.01M15.300 10h.01M8.300 14c1 1.700 2.300 2.500 3.700 2.500s2.700-.8 3.700-2.500"/></svg></div><div class="tb-sp"><p class="tb-n">GERTRIVA 顾客</p><p class="tb-v">来自真实 WhatsApp 讯息</p></div></div><p class="tb-t">“喝完3包，真的好喝”</p><p class="tb-q">已经喝了，3包都喝完了。味道真的很好。说真的，味道真的很好，可以推荐给其他买家。</p></div>
       </div>
     </div>
     <div class="wa-nav"><button class="wa-ke" type="button" aria-controls="wa-trek" data-slide="prev" aria-label="Previous"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg></button><p class="wa-nav-t">左右滑动查看更多</p><button class="wa-ke" type="button" aria-controls="wa-trek" data-slide="next" aria-label="Next"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 5l7 7-7 7"/></svg></button></div>
-    <p class="nota">真实 WhatsApp 截图（马来语），标题为翻译。姓名与号码已模糊处理。效果因人而异。</p>
+    <p class="nota">摘自马来西亚顾客的真实 WhatsApp 讯息，由马来语翻译。不公开姓名。效果因人而异。</p>
     <p class="tv-t">观看视频见证</p>
     <div class="vid-grid tv-grid">
       <div class="vid-kad kad">
@@ -1204,33 +1248,40 @@ body{margin:0;background:#fff;font-family:'Be Vietnam Pro',sans-serif}
 <section class="s putih" id="tempah">
   <div class="tempah-kad">
     <p class="lbl ck-kick">货到付款 · 免运费</p>
-    <h2 class="ck-h"><span class="ck-m">30秒</span>完成下单</h2>
-    <p class="ck-sub">无需信用卡，无需网上付款。<b>包裹送到才付款</b>，全新加坡都送。</p>
-    <p class="lencana-t">官方安全下单</p>
-    <form>
+    <h2 class="ck-h"><span class="ck-m">30秒</span>完成订购</h2>
+    <p class="ck-sub">无需信用卡，无需网上付款。<b>包裹送到才付款</b>，全新加坡送货。</p>
+    <div class="ck-kotak">
       <div class="ck-step"><p class="ck-no">1</p><p class="ck-st">选择您的配套</p></div>
-        <label class="pilih"><input type="radio" name="pakej" value="3盒 - SGD 139" checked> 3盒 · $139（最划算，省 $218）+ 2本免费电子书</label>
-        <label class="pilih"><input type="radio" name="pakej" value="2盒 - SGD 119"> 2盒 · $119（省 $119）+ 2本免费电子书</label>
-        <label class="pilih"><input type="radio" name="pakej" value="1盒 - SGD 69"> 1盒 · $69（省 $50）+ 2本免费电子书</label>
-      <div class="lt-ringkas">
-        <div class="ck-step"><p class="ck-no">2</p><p class="ck-st">订单明细</p></div>
-          <div class="lt-baris"><p class="lt-k">运费（全岛）</p><p class="lt-v">免费</p></div>
-          <div class="lt-baris"><p class="lt-k">付款方式</p><p class="lt-v">货到付款</p></div>
-          <div class="lt-baris lt-jumlah"><p class="lt-k">货到应付（SGD）</p><p class="lt-v lt-total">$139.00</p></div>
-      </div>
-      <div class="ck-step"><p class="ck-no">3</p><p class="ck-st">收货资料</p></div>
-        <label for="nama">姓名 *</label>
-        <input id="nama" name="name" type="text" placeholder="例如：陈大文" required>
-        <label for="telefon">手机号码（送货用）*</label>
-        <input id="telefon" name="phone" type="tel" placeholder="例如：8123 4567" required>
-        <label for="alamat">座号、街名及单位号 *</label>
-        <input id="alamat" name="address" type="text" placeholder="例如：Blk 123 Tampines Street 11, #05-123" required>
-        <label for="poskod">邮区编号 *</label>
-        <input id="poskod" name="zipcode" type="text" placeholder="6位数，例如：520123" required>
-      <button type="submit">立即下单：货到付款 ›</button>
-    </form>
-    <div class="lt-cip"><p class="lt-cip-i">无需信用卡</p><p class="lt-cip-i">免运费</p><p class="lt-cip-i">货到付款</p></div>
-    <p class="tempah-bawah">您的资料仅用于此订单 · 无需信用卡 · 免运费</p>
+      <form>
+      <label class="pilih"><input type="radio" name="pakej" value="1盒 - SGD 69"> 1盒 · $69.00</label>
+      <label class="pilih"><input type="radio" name="pakej" value="2盒 - SGD 119"> 2盒 · $119.00</label>
+      <label class="pilih"><input type="radio" name="pakej" value="3盒 - SGD 139" checked> 3盒 · $139.00 · 最划算</label>
+      <div class="ck-garis"></div>
+      <div class="ck-step"><p class="ck-no">2</p><p class="ck-st">收货资料</p></div>
+        <label for="nama">姓名</label>
+        <input id="nama" name="name" type="text" placeholder="例：Tan Wei Ming" required>
+        <label for="telefon">手机号码<span class="ck-kecil">（送货联系用）</span></label>
+        <div class="ck-tel"><p class="ck-65">+65</p><input id="telefon" name="phone" type="tel" placeholder="8123 4567" required></div>
+        <label for="alamat">组屋座号与街名</label>
+        <input id="alamat" name="address" type="text" placeholder="例：Blk 123 Tampines Street 11" required>
+        <div class="ck-dua">
+          <div class="ck-sel"><label for="unit">单位号码<span class="ck-kecil">（如有）</span></label><input id="unit" name="unit" type="text" placeholder="#05-123"></div>
+          <div class="ck-sel"><label for="poskod">邮区编号</label><input id="poskod" name="zipcode" type="text" inputmode="numeric" placeholder="520123" required></div>
+        </div>
+        <div class="ck-garis"></div>
+        <div class="ck-step"><p class="ck-no">3</p><p class="ck-st">订单明细</p></div>
+        <div class="lt-ringkas">
+          <div class="lt-baris"><p class="lt-k">GERTRIVA × 3盒</p><p class="lt-v">$357.00</p></div>
+          <div class="lt-baris"><p class="lt-k">运费（全岛）</p><p class="lt-v lt-hijau">免费</p></div>
+          <div class="lt-baris"><p class="lt-k">您节省</p><p class="lt-v">-$218.00</p></div>
+          <div class="lt-baris lt-jumlah"><p class="lt-k">货到付款金额 (SGD)</p><p class="lt-v lt-total">$139.00</p></div>
+        </div>
+        <label for="nota">送货备注<span class="ck-kecil">（选填）</span></label>
+        <textarea id="nota" name="message" rows="3" placeholder="例：送货前请先来电，晚上6点后最佳"></textarea>
+        <button type="submit">下单：货到付款 $139</button>
+      </form>
+      <p class="tempah-bawah">无需信用卡 · 免运费 · 您的资料仅用于此订单。</p>
+    </div>
   </div>
 </section>
 <section class="s putih" id="ps">
