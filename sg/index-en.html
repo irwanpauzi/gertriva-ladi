@@ -4,606 +4,463 @@
 <title>GERTRIVA Singapore | Daily Drink for Heartburn, Acid Reflux & Bloating</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800;900&amp;display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300;400;500;600;700;800;900&amp;display=swap">
 <style>
 body{margin:0;background:#ffffff;font-family:'Be Vietnam Pro',sans-serif}
-#gtr{max-width:480px;margin:0 auto;background:#ffffff;color:#16181b;text-align:left}
+#gtr{color:#212529;text-align:left;background:#ffffff}
 #gtr *{box-sizing:border-box}
 #gtr p,#gtr h1,#gtr h2{margin:0}
 #gtr img{display:block;max-width:100%;height:auto}
-#gtr b{font-weight:800;color:#16181b}
-#gtr .sek{padding:40px 16px 0}
+#gtr b{font-weight:600}
+#gtr .w{max-width:1120px;margin:0 auto}
+#gtr .sempit{max-width:760px}
+#gtr .sek{padding:36px 16px 0}
 #gtr .tengah{text-align:center}
-#gtr .lime{color:#c9ec3c}
-#gtr .merah{color:#e11d48}
-#gtr .kicker{font:800 12.5px/1.3 'Be Vietnam Pro',sans-serif;text-transform:uppercase;color:#138a3e}
-#gtr .h2{margin-top:8px;font:900 30px/1.1 'Be Vietnam Pro',sans-serif;color:#16181b}
-#gtr .sub{margin-top:10px;font:500 16px/1.55 'Be Vietnam Pro',sans-serif;color:#3d434b}
-#gtr .nota{margin-top:14px;font:500 12px/1.5 'Be Vietnam Pro',sans-serif;color:#6b7280}
-#gtr .cta{display:block;width:100%;margin-top:18px;padding:16px 18px 16px;border-radius:999px;background:#16181b;box-shadow:0 10px 22px rgba(22,24,27,.22);font:800 17px/1.2 'Be Vietnam Pro',sans-serif;color:#ffffff;text-align:center;text-decoration:none}
-#gtr .cta-nota{margin-top:9px;font:600 13px/1.4 'Be Vietnam Pro',sans-serif;color:#6b7280;text-align:center}
-#gtr .cta-nota b{color:#138a3e}
-#gtr .garis-atas{border-top:1px solid #e2e5ec}
+#gtr .putih{color:#ffffff}
+#gtr .lime{color:#d4f06a}
+#gtr .garis-atas{border-top:1px solid #e6e8ee}
+#gtr .cta{display:block;width:100%;margin-top:14px;padding:15px 18px 15px;border-radius:999px;background:#1d1d1f;font:500 16px/1.2 'Be Vietnam Pro',sans-serif;color:#ffffff;text-align:center;text-decoration:none}
+#gtr .nota{margin-top:14px;font:300 12px/1.5 'Be Vietnam Pro',sans-serif;color:#6c757d}
 
-#gtr .atas{background:#ffffff}
-#gtr .topbar{padding:9px 14px 9px;background:#16181b;font:700 11.5px/1.3 'Be Vietnam Pro',sans-serif;color:#ffffff;text-align:center;white-space:pre}
-#gtr .header{display:flex;align-items:center;justify-content:space-between;gap:10px;height:62px;padding:0 14px 0;border-bottom:1px solid #e2e5ec}
-#gtr .logo{text-align:left}
-#gtr .logo-t{font:900 24px/1 'Be Vietnam Pro',sans-serif;color:#063d22}
-#gtr .logo-s{margin-top:3px;font:700 11.5px/1 'Be Vietnam Pro',sans-serif;color:#6b7280}
-#gtr .bhs{display:flex;gap:5px}
-#gtr .bhs a{display:block;padding:6px 9px 6px;border-radius:99px;background:#f1f3f8;font:700 12px/1.2 'Be Vietnam Pro',sans-serif;color:#16181b;text-decoration:none}
-#gtr .bhs a.aktif{background:#16181b;color:#ffffff}
+#gtr .topbar{display:flex;align-items:center;justify-content:space-between;gap:8px;padding:8px 14px 8px;background:#1d1d1f}
+#gtr .tb-t{font:400 11.5px/1.3 'Be Vietnam Pro',sans-serif;color:#ffffff}
+#gtr .bhs{display:flex;gap:4px}
+#gtr .bhs a{display:block;white-space:nowrap;padding:3px 8px 3px;border-radius:99px;font:500 11.5px/1.3 'Be Vietnam Pro',sans-serif;color:#c9ccd3;text-decoration:none}
+#gtr .bhs a.aktif{background:#ffffff;color:#1d1d1f}
+#gtr .header{padding:14px 16px 14px;border-bottom:1px solid #eceef2;text-align:center}
+#gtr .logo{font:400 24px/1 'Be Vietnam Pro',sans-serif;color:#1d1d1f;text-align:center}
 
-#gtr .hero{padding:0 16px 0}
-#gtr .remah{margin:14px 0 12px;font:600 15px/1.2 'Be Vietnam Pro',sans-serif;color:#6b7280}
-#gtr .galeri{border-radius:18px;overflow:hidden}
+#gtr .produk{padding:0 16px 0}
+#gtr .remah{margin:16px 0 14px;font:300 15px/1.3 'Be Vietnam Pro',sans-serif;color:#212529}
+#gtr .remah b{font-weight:500}
+#gtr .galeri{border-radius:12px;overflow:hidden}
 #gtr .trek{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none}
 #gtr .trek::-webkit-scrollbar{display:none}
-#gtr .slaid{position:relative;flex:0 0 100%;aspect-ratio:1/1;scroll-snap-align:start;background:#f1f3f8;overflow:hidden}
+#gtr .slaid{position:relative;flex:0 0 100%;aspect-ratio:1/1;scroll-snap-align:start;background:#f2f3f7;overflow:hidden}
 #gtr .slaid-img{width:100%;height:100%;object-fit:cover}
-#gtr .poster{background-color:#4a0a1c;background-image:linear-gradient(140deg,#4a0a1c 0%,#9f1239 48%,#e11d48 100%)}
-#gtr .poster-img{position:absolute;right:0;bottom:0;width:56%;height:auto}
-#gtr .poster-atas{position:absolute;left:20px;top:22px;width:56%}
-#gtr .poster-h{font:900 38px/1 'Be Vietnam Pro',sans-serif;text-transform:uppercase;color:#ffffff}
-#gtr .poster-h.lime{color:#c9ec3c}
-#gtr .poster-k{width:84%;margin-top:12px;font:800 16px/1.25 'Be Vietnam Pro',sans-serif;text-transform:uppercase;color:#ffe4ea}
-#gtr .poster-bawah{position:absolute;left:20px;bottom:20px;width:46%}
-#gtr .poster-cb{font:800 12px/1.3 'Be Vietnam Pro',sans-serif;text-transform:uppercase;color:#c9ec3c}
-#gtr .poster-c{margin-top:4px;font:600 14px/1.4 'Be Vietnam Pro',sans-serif;color:#ffffff}
-#gtr .tajuk{display:flex;align-items:flex-end;justify-content:space-between;gap:10px;margin-top:22px}
-#gtr .h1{font:900 34px/1 'Be Vietnam Pro',sans-serif;color:#16181b}
-#gtr .sg{padding:7px 11px 7px;border-radius:99px;background:#f1f3f8;font:700 12.5px/1 'Be Vietnam Pro',sans-serif;color:#16181b;white-space:nowrap}
-#gtr .desk{margin-top:12px;font:500 16px/1.55 'Be Vietnam Pro',sans-serif;color:#3d434b}
-#gtr .cipcip{display:flex;flex-wrap:wrap;gap:7px;margin-top:14px}
-#gtr .cip{padding:7px 11px 7px;border-radius:99px;border:1.5px solid #e2e5ec;font:700 13px/1 'Be Vietnam Pro',sans-serif;color:#16181b}
-#gtr .beli{margin-top:28px}
-#gtr .beli-h{display:flex;align-items:baseline;justify-content:space-between;gap:8px;margin-bottom:14px}
-#gtr .beli-t{font:800 19px/1.2 'Be Vietnam Pro',sans-serif;color:#16181b}
-#gtr .beli-s{font:600 12px/1 'Be Vietnam Pro',sans-serif;color:#6b7280}
-#gtr .baris{display:flex;align-items:center;gap:12px;margin-bottom:14px;padding:16px 14px 16px;border:1.5px solid #e2e5ec;border-radius:14px;background:#ffffff}
-#gtr .baris.on{border:2px solid #16181b;box-shadow:0 6px 18px rgba(22,24,27,.08)}
-#gtr .r{flex:none;width:22px;height:22px;border-radius:50%;border:1.5px solid #9ca3af;background:#ffffff}
-#gtr .r.on{border:6px solid #16181b}
-#gtr .bfoto{flex:none;width:58px;height:auto}
-#gtr .bn{flex:1;min-width:0}
-#gtr .bnama{font:800 18px/1.15 'Be Vietnam Pro',sans-serif;color:#16181b}
-#gtr .bsub{margin-top:4px;font:500 12.5px/1.35 'Be Vietnam Pro',sans-serif;color:#6b7280}
+#gtr .sl-atas{position:absolute;left:24px;top:30px;width:60%}
+#gtr .sl-t{font:300 21px/1.3 'Be Vietnam Pro',sans-serif;color:#495057}
+#gtr .sl-b{font:500 21px/1.3 'Be Vietnam Pro',sans-serif;color:#1d1d1f}
+#gtr .sl-bawah{position:absolute;left:24px;bottom:28px;width:60%;font:300 16px/1.4 'Be Vietnam Pro',sans-serif;color:#495057}
+#gtr .sl-bawah b{font-weight:600;color:#1d1d1f}
+#gtr .gl-nav{display:flex;justify-content:center;gap:10px;margin-top:12px}
+#gtr .gl-b{width:38px;height:38px;padding:0;border-radius:50%;border:1px solid #dee2e6;background:#ffffff;font:300 22px/34px 'Be Vietnam Pro',sans-serif;color:#1d1d1f;cursor:pointer}
+#gtr .tajuk{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-top:22px}
+#gtr .h1{font:500 32px/1.1 'Be Vietnam Pro',sans-serif;color:#1d1d1f}
+#gtr .kkm{font:500 13px/1.3 'Be Vietnam Pro',sans-serif;color:#1d1d1f;text-decoration:underline}
+#gtr .desk{margin-top:12px;font:300 15.5px/1.6 'Be Vietnam Pro',sans-serif;color:#495057}
+#gtr .beli-t{margin-top:26px;margin-bottom:12px;font:500 18px/1.3 'Be Vietnam Pro',sans-serif;color:#1d1d1f}
+#gtr .baris{display:flex;align-items:center;gap:14px;margin-bottom:14px;padding:22px 18px 22px;border:1px solid #e3e5ea;border-radius:10px;background:#ffffff}
+#gtr .baris.on{border:2px solid #1d1d1f}
+#gtr .r{flex:none;width:22px;height:22px;border-radius:50%;border:1px solid #adb5bd;background:#ffffff}
+#gtr .r.on{border:6px solid #1d1d1f}
+#gtr .bn{flex:1;display:flex;flex-wrap:wrap;align-items:baseline;gap:2px 6px}
+#gtr .bn-t{font:400 18px/1.3 'Be Vietnam Pro',sans-serif;color:#1d1d1f}
+#gtr .bk{font:300 13px/1.3 'Be Vietnam Pro',sans-serif;color:#6c757d}
 #gtr .bh{flex:none;text-align:right}
-#gtr .bharga{font:800 18px/1.1 'Be Vietnam Pro',sans-serif;color:#16181b}
-#gtr .basal{margin-top:2px;font:500 12.5px/1.2 'Be Vietnam Pro',sans-serif;color:#9ca3af;text-decoration:line-through}
-#gtr .bsave{width:max-content;margin:5px 0 0 auto;padding:4px 8px 4px;border-radius:6px;background-color:#e8f7d3;background-image:linear-gradient(90deg,#e8f7d3,#f5fbe0);font:800 12px/1 'Be Vietnam Pro',sans-serif;color:#063d22}
-#gtr .btag{width:max-content;margin:0 14px 6px auto;padding:4px 10px 4px;border-radius:6px;background:#16181b;font:700 11.5px/1.2 'Be Vietnam Pro',sans-serif;color:#ffffff}
-#gtr .jimat{margin-top:2px;padding:13px 14px 13px;border-radius:12px;background-color:#eef9e4;background-image:linear-gradient(100deg,#eef9e4,#f6f3ff);font:600 14px/1.4 'Be Vietnam Pro',sans-serif;color:#16181b}
-#gtr .jumlah{display:flex;align-items:flex-end;justify-content:space-between;margin-top:22px}
-#gtr .jumlah-t{font:600 13px/1 'Be Vietnam Pro',sans-serif;text-transform:uppercase;color:#3d434b}
-#gtr .jumlah-k{text-align:right}
-#gtr .jumlah-a{margin-bottom:4px;font:500 13px/1 'Be Vietnam Pro',sans-serif;color:#9ca3af;text-decoration:line-through}
-#gtr .jumlah-b{font:900 30px/1 'Be Vietnam Pro',sans-serif;color:#16181b}
-#gtr .percaya{margin-top:20px;padding:4px 16px 4px;border:1.5px solid #e2e5ec;border-radius:14px}
-#gtr .pc{display:flex;gap:12px;align-items:flex-start;padding:14px 0 14px}
-#gtr .pc-ikon{flex:none;width:26px;height:26px;color:#16181b}
-#gtr .pc-t{font:800 16px/1.3 'Be Vietnam Pro',sans-serif;color:#16181b}
-#gtr .pc-p{margin-top:3px;font:500 14px/1.45 'Be Vietnam Pro',sans-serif;color:#3d434b}
+#gtr .bharga{font:500 17px/1.2 'Be Vietnam Pro',sans-serif;color:#1d1d1f}
+#gtr .bsave{width:max-content;margin:6px 0 0 auto;padding:4px 9px 4px;border-radius:4px;background:#e9f6e5;font:500 12.5px/1.2 'Be Vietnam Pro',sans-serif;color:#1d1d1f}
+#gtr .btag{width:max-content;margin:0 16px 6px auto;padding:4px 10px 4px;border-radius:4px;background:#1d1d1f;font:400 12.5px/1.2 'Be Vietnam Pro',sans-serif;color:#ffffff}
+#gtr .bonus{padding:14px 16px 14px;border-radius:8px;background-color:#eef7e6;background-image:linear-gradient(90deg,#eef6ff,#f3fbe6);font:300 14.5px/1.5 'Be Vietnam Pro',sans-serif;color:#1d1d1f}
+#gtr .bonus b{font-weight:600}
+#gtr .jumlah{display:flex;align-items:baseline;justify-content:space-between;margin-top:26px}
+#gtr .jumlah-t{font:300 13px/1 'Be Vietnam Pro',sans-serif;color:#495057}
+#gtr .jumlah-b{font:400 26px/1 'Be Vietnam Pro',sans-serif;color:#1d1d1f}
+#gtr .percaya{margin-top:16px;padding:6px 20px 6px;border:1px solid #e3e5ea;border-radius:10px}
+#gtr .pc{display:flex;gap:14px;align-items:flex-start;padding:14px 0 14px}
+#gtr .pc-ikon{flex:none;width:24px;height:24px;color:#495057}
+#gtr .pc-t{font:400 16px/1.3 'Be Vietnam Pro',sans-serif;color:#1d1d1f}
+#gtr .pc-p{margin-top:4px;font:300 14px/1.45 'Be Vietnam Pro',sans-serif;color:#495057}
 
-#gtr .manfaat{display:grid;grid-template-columns:1fr 1fr;gap:26px 18px}
-#gtr .mf svg{display:block;width:30px;height:30px;color:#16181b}
-#gtr .mf-t{margin-top:10px;font:800 18px/1.2 'Be Vietnam Pro',sans-serif;color:#16181b}
-#gtr .mf-p{margin-top:7px;font:500 14.5px/1.5 'Be Vietnam Pro',sans-serif;color:#3d434b}
-#gtr .tab{margin-top:22px;border-top:1px solid #e2e5ec}
-#gtr .tab details{border-bottom:1px solid #e2e5ec}
-#gtr .tab summary{padding:19px 4px 19px;font:800 14.5px/1.2 'Be Vietnam Pro',sans-serif;color:#16181b;cursor:pointer}
-#gtr .isi{padding:0 4px 20px}
-#gtr .isi-p{margin-top:10px;padding:0 4px 4px;font:500 15px/1.55 'Be Vietnam Pro',sans-serif;color:#3d434b}
+#gtr .manfaat{display:grid;grid-template-columns:1fr 1fr;gap:28px 20px}
+#gtr .mf svg{display:block;width:24px;height:24px;color:#1d1d1f}
+#gtr .mf-t{margin-top:10px;font:400 17px/1.25 'Be Vietnam Pro',sans-serif;color:#1d1d1f}
+#gtr .mf-p{margin-top:8px;font:300 14px/1.5 'Be Vietnam Pro',sans-serif;color:#6c757d}
+#gtr .tab{margin-top:32px;border-top:1px solid #e6e8ee}
+#gtr .tab details,#gtr .senarai details{border-bottom:1px solid #e6e8ee}
+#gtr .tab summary{padding:18px 4px 18px;font:500 13.5px/1.2 'Be Vietnam Pro',sans-serif;color:#1d1d1f;cursor:pointer}
+#gtr .isi{padding:0 4px 18px}
+#gtr .isi-p{margin-top:8px;padding:0 4px 8px;font:300 14.5px/1.6 'Be Vietnam Pro',sans-serif;color:#495057}
+#gtr .isi-p b{color:#1d1d1f}
 #gtr .langkah{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin-bottom:6px}
-#gtr .lk{padding:12px 4px 12px;border-radius:12px;background:#f1f3f8;text-align:center}
-#gtr .lk-n{font:900 22px/1 'Be Vietnam Pro',sans-serif;color:#138a3e}
-#gtr .lk-t{margin-top:4px;font:700 12.5px/1.3 'Be Vietnam Pro',sans-serif;color:#16181b}
-#gtr .bahan{margin-top:10px;padding:12px 14px 12px;border-radius:12px;background:#f1f3f8}
-#gtr .bh-t{font:800 15.5px/1.3 'Be Vietnam Pro',sans-serif;color:#16181b}
-#gtr .bh-p{margin-top:3px;font:500 14px/1.5 'Be Vietnam Pro',sans-serif;color:#3d434b}
-#gtr .jd{display:flex;gap:10px;padding:11px 10px 11px;background:#ffffff}
-#gtr .jd.ganjil{background:#f1f3f8}
-#gtr .jd-k{flex:none;width:38%;font:600 14.5px/1.45 'Be Vietnam Pro',sans-serif;color:#6b7280}
-#gtr .jd-v{flex:1;font:500 14.5px/1.45 'Be Vietnam Pro',sans-serif;color:#16181b}
-#gtr .surat{margin-top:12px;border-radius:12px 12px 0 0;border:1px solid #e2e5ec}
-#gtr .surat-p{padding:10px 12px 10px;border-radius:0 0 12px 12px;background:#fafafa;font:500 12.5px/1.45 'Be Vietnam Pro',sans-serif;color:#6b7280}
+#gtr .lk{padding:14px 6px 14px;border-radius:10px;background:#f2f3f7;text-align:center}
+#gtr .lk-n{font:300 22px/1 'Be Vietnam Pro',sans-serif;color:#138a3e}
+#gtr .lk-t{margin-top:6px;font:400 12.5px/1.35 'Be Vietnam Pro',sans-serif;color:#1d1d1f}
+#gtr .bahan{margin-top:10px;padding:12px 14px 12px;border-radius:10px;background:#f2f3f7}
+#gtr .bh-t{font:500 15px/1.3 'Be Vietnam Pro',sans-serif;color:#1d1d1f}
+#gtr .bh-p{margin-top:3px;font:300 14px/1.5 'Be Vietnam Pro',sans-serif;color:#495057}
+#gtr .jd{display:flex;gap:12px;padding:12px 10px 12px;background:#ffffff}
+#gtr .jd.ganjil{background:#f2f3f7}
+#gtr .jd-k{flex:none;width:34%;font:300 14px/1.45 'Be Vietnam Pro',sans-serif;color:#6c757d}
+#gtr .jd-v{flex:1;font:400 14px/1.45 'Be Vietnam Pro',sans-serif;color:#1d1d1f}
 
-#gtr .dekat-h{font:700 21px/1.3 'Be Vietnam Pro',sans-serif;color:#16181b;text-align:center}
-#gtr .kgrad{margin-top:18px;border-radius:20px;overflow:hidden;background-color:#063d22;background-image:radial-gradient(circle at 85% 12%,rgba(255,255,255,.28),rgba(201,236,60,.10) 30%,rgba(0,0,0,0) 46%),linear-gradient(140deg,#042e1a 0%,#0b5a2f 42%,#2f9b3a 78%,#8cc63f 100%)}
-#gtr .kgrad-img{width:78%;margin:14px auto 0}
-#gtr .kgrad-p{margin:18px 22px 24px;font:500 16px/1.5 'Be Vietnam Pro',sans-serif;color:#ffffff}
-#gtr .kgrad-p b{color:#c9ec3c}
-#gtr .kmerah{margin-top:14px;border-radius:20px;overflow:hidden;background:#f1f3f8}
-#gtr .km-atas{padding:24px 22px 26px;background-color:#4a0a1c;background-image:linear-gradient(140deg,#4a0a1c 0%,#9f1239 48%,#e11d48 100%)}
-#gtr .km-k{font:800 12px/1.3 'Be Vietnam Pro',sans-serif;color:#ffd1dc}
-#gtr .km-h{margin-top:4px;font:900 38px/1 'Be Vietnam Pro',sans-serif;color:#ffffff}
-#gtr .km-h.lime{color:#c9ec3c}
-#gtr .km-k + .km-h{margin-top:10px}
-#gtr .km-s{margin-top:12px;font:500 16px/1.5 'Be Vietnam Pro',sans-serif;color:#ffe9ee}
-#gtr .stat{display:flex;gap:14px;align-items:center;margin-top:20px;padding:16px 16px 16px;border-radius:14px;background:rgba(0,0,0,.22)}
-#gtr .stat-b{flex:none;font:900 58px/1 'Be Vietnam Pro',sans-serif;color:#c9ec3c}
-#gtr .stat-t{font:600 15px/1.45 'Be Vietnam Pro',sans-serif;color:#ffffff}
-#gtr .stat2{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:10px}
-#gtr .s2{padding:11px 12px 11px;border-radius:12px;background:rgba(255,255,255,.1)}
-#gtr .s2-b{font:900 24px/1 'Be Vietnam Pro',sans-serif;color:#ffffff}
-#gtr .s2-t{margin-top:3px;font:600 12.5px/1.35 'Be Vietnam Pro',sans-serif;color:#ffe4ea}
-#gtr .sumber{margin-top:12px;font:500 11.5px/1.45 'Be Vietnam Pro',sans-serif;color:#ffc2cf}
-#gtr .akor{padding:6px 20px 8px}
-#gtr .akor details + details{border-top:1px solid #e2e5ec}
-#gtr .akor summary{padding:17px 0 17px;font:800 16px/1.3 'Be Vietnam Pro',sans-serif;color:#16181b;cursor:pointer}
-#gtr .akor .isi{padding:0 0 10px}
-#gtr .rantai{display:flex;gap:12px;align-items:flex-start;margin-bottom:12px}
-#gtr .rn{flex:none;width:26px;height:26px;border-radius:50%;background:#e11d48;font:800 13px/26px 'Be Vietnam Pro',sans-serif;color:#ffffff;text-align:center}
-#gtr .rt{font:500 15px/1.55 'Be Vietnam Pro',sans-serif;color:#3d434b}
-#gtr .bmi{margin-top:14px;padding:22px 18px 18px;border-radius:20px;background:#f1f3f8}
-#gtr .bmi-h{font:900 24px/1.15 'Be Vietnam Pro',sans-serif;color:#16181b}
-#gtr .bmi-k{margin-top:6px;font:500 14px/1.45 'Be Vietnam Pro',sans-serif;color:#6b7280}
-#gtr .jalur{display:flex;height:8px;margin-top:16px;border-radius:99px;overflow:hidden}
-#gtr .j1,#gtr .j2,#gtr .j3{flex:1;height:8px}
-#gtr .j1{background:#86efac}
-#gtr .j2{background:#fcd34d}
-#gtr .j3{background:#fb7185}
-#gtr .jalur-l{display:flex;justify-content:space-between;margin-top:6px}
-#gtr .jl{font:600 11.5px/1 'Be Vietnam Pro',sans-serif;color:#6b7280}
-#gtr .bmi-r{display:flex;gap:12px;align-items:flex-start;margin-top:12px;padding:14px 14px 14px;border-radius:14px;background:#ffffff}
-#gtr .bd{flex:none;width:14px;height:14px;margin-top:3px;border-radius:50%}
-#gtr .b1{background:#22c55e}
-#gtr .b2{background:#f59e0b}
-#gtr .b3{background:#e11d48}
-#gtr .bmi-rt{font:800 15px/1.3 'Be Vietnam Pro',sans-serif;color:#16181b}
-#gtr .bmi-rp{margin-top:4px;font:500 14px/1.5 'Be Vietnam Pro',sans-serif;color:#3d434b}
-#gtr .jujur{margin-top:14px;padding:20px 20px 20px;border-radius:20px;border:2px solid #16181b}
-#gtr .jujur-h{font:900 22px/1.15 'Be Vietnam Pro',sans-serif;color:#16181b}
-#gtr .jujur-p{margin-top:10px;font:500 15.5px/1.55 'Be Vietnam Pro',sans-serif;color:#3d434b}
-
-#gtr .grid4{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:22px}
-#gtr .k4{display:flex;flex-direction:column;padding:18px 15px 16px;border-radius:18px;background:#f1f3f8}
-#gtr .k4-ik{width:30px;height:30px}
-#gtr .k4-h{margin-top:12px;margin-bottom:10px;font:900 19px/1.12 'Be Vietnam Pro',sans-serif}
-#gtr .c1{color:#b45309}
-#gtr .c2{color:#e11d48}
-#gtr .c3{color:#7c3aed}
-#gtr .c4{color:#0e7490}
-#gtr .k4-li{margin-bottom:6px;font:600 13.5px/1.4 'Be Vietnam Pro',sans-serif;color:#16181b}
-#gtr .k4-g{margin-top:auto;padding-top:10px;border-top:1px solid #dde1e9}
-#gtr .k4-gb{font:800 11.5px/1.2 'Be Vietnam Pro',sans-serif;color:#138a3e}
-#gtr .k4-gp{margin-top:3px;font:600 13px/1.45 'Be Vietnam Pro',sans-serif;color:#3d434b}
-#gtr .bahaya{margin-top:14px;padding:14px 16px 14px;border-radius:14px;background:#fff1f3;font:500 13px/1.5 'Be Vietnam Pro',sans-serif;color:#7f1d1d}
-#gtr .bahaya b{color:#7f1d1d}
-
-#gtr .kaj{border-radius:20px;overflow:hidden;background:#f1f3f8}
-#gtr .kaj-atas{padding:28px 22px 24px;background-color:#063d22;background-image:linear-gradient(140deg,#042e1a 0%,#0b5a2f 42%,#2f9b3a 78%,#8cc63f 100%);text-align:center}
-#gtr .kaj-h{font:900 25px/1.2 'Be Vietnam Pro',sans-serif;color:#ffffff}
-#gtr .kaj-h.lime{color:#c9ec3c}
-#gtr .nombor{display:flex;justify-content:center;gap:10px;margin-top:20px}
-#gtr .nb{flex:1;padding:12px 6px 12px;border-radius:14px;background:rgba(255,255,255,.12)}
-#gtr .nb-b{font:900 26px/1 'Be Vietnam Pro',sans-serif;color:#ffffff}
-#gtr .nb-t{margin-top:4px;font:600 12px/1.3 'Be Vietnam Pro',sans-serif;color:#e6f7da}
-#gtr .kaj-p{margin-top:18px;font:500 14.5px/1.5 'Be Vietnam Pro',sans-serif;color:#e6f7da;text-align:left}
-#gtr .kaj-p b{color:#ffffff}
-#gtr .kaj-sains{margin-top:16px;font:800 13.5px/1 'Be Vietnam Pro',sans-serif;color:#ffffff;text-align:left}
-#gtr .kaj-senarai{padding:4px 20px 6px}
-#gtr .kaj-senarai details + details{border-top:1px solid #e2e5ec}
-#gtr .kaj-senarai summary{padding:18px 0 18px;font:600 16px/1.35 'Be Vietnam Pro',sans-serif;color:#16181b;cursor:pointer}
-#gtr .fakta{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:4px}
-#gtr .fk{padding:6px 10px 6px;border-radius:99px;background:#ffffff;font:700 12.5px/1 'Be Vietnam Pro',sans-serif;color:#16181b}
-#gtr .jurnal{margin-top:10px;border-radius:10px;border:1px solid #e2e5ec}
-#gtr .rujuk{margin-top:8px;font:500 12px/1.45 'Be Vietnam Pro',sans-serif;color:#6b7280}
-#gtr .kertas{margin-top:10px;padding:12px 14px 12px;border-radius:10px;background:#ffffff;border:1px solid #e2e5ec}
-#gtr .kertas-t{font:700 14px/1.4 'Be Vietnam Pro',sans-serif;color:#1d4ed8}
-#gtr .kertas-s{margin-top:5px;font:500 12px/1.4 'Be Vietnam Pro',sans-serif;color:#6b7280}
-
-#gtr .fbar{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:20px 22px 20px;border-radius:18px;background:#f1f3f8}
-#gtr .fbar-p{font:500 16px/1.35 'Be Vietnam Pro',sans-serif;color:#16181b}
-#gtr .fbar-img{flex:none;width:92px}
-#gtr .f2{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:12px}
-#gtr .fk2{position:relative;overflow:hidden;min-height:228px;padding:20px 16px 18px;border-radius:18px;background:#f1f3f8}
-#gtr .fk2-h{font:800 18px/1.15 'Be Vietnam Pro',sans-serif}
-#gtr .biru{color:#2563eb}
+#gtr .dekat-h{margin-bottom:20px;font:400 22px/1.3 'Be Vietnam Pro',sans-serif;color:#1d1d1f;text-align:center}
+#gtr .bk-kol{display:flex;flex-direction:column;gap:12px}
+#gtr .bk-kol + .bk-kol{margin-top:12px}
+#gtr .kad{position:relative;border-radius:18px;overflow:hidden;background:#f2f3f7}
+#gtr .kad-img{width:100%;height:auto}
+#gtr .kad-gelap{background:#063d22}
+#gtr .kad-teks{position:absolute;left:22px;right:22px;bottom:24px;font:300 15px/1.55 'Be Vietnam Pro',sans-serif;color:#1d1d1f}
+#gtr .kad-teks.putih{color:#ffffff}
+#gtr .kad-teks b{font-weight:600}
+#gtr .kad-besar{position:absolute;left:24px;bottom:26px;font:400 34px/1.15 'Be Vietnam Pro',sans-serif;color:#ffffff}
+#gtr .kad-bar{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:16px 22px 16px}
+#gtr .bar-t{font:300 17px/1.35 'Be Vietnam Pro',sans-serif;color:#1d1d1f}
+#gtr .bar-img{flex:none;width:76px}
+#gtr .dua{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+#gtr .kecil{padding:20px 16px 0}
+#gtr .kc-h{font:500 16px/1.2 'Be Vietnam Pro',sans-serif}
+#gtr .biru{color:#3b4fd8}
 #gtr .hijau{color:#138a3e}
-#gtr .fk2-p{width:100%;margin-top:8px;font:500 13.5px/1.45 'Be Vietnam Pro',sans-serif;color:#16181b}
-#gtr .bulat{position:absolute;right:0;bottom:0;width:86px;height:86px;padding:22px 22px 22px;border-radius:50% 0 18px 0}
-#gtr .bb{background-color:#93c5fd;background-image:radial-gradient(circle at 35% 30%,#dbeafe,#93c5fd);color:#1d4ed8}
-#gtr .bh2{background-color:#a3e635;background-image:radial-gradient(circle at 35% 30%,#ecfccb,#a3e635);color:#3f6212}
-#gtr .fpenuh{display:flex;gap:14px;align-items:center;margin-top:12px;padding:18px 20px 18px;border-radius:18px;background:#f1f3f8}
-#gtr .fp-bulat{flex:none;width:58px;height:58px;padding:15px 15px 15px;border-radius:50%;background-color:#fbbf24;background-image:radial-gradient(circle at 35% 30%,#fef3c7,#fbbf24);color:#92400e}
-#gtr .fp-h{font:800 18px/1.2 'Be Vietnam Pro',sans-serif;color:#b45309}
-#gtr .fp-p{margin-top:5px;font:500 13.5px/1.45 'Be Vietnam Pro',sans-serif;color:#16181b}
-#gtr .masa{margin-top:12px;padding:24px 20px 20px;border-radius:18px;background:#f1f3f8}
-#gtr .masa-h{font:800 18px/1.25 'Be Vietnam Pro',sans-serif;color:#16181b;text-align:center}
-#gtr .masa-k{margin-top:4px;font:500 14px/1.4 'Be Vietnam Pro',sans-serif;color:#6b7280;text-align:center}
-#gtr .garis-masa{margin-top:22px;padding-left:2px;border-left:3px solid #9fd9a4}
-#gtr .gm{display:flex;gap:12px;align-items:flex-start;margin-bottom:18px}
-#gtr .gm-titik{flex:none;width:15px;height:15px;margin-top:2px;border-radius:50%;background:#ffffff;border:3px solid #138a3e}
-#gtr .gm-titik.biru{border-color:#2563eb;box-shadow:0 0 0 5px rgba(37,99,235,.18)}
-#gtr .gm-b{font:800 13px/1.2 'Be Vietnam Pro',sans-serif;color:#138a3e}
-#gtr .gm-b.biru{color:#2563eb}
-#gtr .gm-t{margin-top:4px;font:600 15.5px/1.45 'Be Vietnam Pro',sans-serif;color:#16181b}
+#gtr .kc-p{margin-top:8px;font:300 13px/1.45 'Be Vietnam Pro',sans-serif;color:#1d1d1f}
+#gtr .kc-img{width:100%;margin-top:6px}
+#gtr .kc-img2{width:78%;margin:6px auto 0}
+#gtr .kc-p2{margin-top:8px;margin-bottom:18px;font:300 13px/1.5 'Be Vietnam Pro',sans-serif;color:#1d1d1f}
+#gtr .kad-kaj{background:#f2f3f7}
+#gtr .kaj-atas{padding:28px 22px 22px;background-color:#063d22;background-image:linear-gradient(150deg,#0b5a2f 0%,#138a3e 45%,#7cc142 100%);text-align:center}
+#gtr .kaj-h{font:500 19px/1.3 'Be Vietnam Pro',sans-serif;color:#ffffff}
+#gtr .kaj-img{width:44%;margin:18px auto 0}
+#gtr .kaj-l{margin-top:18px;font:500 13px/1.2 'Be Vietnam Pro',sans-serif;color:#ffffff;text-align:left}
+#gtr .kaj-senarai{padding:4px 20px 8px}
+#gtr .kaj-senarai details + details{border-top:1px solid #e3e5ea}
+#gtr .kaj-senarai summary,#gtr .anat-isi summary{padding:16px 0 16px;font:400 16px/1.3 'Be Vietnam Pro',sans-serif;color:#1d1d1f;cursor:pointer}
+#gtr .senarai-ikon{padding:18px 14px 18px}
+#gtr .si{display:flex;align-items:center;gap:8px;margin-bottom:10px}
+#gtr .si-img{flex:none;width:44px;height:44px;border-radius:50%}
+#gtr .si-t{font:300 12.5px/1.35 'Be Vietnam Pro',sans-serif;color:#1d1d1f}
+#gtr .si-t b{font-weight:600}
+#gtr .kad-jamin{padding:22px 22px 22px;background-color:#f2f3f7;background-image:linear-gradient(160deg,#eef3ff 0%,#f2f3f7 60%)}
+#gtr .jamin-h{font:600 18px/1.25 'Be Vietnam Pro',sans-serif;color:#138a3e}
+#gtr .jamin-p{margin-top:14px;font:500 13px/1.4 'Be Vietnam Pro',sans-serif;color:#0b5a2f}
+#gtr .kad-stat{padding:20px 20px 8px}
+#gtr .st{display:flex;align-items:center;gap:16px;margin-bottom:16px}
+#gtr .st-n{flex:none;width:76px;font:500 34px/1 'Be Vietnam Pro',sans-serif;color:#138a3e}
+#gtr .st-t{font:300 14px/1.45 'Be Vietnam Pro',sans-serif;color:#1d1d1f}
+#gtr .st-t b{font-weight:600}
+#gtr .kad-aril{background:#eceef2}
+#gtr .aril-t{position:absolute;right:20px;top:22px;width:50%;font:300 17px/1.3 'Be Vietnam Pro',sans-serif;color:#1d1d1f;text-align:right}
+#gtr .tonton{position:absolute;right:20px;bottom:18px;font:400 13px/1 'Be Vietnam Pro',sans-serif;color:#ffffff;text-decoration:none}
+#gtr .kad-terang{background:#f2f3f7}
+#gtr .besar-h{position:absolute;left:22px;top:24px;font:600 38px/1 'Be Vietnam Pro',sans-serif;color:#1d1d1f}
+#gtr .terang-p{margin:18px 22px 24px;font:300 15px/1.55 'Be Vietnam Pro',sans-serif;color:#1d1d1f}
+#gtr .terang-p b{font-weight:600}
+#gtr .kad-anat{background:#f2f3f7}
+#gtr .anat-atas{position:relative}
+#gtr .anat-img{width:100%;height:auto}
+#gtr .anat-l{position:absolute;right:20px;top:18px;font:400 17px/1.2 'Be Vietnam Pro',sans-serif;color:#ffffff}
+#gtr .anat-isi{padding:18px 20px 8px}
+#gtr .anat-p{margin-bottom:10px;font:300 14px/1.55 'Be Vietnam Pro',sans-serif;color:#1d1d1f}
+#gtr .anat-isi details{border-top:1px solid #e3e5ea}
+#gtr .rantai{display:flex;gap:12px;align-items:flex-start;margin-bottom:10px}
+#gtr .rn{flex:none;width:24px;height:24px;border-radius:50%;background-color:#c2185b;background-image:linear-gradient(135deg,#e5306b,#8e44ad);font:500 12px/24px 'Be Vietnam Pro',sans-serif;color:#ffffff;text-align:center}
+#gtr .rt{font:300 14px/1.5 'Be Vietnam Pro',sans-serif;color:#1d1d1f}
+#gtr .kad-sachet{padding:0 22px 26px;text-align:center}
+#gtr .sachet-img{width:72%;margin:22px auto 0}
+#gtr .sc-h{margin-top:18px;font:500 15.5px/1.35 'Be Vietnam Pro',sans-serif;color:#1d1d1f}
+#gtr .sc-p{margin-top:4px;font:300 15px/1.35 'Be Vietnam Pro',sans-serif;color:#1d1d1f}
+#gtr .masa{display:flex;justify-content:space-between;margin-top:20px}
+#gtr .masa-a{font:500 12.5px/1 'Be Vietnam Pro',sans-serif;color:#5b5bd6}
+#gtr .masa-b{font:500 12.5px/1 'Be Vietnam Pro',sans-serif;color:#c2185b}
+#gtr .garis{display:flex;justify-content:space-between;align-items:center;height:12px;margin-top:10px;border-radius:99px;background-color:#c2185b;background-image:linear-gradient(90deg,#5b5bd6,#c2185b);background-size:100% 2px;background-repeat:no-repeat;background-position:center}
+#gtr .titik{width:12px;height:12px;border-radius:50%;background:#5b5bd6}
+#gtr .titik.hujung{width:8px;height:8px;background:#c2185b}
+#gtr .kad-foto{display:flex;align-items:stretch}
+#gtr .foto-img{flex:none;width:46%;height:auto;object-fit:cover}
+#gtr .foto-t{flex:1;margin:22px 18px 22px;font:300 14px/1.55 'Be Vietnam Pro',sans-serif;color:#495057}
+#gtr .foto-t b{font-weight:600;color:#1d1d1f}
+#gtr .kad-quote{padding:26px 24px 24px;background-color:#f2f3f7;background-image:linear-gradient(170deg,#ffffff 0%,#eceef3 100%)}
+#gtr .q-t{font:400 17px/1.55 'Be Vietnam Pro',sans-serif;color:#1d1d1f}
+#gtr .q-n{margin-top:16px;font:300 13px/1.3 'Be Vietnam Pro',sans-serif;color:#6c757d}
+#gtr .kad-ungu{padding:28px 22px 24px;background-color:#8e7cf0;background-image:linear-gradient(160deg,#7b6cf6 0%,#a596f5 55%,#c4b8f7 100%)}
+#gtr .ungu-h{font:600 24px/1.2 'Be Vietnam Pro',sans-serif;color:#ffffff}
+#gtr .ungu-s{margin-top:10px;margin-bottom:16px;font:400 15px/1.3 'Be Vietnam Pro',sans-serif;color:#ffffff}
+#gtr .gelembung{width:84%;margin-top:10px;padding:12px 14px 12px;border-radius:14px 14px 14px 4px;background:#ffffff}
+#gtr .gelembung.kanan{margin-left:auto;border-radius:14px 14px 4px 14px;background:#dcf8c6}
+#gtr .gb{font:400 14px/1.45 'Be Vietnam Pro',sans-serif;color:#1d1d1f}
+#gtr .ungu-n{margin-top:14px;font:300 12.5px/1.3 'Be Vietnam Pro',sans-serif;color:#ffffff;text-align:right}
 
-#gtr .vkad{padding:24px 20px 20px;border-radius:20px;background-color:#86c5a0;background-image:linear-gradient(150deg,#a7f3d0 0%,#86c5a0 30%,#4d8f6b 100%)}
-#gtr .vk-h{font:900 29px/1.08 'Be Vietnam Pro',sans-serif;color:#ffffff}
-#gtr .vk-k{margin-top:6px;font:600 14.5px/1.4 'Be Vietnam Pro',sans-serif;color:#063d22}
-#gtr .vdua{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:16px}
-#gtr .yt{position:relative;aspect-ratio:9/16;border-radius:14px;overflow:hidden;background:#0b1a12;box-shadow:0 10px 22px rgba(0,0,0,.2)}
-#gtr .yt iframe{position:absolute;left:0;top:0;width:100%;height:100%;border:0}
-#gtr .yt-b{margin-top:8px;font:800 13.5px/1.25 'Be Vietnam Pro',sans-serif;color:#ffffff}
-#gtr .yt-c{margin-top:2px;font:600 12px/1.35 'Be Vietnam Pro',sans-serif;color:#ffffff}
-#gtr .tonton{margin-top:14px;font:700 13.5px/1 'Be Vietnam Pro',sans-serif;color:#ffffff;text-align:right}
+#gtr .senarai{border-top:1px solid #e6e8ee}
+#gtr .senarai summary{padding:18px 4px 18px;font:400 15.5px/1.3 'Be Vietnam Pro',sans-serif;color:#1d1d1f;cursor:pointer}
+#gtr .ukur-h{margin-top:30px;font:500 16px/1.3 'Be Vietnam Pro',sans-serif;color:#1d1d1f}
+#gtr .ukur-p{margin-top:10px;font:300 14px/1.6 'Be Vietnam Pro',sans-serif;color:#495057}
 
-#gtr .suara{margin-top:40px;padding:34px 0 30px;background:#f4f5f7}
-#gtr .suara-h{margin:0 16px 0;font:600 31px/1.15 'Be Vietnam Pro',sans-serif;color:#16181b;text-align:center}
-#gtr .suara-p{margin:10px 16px 0;font:500 15px/1.45 'Be Vietnam Pro',sans-serif;color:#3d434b;text-align:center}
-#gtr .rel-w{margin-top:22px;padding:0 16px 0}
+#gtr .suara{margin-top:40px;padding:36px 16px 34px;background:#f4f5f7}
+#gtr .suara-h{font:400 30px/1.15 'Be Vietnam Pro',sans-serif;color:#1d1d1f;text-align:center}
+#gtr .suara-p{margin-top:10px;font:400 15px/1.45 'Be Vietnam Pro',sans-serif;color:#495057;text-align:center}
+#gtr .rel-w{margin-top:24px}
 #gtr .rel{display:flex;gap:14px;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none}
 #gtr .rel::-webkit-scrollbar{display:none}
-#gtr .tk{flex:0 0 330px;scroll-snap-align:start;padding:22px 20px 18px;border-radius:18px;background:#ffffff;box-shadow:0 2px 10px rgba(0,0,0,.04)}
-#gtr .tk-h{font:700 21px/1.2 'Be Vietnam Pro',sans-serif;color:#16181b}
-#gtr .tk-p{margin-top:10px;font:500 14.5px/1.55 'Be Vietnam Pro',sans-serif;color:#3d434b}
-#gtr .tk-img{width:100%;height:210px;object-fit:cover;object-position:top;margin-top:14px;border-radius:10px;border:1px solid #e2e5ec}
-#gtr .tk-s{margin-top:14px;font:600 12.5px/1.3 'Be Vietnam Pro',sans-serif;color:#6b7280}
-#gtr .rel-nav{display:flex;justify-content:center;gap:10px;margin-top:14px}
-#gtr .rel-b{width:42px;height:42px;padding:0;border-radius:50%;border:1.5px solid #d4d7de;background:#ffffff;font:600 20px/38px 'Be Vietnam Pro',sans-serif;color:#16181b;cursor:pointer}
-#gtr .suara .nota{margin:14px 16px 0}
+#gtr .tk{flex:0 0 300px;scroll-snap-align:start;padding:26px 24px 22px;border-radius:12px;background:#ffffff}
+#gtr .tk-h{font:400 21px/1.25 'Be Vietnam Pro',sans-serif;color:#1d1d1f}
+#gtr .tk-p{margin-top:14px;font:300 14.5px/1.6 'Be Vietnam Pro',sans-serif;color:#495057}
+#gtr .tk-n{margin-top:18px;font:400 13px/1.3 'Be Vietnam Pro',sans-serif;color:#1d1d1f}
+#gtr .rel-nav{display:flex;justify-content:center;gap:10px;margin-top:16px}
+#gtr .rel-b{width:40px;height:40px;padding:0;border-radius:50%;border:1px solid #dee2e6;background:#ffffff;font:300 22px/36px 'Be Vietnam Pro',sans-serif;color:#1d1d1f;cursor:pointer}
 
-#gtr .uj{padding:24px 18px 20px;border-radius:20px;background:#16181b}
-#gtr .putih{color:#ffffff}
-#gtr .kelabu{color:#c9ccd3}
-#gtr .uj-l{display:flex;align-items:center;gap:12px;margin-top:8px;padding:13px 14px 13px;border-radius:12px;background:rgba(255,255,255,.07)}
-#gtr .uj .uj-l:first-of-type{margin-top:18px}
-#gtr .uj-k{flex:none;width:22px;height:22px;border-radius:6px;border:2px solid #6b7280}
-#gtr .uj-t{font:600 15px/1.35 'Be Vietnam Pro',sans-serif;color:#ffffff}
-#gtr .uj-hasil{margin-top:16px;padding:4px 16px 4px;border-radius:14px;background:#ffffff}
-#gtr .uh{display:flex;gap:14px;align-items:flex-start;padding:14px 0 14px}
-#gtr .uh-n{flex:none;width:52px;font:900 22px/1.1 'Be Vietnam Pro',sans-serif}
-#gtr .kuning{color:#16a34a}
-#gtr .oren{color:#d97706}
-#gtr .uh-s{font:800 14px/1.3 'Be Vietnam Pro',sans-serif;text-transform:uppercase;color:#16181b}
-#gtr .uh-p{margin-top:4px;font:500 14px/1.5 'Be Vietnam Pro',sans-serif;color:#3d434b}
-#gtr .cta-lime{background:#c9ec3c;box-shadow:none;color:#16181b}
-
-#gtr .tempah-kad{padding:0 0 0}
-#gtr .ck-kick{font:800 12.5px/1.3 'Be Vietnam Pro',sans-serif;text-transform:uppercase;color:#138a3e;text-align:center}
-#gtr .ck-h{margin-top:8px;font:900 30px/1.1 'Be Vietnam Pro',sans-serif;color:#16181b;text-align:center}
-#gtr .ck-m{color:#e11d48}
-#gtr .ck-sub{margin-top:10px;font:500 16px/1.55 'Be Vietnam Pro',sans-serif;color:#3d434b;text-align:center}
-#gtr .ck-kotak{margin-top:22px;padding:20px 16px 18px;border-radius:20px;background:#f1f3f8}
+#gtr #tempah{padding:40px 16px 0}
+#gtr .tempah-kad{max-width:620px;margin:0 auto}
+#gtr .ck-kick{font:500 12.5px/1.3 'Be Vietnam Pro',sans-serif;text-transform:uppercase;color:#138a3e;text-align:center}
+#gtr .ck-h{margin-top:8px;font:500 28px/1.15 'Be Vietnam Pro',sans-serif;color:#1d1d1f;text-align:center}
+#gtr .ck-m{color:#c2185b}
+#gtr .ck-sub{margin-top:10px;font:300 15.5px/1.55 'Be Vietnam Pro',sans-serif;color:#495057;text-align:center}
+#gtr .ck-sub b{font-weight:600;color:#1d1d1f}
+#gtr .ck-kotak{margin-top:22px;padding:22px 18px 20px;border-radius:18px;background:#f2f3f7}
 #gtr .ck-step{display:flex;align-items:center;gap:10px}
-#gtr .ck-no{flex:none;width:26px;height:26px;border-radius:50%;background:#16181b;font:800 13px/26px 'Be Vietnam Pro',sans-serif;color:#ffffff;text-align:center}
-#gtr .ck-st{font:800 17px/1.2 'Be Vietnam Pro',sans-serif;color:#16181b}
+#gtr .ck-no{flex:none;width:26px;height:26px;border-radius:50%;background:#1d1d1f;font:500 13px/26px 'Be Vietnam Pro',sans-serif;color:#ffffff;text-align:center}
+#gtr .ck-st{font:500 17px/1.2 'Be Vietnam Pro',sans-serif;color:#1d1d1f}
 #gtr .ck-garis{height:1px;margin:22px 0 20px;background:#dde1e9}
-#gtr .pilih{display:flex;align-items:center;gap:12px;height:78px;margin-top:12px;padding:0 16px 0;border:1.5px solid #e2e5ec;border-radius:14px;background:#ffffff;font:700 16px/1.3 'Be Vietnam Pro',sans-serif;color:#16181b}
-#gtr form label{display:block;margin-top:14px;font:700 14px/1.2 'Be Vietnam Pro',sans-serif;color:#16181b}
-#gtr form .ck-kecil{font-weight:500;color:#6b7280}
-#gtr form input[type=text],#gtr form input[type=tel],#gtr form textarea{display:block;width:100%;height:50px;margin-top:6px;padding:0 14px 0;border:1.5px solid #d4d7de;border-radius:12px;background:#ffffff;font:500 16.5px/1.3 'Be Vietnam Pro',sans-serif;color:#16181b}
+#gtr .pilih{display:flex;align-items:center;gap:12px;height:78px;margin-top:12px;padding:0 16px 0;border:1px solid #e3e5ea;border-radius:10px;background:#ffffff;font:400 16px/1.3 'Be Vietnam Pro',sans-serif;color:#1d1d1f}
+#gtr form label{display:block;margin-top:14px;font:500 14px/1.2 'Be Vietnam Pro',sans-serif;color:#1d1d1f}
+#gtr form .ck-kecil{font-weight:300;color:#6c757d}
+#gtr form input[type=text],#gtr form input[type=tel],#gtr form textarea{display:block;width:100%;height:50px;margin-top:6px;padding:0 14px 0;border:1px solid #d4d7de;border-radius:10px;background:#ffffff;font:300 16px/1.3 'Be Vietnam Pro',sans-serif;color:#1d1d1f}
 #gtr form textarea{height:80px;padding:14px 14px 14px}
 #gtr .ck-dua{display:grid;grid-template-columns:1fr 1fr;gap:10px}
-#gtr .lt-ringkas{margin-top:14px;padding:8px 14px 14px;border-radius:14px;background:#ffffff}
+#gtr .lt-ringkas{margin-top:14px;padding:8px 16px 14px;border-radius:12px;background:#ffffff}
 #gtr .lt-baris{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-top:6px;padding:6px 0 6px}
-#gtr .lt-k{font:500 15px/1.35 'Be Vietnam Pro',sans-serif;color:#3d434b}
-#gtr .lt-v{font:700 15px/1.35 'Be Vietnam Pro',sans-serif;color:#16181b;text-align:right}
+#gtr .lt-k{font:300 15px/1.35 'Be Vietnam Pro',sans-serif;color:#495057}
+#gtr .lt-v{font:500 15px/1.35 'Be Vietnam Pro',sans-serif;color:#1d1d1f;text-align:right}
 #gtr .lt-v.lt-hijau{color:#138a3e}
 #gtr .lt-jumlah{margin-top:6px;padding-top:12px;border-top:1px dashed #d4d7de}
-#gtr .lt-jumlah .lt-k{font-weight:800;color:#16181b}
-#gtr .lt-total{font:900 24px/1 'Be Vietnam Pro',sans-serif;color:#16181b}
-#gtr form button{display:block;width:100%;height:56px;margin-top:18px;border:0;border-radius:999px;background:#16181b;box-shadow:0 10px 22px rgba(22,24,27,.22);font:800 17px/1.2 'Be Vietnam Pro',sans-serif;color:#ffffff}
-#gtr .tempah-bawah{margin-top:12px;font:500 12.5px/1.45 'Be Vietnam Pro',sans-serif;color:#6b7280;text-align:center}
-#gtr .selamat{display:flex;justify-content:center;gap:16px;margin-top:14px}
-#gtr .sl{font:700 12.5px/1.3 'Be Vietnam Pro',sans-serif;color:#3d434b}
+#gtr .lt-jumlah .lt-k{font-weight:500;color:#1d1d1f}
+#gtr .lt-total{font:500 24px/1 'Be Vietnam Pro',sans-serif;color:#1d1d1f}
+#gtr form button{display:block;width:100%;height:54px;margin-top:18px;border:0;border-radius:999px;background:#1d1d1f;font:500 16.5px/1.2 'Be Vietnam Pro',sans-serif;color:#ffffff}
+#gtr .tempah-bawah{margin-top:12px;font:300 12.5px/1.45 'Be Vietnam Pro',sans-serif;color:#6c757d;text-align:center}
+#gtr .selamat{display:flex;justify-content:center;gap:16px;margin-top:12px}
+#gtr .sl{font:500 12.5px/1.3 'Be Vietnam Pro',sans-serif;color:#495057}
 
-#gtr .faq{margin-top:18px;border-top:1px solid #e2e5ec}
-#gtr .faq details{border-bottom:1px solid #e2e5ec}
-#gtr .faq summary{padding:18px 2px 18px;font:700 16px/1.35 'Be Vietnam Pro',sans-serif;color:#16181b;cursor:pointer}
-#gtr .faq .isi-p{margin-top:0;padding:0 2px 18px}
-#gtr .penting{margin-top:28px}
-#gtr .penting-h{font:800 16px/1.3 'Be Vietnam Pro',sans-serif;color:#16181b}
-#gtr .penting-p{margin-top:10px;font:500 14.5px/1.55 'Be Vietnam Pro',sans-serif;color:#3d434b}
-#gtr .kaki{margin-top:36px;padding:28px 18px 40px;background:#111315;text-align:center}
-#gtr .kaki-l{font:900 22px/1 'Be Vietnam Pro',sans-serif;color:#ffffff}
-#gtr .kaki-p{margin-top:10px;font:500 12.5px/1.6 'Be Vietnam Pro',sans-serif;color:#a1a6ae}
-#gtr .kaki-p b{color:#e5e7eb}
+#gtr .faq-h{margin-bottom:18px;font:400 28px/1.2 'Be Vietnam Pro',sans-serif;color:#1d1d1f;text-align:center}
+#gtr .kaki{margin-top:44px;padding:34px 16px 40px;background:#141414}
+#gtr .kaki-l{font:400 24px/1 'Be Vietnam Pro',sans-serif;color:#ffffff}
+#gtr .kaki-p{margin-top:12px;font:300 13.5px/1.6 'Be Vietnam Pro',sans-serif;color:#b8bcc4}
+#gtr .kaki-k{margin-top:12px;font:300 12px/1.6 'Be Vietnam Pro',sans-serif;color:#8a8f98}
+#gtr .kaki-garis{margin-top:14px;padding:12px 0 12px;border-bottom:1px solid #2a2a2a;font:400 13px/1.3 'Be Vietnam Pro',sans-serif;color:#ffffff}
 
-#gtr .km-foto{width:100%;height:auto}
-#gtr .km-s2{margin-top:10px;font:700 19px/1.35 'Be Vietnam Pro',sans-serif;color:#ffffff}
-#gtr .km-k2{margin-top:14px;font:700 15px/1.3 'Be Vietnam Pro',sans-serif;color:#ffd1dc}
-#gtr .km-k2 + .km-h{margin-top:6px}
-#gtr .kitar{margin-top:20px;padding:16px 16px 14px;border-radius:14px;background:rgba(0,0,0,.22)}
-#gtr .kitar-h{margin-bottom:12px;font:800 16px/1.3 'Be Vietnam Pro',sans-serif;color:#c9ec3c}
-#gtr .rn-p{background:#c9ec3c;color:#4a0a1c}
-#gtr .rt-p{color:#ffffff}
-#gtr .kitar-akhir{margin-top:4px;padding:10px 12px 10px;border-radius:10px;background:#e11d48;font:800 15px/1.3 'Be Vietnam Pro',sans-serif;color:#ffffff;text-align:center}
-#gtr .rosak{margin-top:14px;padding:22px 18px 18px;border-radius:20px;background:#f1f3f8}
-#gtr .rosak-k{font:800 12.5px/1.3 'Be Vietnam Pro',sans-serif;color:#e11d48}
-#gtr .rosak-h{margin-top:6px;font:900 24px/1.15 'Be Vietnam Pro',sans-serif;color:#16181b}
-#gtr .rosak-img{width:100%;margin-top:14px;border-radius:12px}
-#gtr .rosak-c{margin-top:8px;font:600 13px/1.4 'Be Vietnam Pro',sans-serif;color:#6b7280}
-#gtr .rosak-b{margin-top:16px;padding:14px 16px 14px;border-radius:14px;background:#16181b;font:800 15px/1.4 'Be Vietnam Pro',sans-serif;color:#ffffff;text-align:center}
-#gtr .doktor{margin-top:14px;padding:24px 20px 22px;border-radius:20px;background-color:#063d22;background-image:linear-gradient(140deg,#042e1a 0%,#0b5a2f 60%,#2f9b3a 100%);text-align:center}
-#gtr .dr-img{width:150px;height:150px;margin:0 auto;border-radius:50%;object-fit:cover;border:4px solid #c9ec3c}
-#gtr .dr-q{margin-top:16px;font:700 17px/1.5 'Be Vietnam Pro',sans-serif;color:#ffffff}
-#gtr .dr-n{margin-top:14px;font:800 15px/1.3 'Be Vietnam Pro',sans-serif;color:#c9ec3c}
-#gtr .dr-s{margin-top:2px;font:500 13px/1.3 'Be Vietnam Pro',sans-serif;color:#d6ecd9}
+@media (min-width:900px){
+  #gtr .sek{padding:56px 40px 0}
+  #gtr .produk{padding:0 40px 0}
+  #gtr .pg{display:grid;grid-template-columns:1.05fr 1fr;gap:44px;align-items:start}
+  #gtr .h1{font-size:34px}
+  #gtr .manfaat{grid-template-columns:repeat(3,1fr);gap:34px 40px}
+  #gtr .tab{max-width:760px;margin-left:auto;margin-right:auto}
+  #gtr .dekat-h{font-size:26px;margin-bottom:28px}
+  #gtr .bento{display:grid;grid-template-columns:1fr 1fr;gap:14px;max-width:1000px;margin:0 auto;align-items:start}
+  #gtr .bk-kol + .bk-kol{margin-top:0}
+  #gtr .suara{padding:56px 40px 50px}
+  #gtr .suara-h{font-size:36px}
+  #gtr .tk{flex:0 0 340px}
+  #gtr #tempah{padding:56px 40px 0}
+  #gtr .kaki{padding:44px 40px 50px}
+}
 
 </style>
 </head><body>
 <div id="gtr">
 <section class="atas" id="atas">
-  <p class="topbar">FREE DELIVERY  •  CASH ON DELIVERY</p>
-  <div class="header">
-    <div class="logo"><p class="logo-t">GERTRIVA™</p><p class="logo-s">BY TOTALMEN</p></div>
-    <div class="bhs"><a class="aktif" href="https://sg.gertriva.com/" role="button">EN</a><a href="https://sg.gertriva.com/bm" role="button">BM</a><a href="https://sg.gertriva.com/cn" role="button">中文</a></div>
-  </div>
+  <div class="topbar"><p class="tb-t">FREE DELIVERY · COD</p><div class="bhs"><a class="aktif" href="https://sg.gertriva.com/" role="button">EN</a><a href="https://sg.gertriva.com/bm" role="button">BM</a><a href="https://sg.gertriva.com/cn" role="button">中文</a></div></div>
+  <div class="header"><p class="logo">GERTRIVA™</p></div>
 </section>
 
-<section class="sek hero" id="hero">
-  <p class="remah">Digestive Wellness / <b>GERTRIVA™</b></p>
-  <div class="galeri" aria-roledescription="carousel">
-    <div class="trek" id="gl-trek">
-      <div class="slaid poster" aria-roledescription="slide">
-        <img class="poster-img" src="https://cdn.jsdelivr.net/gh/irwanpauzi/gertriva-ladi@1bbfb2fea9961251ddda889c215221957d70e302/sg/bcl/aril-sut-hitam.webp" width="560" height="807" alt="Aril Pilus holding a box of GERTRIVA">
-        <div class="poster-atas"><p class="poster-h">Burning chest.</p><p class="poster-h lime">Sour throat.</p><p class="poster-k">Tried everything. Still coming back?</p></div>
-        <div class="poster-bawah"><p class="poster-cb">For heartburn &amp; GERD</p><p class="poster-c">1 daily drink that helps calm the burning.</p></div>
+<section class="produk" id="produk">
+  <div class="w">
+    <p class="remah"><b>Store</b>  /  GERTRIVA™</p>
+    <div class="pg">
+      <div class="pg-kiri">
+        <div class="galeri" aria-roledescription="carousel">
+          <div class="trek" id="gl-trek">
+            <div class="slaid terang" aria-roledescription="slide"><img class="slaid-img" src="https://cdn.jsdelivr.net/gh/irwanpauzi/gertriva-ladi@7f1ea3db0e7e18b3a0deec46f773e6a670a3b51b/sg/oc/galeri-podium-terang.webp" width="900" height="900" alt="GERTRIVA box on a white podium"><div class="sl-atas"><p class="sl-t">Daily care for</p><p class="sl-b">heartburn &amp; acid reflux.</p></div><p class="sl-bawah">Feel the difference in <b>1–4 weeks*</b></p></div>
+            <div class="slaid" aria-roledescription="slide"><img class="slaid-img" src="https://cdn.jsdelivr.net/gh/irwanpauzi/gertriva-ladi@7f1ea3db0e7e18b3a0deec46f773e6a670a3b51b/sg/oc/aril-dada.webp" width="900" height="1200" alt="Aril Pilus with his hand on his chest"></div>
+            <div class="slaid" aria-roledescription="slide"><img class="slaid-img" src="https://cdn.jsdelivr.net/gh/irwanpauzi/gertriva-ladi@7f1ea3db0e7e18b3a0deec46f773e6a670a3b51b/sg/oc/kad-produk.webp" width="900" height="1125" alt="GERTRIVA box with floating green spheres"></div>
+            <div class="slaid" aria-roledescription="slide"><img class="slaid-img" src="https://cdn.jsdelivr.net/gh/irwanpauzi/gertriva-ladi@5d92148552ba69f5159fc2499254fff8603c4a4d/sg/gambar/produk-podium.webp" width="900" height="900" alt="GERTRIVA box and sachets"></div>
+            <div class="slaid" aria-roledescription="slide"><img class="slaid-img" src="https://cdn.jsdelivr.net/gh/irwanpauzi/gertriva-ladi@1bbfb2fea9961251ddda889c215221957d70e302/sg/bcl/galeri-kotak.webp" width="720" height="720" alt="GERTRIVA box with Gastro-AD, isolated soy protein, inulin and oat fibre"></div>
+            <div class="slaid" aria-roledescription="slide"><img class="slaid-img" src="https://cdn.jsdelivr.net/gh/irwanpauzi/gertriva-ladi@1bbfb2fea9961251ddda889c215221957d70e302/sg/bcl/galeri-bahan.webp" width="720" height="720" alt="Main ingredients of GERTRIVA"></div>
+            <div class="slaid" aria-roledescription="slide"><img class="slaid-img" src="https://cdn.jsdelivr.net/gh/irwanpauzi/gertriva-ladi@1bbfb2fea9961251ddda889c215221957d70e302/sg/bcl/galeri-cara.webp" width="720" height="720" alt="How to take GERTRIVA: tear, pour, mix, drink"></div>
+          </div>
+        </div>
+        <div class="gl-nav"><button class="gl-b" type="button" aria-controls="gl-trek" data-slide="prev" aria-label="Previous">‹</button><button class="gl-b" type="button" aria-controls="gl-trek" data-slide="next" aria-label="Next">›</button></div>
       </div>
-      <div class="slaid" aria-roledescription="slide"><img class="slaid-img" src="https://cdn.jsdelivr.net/gh/irwanpauzi/gertriva-ladi@5d92148552ba69f5159fc2499254fff8603c4a4d/sg/gambar/produk-podium.webp" width="900" height="900" alt="GERTRIVA box and sachets"></div>
-      <div class="slaid" aria-roledescription="slide"><img class="slaid-img" src="https://cdn.jsdelivr.net/gh/irwanpauzi/gertriva-ladi@1bbfb2fea9961251ddda889c215221957d70e302/sg/bcl/galeri-aril.webp" width="720" height="720" alt="Aril Pilus with GERTRIVA: fast relief, daily comfort, gentle support, natural ingredients"></div>
-      <div class="slaid" aria-roledescription="slide"><img class="slaid-img" src="https://cdn.jsdelivr.net/gh/irwanpauzi/gertriva-ladi@1bbfb2fea9961251ddda889c215221957d70e302/sg/bcl/galeri-kotak.webp" width="720" height="720" alt="GERTRIVA box with Gastro-AD, isolated soy protein, inulin and oat fibre"></div>
-      <div class="slaid" aria-roledescription="slide"><img class="slaid-img" src="https://cdn.jsdelivr.net/gh/irwanpauzi/gertriva-ladi@1bbfb2fea9961251ddda889c215221957d70e302/sg/bcl/galeri-manfaat.webp" width="720" height="720" alt="What GERTRIVA helps with"></div>
-      <div class="slaid" aria-roledescription="slide"><img class="slaid-img" src="https://cdn.jsdelivr.net/gh/irwanpauzi/gertriva-ladi@1bbfb2fea9961251ddda889c215221957d70e302/sg/bcl/galeri-formula.webp" width="720" height="720" alt="GERTRIVA formula highlights"></div>
-      <div class="slaid" aria-roledescription="slide"><img class="slaid-img" src="https://cdn.jsdelivr.net/gh/irwanpauzi/gertriva-ladi@1bbfb2fea9961251ddda889c215221957d70e302/sg/bcl/galeri-bahan.webp" width="720" height="720" alt="Main ingredients of GERTRIVA"></div>
-      <div class="slaid" aria-roledescription="slide"><img class="slaid-img" src="https://cdn.jsdelivr.net/gh/irwanpauzi/gertriva-ladi@1bbfb2fea9961251ddda889c215221957d70e302/sg/bcl/galeri-cara.webp" width="720" height="720" alt="How to take GERTRIVA: tear, pour, mix, drink"></div>
+      <div class="pg-kanan">
+        <div class="tajuk"><h1 class="h1">GERTRIVA™</h1><p class="kkm">✓ Label reviewed by KKM</p></div>
+        <p class="desk">The daily gut-comfort drink that helps ease heartburn and acid reflux, calms bloating and keeps you regular. With Gastro-AD®, prebiotic fibre and soy protein, in one sachet a day.</p>
+        <p class="beli-t">Buy More, Save More</p>
+        <div class="baris"><div class="r"></div><div class="bn"><p class="bn-t">1-Box</p><p class="bk">(try it first)</p></div><div class="bh"><p class="bharga">SGD 69.00</p><p class="bsave">Save 42%</p></div></div>
+        <div class="baris"><div class="r"></div><div class="bn"><p class="bn-t">2-Box</p><p class="bk">($59.50 per box)</p></div><div class="bh"><p class="bharga">SGD 119.00</p><p class="bsave">Save 50%</p></div></div>
+        <p class="btag">Recommended</p>
+        <div class="baris on"><div class="r on"></div><div class="bn"><p class="bn-t">3-Box</p><p class="bk">(daily routine)</p></div><div class="bh"><p class="bharga">SGD 139.00</p><p class="bsave">Save 61%</p></div></div>
+        <p class="bonus">Get <b>2 FREE ebooks + FREE delivery</b> with every order. Pay only when it arrives.</p>
+        <div class="jumlah"><p class="jumlah-t">TOTAL</p><p class="jumlah-b">SGD 139.00</p></div>
+        <a class="cta" href="#tempah" role="button">Order Now · Pay on Delivery</a>
+        <div class="percaya">
+          <div class="pc"><div class="pc-ikon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2.500 6.500h11v9.500h-11z"/><path d="M13.500 9.500h4l3.500 3.500v3h-7.500z"/><circle cx="7" cy="17.500" r="1.800"/><circle cx="17" cy="17.500" r="1.800"/></svg></div><div class="pc-x"><p class="pc-t">Free Delivery Islandwide</p><p class="pc-p">Delivered to your door anywhere in Singapore.</p></div></div>
+          <div class="pc garis-atas"><div class="pc-ikon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2.500" y="6" width="19" height="12" rx="2"/><circle cx="12" cy="12" r="2.600"/><path d="M6 9.500v5M18 9.500v5"/></svg></div><div class="pc-x"><p class="pc-t">Cash on Delivery</p><p class="pc-p">No card, no online payment. Pay when your parcel arrives.</p></div></div>
+          <div class="pc garis-atas"><div class="pc-ikon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l7.500 2.800v5.700c0 4.500-3 7.800-7.500 9.500-4.500-1.700-7.500-5-7.500-9.500V5.800z"/><path d="M8.700 12l2.300 2.300 4.300-4.600"/></svg></div><div class="pc-x"><p class="pc-t">Label Reviewed by KKM Malaysia</p><p class="pc-p">Nutrition tested by SGS. Lactose-free, no animal milk.</p></div></div>
+        </div>
+      </div>
     </div>
-  </div>
-  <div class="tajuk">
-    <h1 class="h1">GERTRIVA™</h1>
-    <p class="sg">Now in Singapore</p>
-  </div>
-  <p class="desk">The daily drink for <b>heartburn, acid reflux &amp; bloating</b>. <b>Gastro-AD®</b> helps ease heartburn and acid reflux, <b>inulin + oat fibre</b> keep you regular, and <b>soy protein</b> keeps you full for longer.</p>
-  <div class="cipcip"><p class="cip">✓ Less heartburn</p><p class="cip">✓ Less acid reflux</p><p class="cip">✓ Less bloating</p><p class="cip">✓ Regular bowels</p><p class="cip">✓ Lactose-free</p></div>
-  <div class="beli">
-    <div class="beli-h"><p class="beli-t">Buy More, Save More</p><p class="beli-s">All prices in SGD</p></div>
-    <div class="baris">
-      <div class="r"></div><img class="bfoto" src="https://cdn.jsdelivr.net/gh/irwanpauzi/gertriva-ladi@5d92148552ba69f5159fc2499254fff8603c4a4d/sg/gambar/pakej-baru-1.webp" width="231" height="300" alt="1 box of GERTRIVA">
-      <div class="bn"><p class="bnama">1 Box</p><p class="bsub">To try it first</p></div>
-      <div class="bh"><p class="bharga">$69.00</p><p class="basal">$119.00</p><p class="bsave">Save 42%</p></div>
-    </div>
-    <div class="baris">
-      <div class="r"></div><img class="bfoto" src="https://cdn.jsdelivr.net/gh/irwanpauzi/gertriva-ladi@5d92148552ba69f5159fc2499254fff8603c4a4d/sg/gambar/pakej-baru-2.webp" width="295" height="300" alt="2 boxes of GERTRIVA">
-      <div class="bn"><p class="bnama">2 Boxes</p><p class="bsub">$59.50 per box</p></div>
-      <div class="bh"><p class="bharga">$119.00</p><p class="basal">$238.00</p><p class="bsave">Save 50%</p></div>
-    </div>
-    <p class="btag">Best Value</p>
-    <div class="baris on">
-      <div class="r on"></div><img class="bfoto" src="https://cdn.jsdelivr.net/gh/irwanpauzi/gertriva-ladi@5d92148552ba69f5159fc2499254fff8603c4a4d/sg/gambar/pakej-baru-3.webp" width="356" height="300" alt="3 boxes of GERTRIVA">
-      <div class="bn"><p class="bnama">3 Boxes</p><p class="bsub">Only $46.33 per box</p></div>
-      <div class="bh"><p class="bharga">$139.00</p><p class="basal">$357.00</p><p class="bsave">Save 61%</p></div>
-    </div>
-    <p class="jimat">You save <b>$218.00</b> today. Delivery is <b>free</b>, and you pay only when it arrives.</p>
-    <div class="jumlah"><p class="jumlah-t">TOTAL</p><div class="jumlah-k"><p class="jumlah-a">$357.00</p><p class="jumlah-b">$139.00</p></div></div>
-    <a class="cta" href="#tempah" role="button">Order Now: Pay on Delivery →</a>
-    <p class="cta-nota">No card needed. <b>Cash on delivery</b> anywhere in Singapore.</p>
-  </div>
-  <div class="percaya">
-    <div class="pc"><div class="pc-ikon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2.500 6.500h11v9.500h-11z"/><path d="M13.500 9.500h4l3.500 3.500v3h-7.500z"/><circle cx="7" cy="17.500" r="1.800"/><circle cx="17" cy="17.500" r="1.800"/></svg></div><div class="pc-x"><p class="pc-t">Free Delivery Island-wide</p><p class="pc-p">Delivered to your door anywhere in Singapore. No minimum order.</p></div></div>
-    <div class="pc garis-atas"><div class="pc-ikon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2.500" y="6" width="19" height="12" rx="2"/><circle cx="12" cy="12" r="2.600"/><path d="M6 9.500v5M18 9.500v5"/></svg></div><div class="pc-x"><p class="pc-t">Cash on Delivery Only</p><p class="pc-p">No online payment, no card details. Pay only when your parcel is in your hands.</p></div></div>
-    <div class="pc garis-atas"><div class="pc-ikon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l7.500 2.800v5.700c0 4.500-3 7.800-7.500 9.500-4.500-1.700-7.500-5-7.500-9.500V5.800z"/><path d="M8.700 12l2.300 2.300 4.300-4.600"/></svg></div><div class="pc-x"><p class="pc-t">Made in Malaysia by TOTALMEN</p><p class="pc-p">Label reviewed by Malaysia's Ministry of Health (KKM). Lactose-free, with no animal milk.</p></div></div>
   </div>
 </section>
 
 <section class="sek" id="manfaat">
-  <div class="manfaat">
-    <div class="mf"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3c2 3 5 5 5 9a5 5 0 0 1-10 0c0-2 1-3.5 2-4.5.3 1.6 1.2 2.5 2 2.5-.5-2.5 0-5 1-7z"/></svg><p class="mf-t">Eases Heartburn</p><p class="mf-p">Gastro-AD® helps reduce that burning feeling and acid rising up after heavy, spicy or oily meals.</p></div>
-    <div class="mf"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12h16M12 4v16"/><circle cx="12" cy="12" r="9"/></svg><p class="mf-t">Keeps You Regular</p><p class="mf-p">Inulin and oat fibre help your bowels move more smoothly and regularly, without laxatives.</p></div>
-    <div class="mf"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 9c3-3 6 3 9 0s5-2 7 0M4 15c3-3 6 3 9 0s5-2 7 0"/></svg><p class="mf-t">Less Bloating</p><p class="mf-p">Prebiotic + postbiotic support for a calmer gut, with less of that tight, full, gassy belly.</p></div>
-    <div class="mf"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3a6 6 0 0 1 6 6c0 4-6 12-6 12S6 13 6 9a6 6 0 0 1 6-6z"/><path d="M9.5 9.5l5 0"/></svg><p class="mf-t">Settles Nausea</p><p class="mf-p">Gastro-AD® helps settle that queasy, about-to-throw-up feeling after a big meal.</p></div>
-    <div class="mf"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 11h14l-1.5 8.5a2 2 0 0 1-2 1.5h-7a2 2 0 0 1-2-1.5z"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg><p class="mf-t">Full For Longer</p><p class="mf-p">Soy protein + fibre help you feel satisfied, so the second plate is easier to skip.</p></div>
-    <div class="mf"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 3h8M9 3v4l-3 5v8a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1v-8l-3-5V3"/><path d="M4 4l16 16"/></svg><p class="mf-t">Lactose-Free</p><p class="mf-p">No animal milk. Gentle on sensitive stomachs, and it tastes good enough to drink daily.</p></div>
-  </div>
-  <div class="tab">
-    <details>
-      <summary>HOW TO CONSUME</summary>
-      <div class="isi">
-        <div class="langkah"><div class="lk"><p class="lk-n">1</p><p class="lk-t">Tear 1 sachet</p></div><div class="lk"><p class="lk-n">2</p><p class="lk-t">Pour into 150–200 ml warm water</p></div><div class="lk"><p class="lk-n">3</p><p class="lk-t">Stir well</p></div><div class="lk"><p class="lk-n">4</p><p class="lk-t">Drink</p></div></div>
-        <p class="isi-p"><b>Best time:</b> after a big meal, before bed, or whenever your stomach starts to feel heavy. Follow the directions on the label.</p>
-        <p class="isi-p">Taking medication? Keep taking it as prescribed. GERTRIVA is a food drink, not a replacement for medicine.</p>
-      </div>
-    </details>
-    <details>
-      <summary>INGREDIENTS</summary>
-      <div class="isi">
-        <div class="bahan"><p class="bh-t">Gastro-AD®</p><p class="bh-p">Non-GMO fermented soybean with postbiotic L. delbrueckii, peptides and microbial metabolites. Helps ease heartburn, acid reflux and nausea.</p></div>
-        <div class="bahan"><p class="bh-t">Inulin</p><p class="bh-p">Plant-based soluble fibre and prebiotic. Feeds good gut bacteria (Bifidobacteria, Lactobacilli) and helps with constipation.</p></div>
-        <div class="bahan"><p class="bh-t">Oat fibre</p><p class="bh-p">Contains beta-glucan, a prebiotic fibre that supports digestive regularity.</p></div>
-        <div class="bahan"><p class="bh-t">Isolated soy protein</p><p class="bh-p">Plant protein for your daily intake. Suitable for people who are lactose intolerant.</p></div>
-        <p class="isi-p"><b>Allergen:</b> contains soy.</p>
-      </div>
-    </details>
-    <details>
-      <summary>PRODUCT SAFETY</summary>
-      <div class="isi">
-        <div class="jd ganjil"><p class="jd-k">KKM label review</p><p class="jd-v">Reviewed by Malaysia's Ministry of Health (Food Safety &amp; Quality Programme): "no objection" to the GERTRIVA label.</p></div>
-        <div class="jd"><p class="jd-k">Manufacturer</p><p class="jd-v">TOTALMEN (M) SDN. BHD., Malaysia</p></div>
-        <div class="jd ganjil"><p class="jd-k">Type</p><p class="jd-v">Powdered food drink (oats + inulin). Not a medicine.</p></div>
-        <div class="jd"><p class="jd-k">Others</p><p class="jd-v">Lactose-free · No animal milk · Non-GMO soybean · Prebiotic + postbiotic</p></div>
-        <img class="surat" src="https://cdn.jsdelivr.net/gh/irwanpauzi/gertriva-ladi@1bbfb2fea9961251ddda889c215221957d70e302/sg/bcl/surat-kkm.webp" width="900" height="1183" alt="KKM label review letter for GERTRIVA">
-        <p class="surat-p">Letter from Malaysia's Ministry of Health (KKM) on the GERTRIVA food label (personal details blurred). This is a Malaysian label review, not a Singapore HSA approval.</p>
-      </div>
-    </details>
-  </div>
-</section>
-
-<section class="sek" id="masalah">
-  <h2 class="dekat-h">A closer look at GERTRIVA™</h2>
-  <div class="kgrad">
-    <img class="kgrad-img" src="https://cdn.jsdelivr.net/gh/irwanpauzi/gertriva-ladi@1bbfb2fea9961251ddda889c215221957d70e302/sg/bcl/aril-sut-putih.webp" width="720" height="786" alt="Aril Pilus holding two boxes of GERTRIVA">
-    <p class="kgrad-p">The daily drink that helps <b>calm the burning</b>: less acid rising, less bloating, easier toilet trips. With <b>Gastro-AD®</b>, in just <b>one drink a day</b>.</p>
-  </div>
-  <div class="kmerah">
-    <img class="km-foto" src="https://cdn.jsdelivr.net/gh/irwanpauzi/gertriva-ladi@e1050d25928f7c09b2f20e275a5ccd3ec2e3505e/sg/gambar/malam-gerd.webp" width="900" height="675" alt="Man sitting up in bed at night with his hand on his chest">
-    <div class="km-atas">
-      <p class="km-k">FOR YOU WHO HAVE LIVED WITH GERD FOR YEARS</p>
-      <p class="km-s2">Every day you avoid spicy food, cut down on coffee and even eat on schedule…</p>
-      <p class="km-k2">But your GERD symptoms</p>
-      <p class="km-h">KEEP COMING</p>
-      <p class="km-h lime">BACK.</p>
-      <p class="km-s">What you eat is only part of the problem. The bigger part is a stomach and gut that have been neglected for years.</p>
-      <div class="kitar">
-        <p class="kitar-h">The GERD cycle</p>
-        <div class="rantai"><p class="rn rn-p">1</p><p class="rt rt-p">Morning coffee, a late lunch, a bit of sambal.</p></div>
-        <div class="rantai"><p class="rn rn-p">2</p><p class="rt rt-p">Afternoon, the burping starts. Your chest feels tight.</p></div>
-        <div class="rantai"><p class="rn rn-p">3</p><p class="rt rt-p">Night, you lie down. Sour, burning acid rises to your throat.</p></div>
-        <div class="rantai"><p class="rn rn-p">4</p><p class="rt rt-p">You get up, drink warm water, sit upright till dawn.</p></div>
-        <div class="rantai"><p class="rn rn-p">5</p><p class="rt rt-p">A week or two later, you feel okay. You eat like normal again.</p></div>
-        <p class="kitar-akhir">And it all starts again.</p>
-      </div>
+  <div class="w">
+    <div class="manfaat">
+      <div class="mf"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3c2 3 5 5 5 9a5 5 0 0 1-10 0c0-2 1-3.5 2-4.5.3 1.6 1.2 2.5 2 2.5-.5-2.5 0-5 1-7z"/></svg><p class="mf-t">Eases Heartburn</p><p class="mf-p">Gastro-AD® helps reduce that burning feeling in your chest after heavy, spicy or oily meals.</p></div>
+      <div class="mf"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3a6 6 0 0 1 6 6c0 4-6 12-6 12S6 13 6 9a6 6 0 0 1 6-6z"/><path d="M9.5 9.5l5 0"/></svg><p class="mf-t">Calms Acid Reflux</p><p class="mf-p">Helps calm the sour acid that rises to your throat, especially at night.</p></div>
+      <div class="mf"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 9c3-3 6 3 9 0s5-2 7 0M4 15c3-3 6 3 9 0s5-2 7 0"/></svg><p class="mf-t">Less Bloating</p><p class="mf-p">Prebiotic + postbiotic support for a calmer gut, with less wind and burping.</p></div>
+      <div class="mf"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12h16M12 4v16"/><circle cx="12" cy="12" r="9"/></svg><p class="mf-t">Keeps You Regular</p><p class="mf-p">Inulin and oat fibre help your bowels move more smoothly and regularly.</p></div>
+      <div class="mf"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 11h14l-1.5 8.5a2 2 0 0 1-2 1.5h-7a2 2 0 0 1-2-1.5z"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg><p class="mf-t">Full For Longer</p><p class="mf-p">Soy protein + fibre help you feel satisfied, so you don't overeat.</p></div>
+      <div class="mf"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 3h8M9 3v4l-3 5v8a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1v-8l-3-5V3"/><path d="M4 4l16 16"/></svg><p class="mf-t">Lactose-Free</p><p class="mf-p">No animal milk. Gentle on sensitive stomachs, and it tastes good enough to drink daily.</p></div>
     </div>
-    <div class="akor">
+    <div class="tab">
       <details>
-        <summary>Why antacids aren't enough</summary>
-        <p class="isi-p"><b>Antacids:</b> quick relief, then the acid comes back once it wears off. <b>Ginger or mint water:</b> sometimes it works, sometimes it doesn't. <b>Medicine only when it hurts:</b> your stomach isn't cared for every day.</p>
-      </details>
-      <details>
-        <summary>Why acid keeps rising</summary>
-        <p class="isi-p">When the valve at the end of your oesophagus is weak, stomach acid rises up. Heavy, spicy or oily meals, kopi, late suppers and lying down soon after eating all make it worse.</p>
-      </details>
-      <details>
-        <summary>What it does to your oesophagus</summary>
-        <p class="isi-p">Acid that keeps rising wears away the oesophagus wall bit by bit. You can't see it, but the damage happens every time the burning comes. Left for years, the wall can become wounded, swollen and scarred.</p>
-      </details>
-    </div>
-  </div>
-  <div class="rosak">
-    <p class="rosak-k">WARNING</p>
-    <p class="rosak-h">Don't wait until your oesophagus starts to get damaged.</p>
-    <img class="rosak-img" src="https://w.ladicdn.com/64d0957e7550bc001218243b/esafogus-rosak-20261008082721-1hybq.jpg" width="1920" height="1482" alt="Four endoscopy images A to D showing the stages of oesophagus damage from GERD">
-    <p class="rosak-c">Stages of oesophagus damage in severe GERD (A to D)</p>
-    <img class="rosak-img" src="https://w.ladicdn.com/64d0957e7550bc001218243b/new-project-20261012030409-00lyx.png" width="1080" height="1080" alt="Newspaper clipping about heartburn and oesophageal cancer">
-    <p class="rosak-c">Newspaper report: excess acid can contribute to oesophageal cancer</p>
-    <p class="rosak-b">Gastric today, GERD tomorrow, a wounded oesophagus the day after. Break the chain now.</p>
-  </div>
-  <div class="doktor">
-    <img class="dr-img" src="https://cdn.jsdelivr.net/gh/irwanpauzi/gertriva-ladi@3b0ff5eae42a5410871dc059c7bf11720a77cb37/zizan/gambar/zz-drely-bulat.webp" width="640" height="640" alt="Dr Ely Fauziani with a box of GERTRIVA">
-    <p class="dr-q">"Don't ignore GERD. Left untreated, it can lead to stomach ulcers, Barrett's oesophagus, breathing and lung problems, and oesophageal cancer."</p>
-    <p class="dr-n">Dr Ely Fauziani</p>
-    <p class="dr-s">Medical doctor (MBBS)</p>
-  </div>
-  <p class="nota">*General information, not a diagnosis. See a doctor if your symptoms are severe, frequent or do not improve.</p>
-</section>
-
-<section class="sek" id="seksa">
-  <p class="kicker tengah">SOUND FAMILIAR?</p>
-  <h2 class="h2 tengah">Made for you if you have <span class="merah">1 of these 4 signs</span></h2>
-  <p class="sub tengah">Most people with GERD have more than one. They all start in the same place: <b>acid that won't stay down.</b></p>
-  <div class="grid4">
-    <div class="k4"><div class="k4-ik c2"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3c.8 3.4 5 5.2 5 9.800a5 5 0 0 1-10 0c0-2 .9-3.300 2-4.300.3 1.500.9 2.300 1.800 2.700C10.600 8.400 11 5.600 12 3z"/></svg></div><p class="k4-h c2">Heartburn</p>
-      <p class="k4-li">• Chest burns after eating</p><p class="k4-li">• Worse after spicy or oily food</p><p class="k4-li">• Tight, heavy chest</p>
-      <div class="k4-g"><p class="k4-gb">GERTRIVA</p><p class="k4-gp">Gastro-AD® helps ease heartburn and acid reflux.</p></div></div>
-    <div class="k4"><div class="k4-ik c1"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 3v5c0 2-1 3-1 5.500V21M15 3v5c0 2 1 3 1 5.500V21"/><path d="M12 7v3M12 13v.01M12 16v3"/></svg></div><p class="k4-h c1">Sour throat</p>
-      <p class="k4-li">• Sour or bitter taste rising up</p><p class="k4-li">• Hoarse voice in the morning</p><p class="k4-li">• Always clearing your throat</p>
-      <div class="k4-g"><p class="k4-gb">GERTRIVA</p><p class="k4-gp">Helps calm the acid that rises to your throat.</p></div></div>
-    <div class="k4"><div class="k4-ik c3"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 9h10.500a2.500 2.500 0 1 0-2.500-2.500M3 13h15.500a2.500 2.500 0 1 1-2.500 2.500M3 17h6"/></svg></div><p class="k4-h c3">Bloating</p>
-      <p class="k4-li">• Belly tight and hard</p><p class="k4-li">• Burping, passing wind</p><p class="k4-li">• "Full" for hours</p>
-      <div class="k4-g"><p class="k4-gb">GERTRIVA</p><p class="k4-gp">Prebiotic + postbiotic help your gut feel calmer.</p></div></div>
-    <div class="k4"><div class="k4-ik c4"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 14.300A8 8 0 1 1 9.700 4a6.300 6.300 0 0 0 10.300 10.300z"/></svg></div><p class="k4-h c4">Night reflux</p>
-      <p class="k4-li">• Wake up with acid in your throat</p><p class="k4-li">• Sleep on two pillows</p><p class="k4-li">• Tired the next day</p>
-      <div class="k4-g"><p class="k4-gb">GERTRIVA</p><p class="k4-gp">One drink a day, so your stomach is cared for every day.</p></div></div>
-  </div>
-  <p class="bahaya"><b>See a doctor immediately</b> if you vomit blood, pass black or bloody stools, have severe stomach pain, unexplained weight loss, trouble swallowing, or chest pain that spreads to your arm or jaw (call 995). This page is general information, not a diagnosis.</p>
-</section>
-
-<section class="sek" id="kajian">
-  <div class="kaj">
-    <div class="kaj-atas">
-      <p class="kaj-h">Clinically studied ingredients.</p>
-      <p class="kaj-h lime">Tested &amp; proven.</p>
-      <div class="nombor"><div class="nb"><p class="nb-b">3</p><p class="nb-t">randomised placebo-controlled studies</p></div><div class="nb"><p class="nb-b">199</p><p class="nb-t">adults in total</p></div><div class="nb"><p class="nb-b">3</p><p class="nb-t">problems studied</p></div></div>
-      <p class="kaj-p">GERTRIVA's key ingredients, <b>fermented soybean with L. delbrueckii</b> (the Gastro-AD® ingredient type) and <b>prebiotic inulin</b>, have been tested in randomised, double-blind, placebo-controlled studies.</p>
-      <p class="kaj-sains">Learn the science ↓</p>
-    </div>
-    <div class="kaj-senarai">
-      <details>
-        <summary>Heartburn · Nutrients 2024 · 110 adults · 12 weeks</summary>
+        <summary>HOW TO CONSUME</summary>
         <div class="isi">
-          <div class="fakta"><p class="fk">110 adults with GERD</p><p class="fk">12 weeks</p><p class="fk">1 g daily</p></div>
-          <p class="isi-p"><b>Heartburn and regurgitation dropped significantly</b> compared with placebo, and quality of life improved.</p>
-          <img class="jurnal" src="https://cdn.jsdelivr.net/gh/irwanpauzi/gertriva-ladi@1bbfb2fea9961251ddda889c215221957d70e302/sg/bcl/jurnal-nutrients-2024.webp" width="800" height="355" alt="PubMed page of Tan et al., Nutrients 2024">
-          <p class="rujuk">Tan et al., Nutrients 2024. UCSI University, Kuala Lumpur. Randomised, double-blind, placebo-controlled. PMID 39203915.</p>
+          <div class="langkah"><div class="lk"><p class="lk-n">1</p><p class="lk-t">Tear 1 sachet</p></div><div class="lk"><p class="lk-n">2</p><p class="lk-t">Pour into 150–200 ml warm water</p></div><div class="lk"><p class="lk-n">3</p><p class="lk-t">Stir well</p></div><div class="lk"><p class="lk-n">4</p><p class="lk-t">Drink daily</p></div></div>
+          <p class="isi-p">Once a day, before or after meals. Keep taking your doctor's medicine as usual. GERTRIVA is a food drink, not a medicine.</p>
         </div>
       </details>
       <details>
-        <summary>Fear of eating · BMC Research Notes 2020 · 50 adults · 3 weeks</summary>
+        <summary>INGREDIENTS</summary>
         <div class="isi">
-          <div class="fakta"><p class="fk">50 adults with frequent heartburn</p><p class="fk">3 weeks</p></div>
-          <p class="isi-p">Compared with placebo, the fermented-soy group did better on <b>"fear of eating"</b> and <b>"after-meal activities disturbed"</b>. One week after stopping, heartburn and bloating frequency were also better than at the start.</p>
-          <img class="jurnal" src="https://cdn.jsdelivr.net/gh/irwanpauzi/gertriva-ladi@1bbfb2fea9961251ddda889c215221957d70e302/sg/bcl/jurnal-bmc-2020.webp" width="800" height="415" alt="PubMed page of Fatani et al., BMC Research Notes 2020">
-          <p class="rujuk">Fatani et al., BMC Research Notes 2020. Randomised, double-blind, placebo-controlled. PMID 32746904. Heartburn severity during the study was not significantly different between groups.</p>
+          <div class="bahan"><p class="bh-t">Gastro-AD® (postbiotic)</p><p class="bh-p">Non-GMO fermented soybean with L. delbrueckii. Helps ease heartburn, acid reflux and nausea.</p></div>
+          <div class="bahan"><p class="bh-t">Inulin (prebiotic)</p><p class="bh-p">Soluble plant fibre that feeds good gut bacteria and helps with constipation.</p></div>
+          <div class="bahan"><p class="bh-t">Oat fibre</p><p class="bh-p">Contains beta-glucan, a prebiotic fibre that supports digestive regularity.</p></div>
+          <div class="bahan"><p class="bh-t">Isolated soy protein</p><p class="bh-p">Plant protein, suitable for people who are lactose intolerant.</p></div>
         </div>
       </details>
       <details>
-        <summary>Constipation · BMC Gastroenterology 2025 · 39 adults · 4 weeks</summary>
+        <summary>PRODUCT SAFETY</summary>
         <div class="isi">
-          <div class="fakta"><p class="fk">39 constipated adults</p><p class="fk">4 weeks</p><p class="fk">12 g inulin daily</p></div>
-          <p class="isi-p">Inulin <b>increased bowel movement frequency</b> and improved gut symptoms compared with placebo, and boosted good butyrate-producing gut bacteria.</p>
-          <div class="kertas"><p class="kertas-t">Inulin-induced improvements on bowel habit and gut microbiota in adults with functional constipation: findings of a randomized, double-blind, placebo-controlled study</p><p class="kertas-s">Puhlmann ML, Wegh CAM, et al. · BMC Gastroenterology 2025</p></div>
-          <p class="rujuk">Puhlmann et al., BMC Gastroenterology 2025. Randomised, double-blind, placebo-controlled (crossover). PMID 41233756.</p>
+          <div class="jd ganjil"><p class="jd-k">KKM Label Review</p><p class="jd-v">Food label reviewed by Malaysia's Ministry of Health (Food Safety &amp; Quality Programme). Not a Singapore HSA approval.</p></div>
+          <div class="jd"><p class="jd-k">Lab Test</p><p class="jd-v">Nutrition facts tested by SGS (Malaysia) Sdn Bhd.</p></div>
+          <div class="jd ganjil"><p class="jd-k">Manufacturer</p><p class="jd-v">TOTALMEN (M) SDN. BHD., Malaysia</p></div>
+          <div class="jd"><p class="jd-k">Allergen</p><p class="jd-v">Contains soy.</p></div>
+          <div class="jd ganjil"><p class="jd-k">Others</p><p class="jd-v">• Lactose-Free • No Animal Milk • Non-GMO Soybean • Prebiotic + Postbiotic • Food Drink, Not A Medicine</p></div>
+        </div>
+      </details>
+      <details>
+        <summary>TESTIMONIAL</summary>
+        <div class="isi">
+          <p class="isi-p">"Okay sangat. For a few days now my stomach hasn't felt bloated. Before, it felt uncomfortable after every meal." <b>GERTRIVA customer</b></p>
+          <p class="isi-p">"I drank it for 3 days. On the second night my stomach finally felt comfortable." <b>GERTRIVA customer</b></p>
+        </div>
+      </details>
+      <details>
+        <summary>FAQ</summary>
+        <div class="isi">
+          <p class="isi-p"><b>How do I pay?</b> Cash on delivery. Pay when your parcel arrives.</p>
+          <p class="isi-p"><b>Is delivery free?</b> Yes, islandwide in Singapore.</p>
         </div>
       </details>
     </div>
   </div>
-  <p class="nota">*The studies tested fermented soybean with L. delbrueckii (the Gastro-AD® ingredient type; the 2024 study used the Nattome™ product) and chicory inulin at study doses, not GERTRIVA itself. The amount per sachet may differ from the study doses. Results vary between individuals.</p>
 </section>
 
-<section class="sek" id="formula">
-  <div class="fbar"><p class="fbar-p">Targeted <b>Gut-Comfort</b> Formula: <b>4 ingredients</b>, 1 sachet</p><img class="fbar-img" src="https://cdn.jsdelivr.net/gh/irwanpauzi/gertriva-ladi@1bbfb2fea9961251ddda889c215221957d70e302/sg/bcl/kotak-1.webp" width="168" height="168" alt="GERTRIVA box"></div>
-  <div class="f2">
-    <div class="fk2"><p class="fk2-h biru">Postbiotic</p><p class="fk2-h biru">Gastro-AD®</p><p class="fk2-p">Fermented soybean that helps calm the burn, the acid and the queasy feeling.</p><div class="bulat bb"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3.500s6 6.200 6 10.500a6 6 0 0 1-12 0c0-4.300 6-10.500 6-10.500z"/><path d="M9.500 14.500a2.500 2.500 0 0 0 2.500 2.500"/></svg></div></div>
-    <div class="fk2"><p class="fk2-h hijau">Prebiotic</p><p class="fk2-h hijau">Inulin + Oat</p><p class="fk2-p">Fibre that feeds good gut bacteria and gets things moving.</p><div class="bulat bh2"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 19C5 10 10 5 19.500 4.500 19 14 14 19 5 19zM5 19l8-8"/></svg></div></div>
-  </div>
-  <div class="fpenuh"><div class="fp-bulat"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 3v6.500a2 2 0 0 0 4 0V3M9 11.500V21M16.500 3c-1.800 1.800-2.500 4.800-2.500 8h3V21"/></svg></div><div class="fp-x"><p class="fp-h">Soy Protein</p><p class="fp-p">Plant protein + fibre help you stay full for longer. No animal milk, so it's lactose-free.</p></div></div>
-  <div class="masa">
-    <p class="masa-h">What you may feel with GERTRIVA</p>
-    <p class="masa-k">Eat as usual, without the burning after.</p>
-    <div class="garis-masa">
-      <div class="gm"><div class="gm-titik biru"></div><div class="gm-x"><p class="gm-b biru">RIGHT AFTER DRINKING</p><p class="gm-t">Feel more satisfied and full.</p></div></div>
-      <div class="gm"><div class="gm-titik"></div><div class="gm-x"><p class="gm-b">SAME DAY</p><p class="gm-t">Stomach feels more comfortable, especially if you often get gastric discomfort.</p></div></div>
-      <div class="gm"><div class="gm-titik"></div><div class="gm-x"><p class="gm-b">WITHIN A FEW DAYS</p><p class="gm-t">More regular, consistent bowel movements.</p></div></div>
-      <div class="gm"><div class="gm-titik"></div><div class="gm-x"><p class="gm-b">1–4 WEEKS</p><p class="gm-t">Fewer heartburn attacks and less acid reflux, even with kopi or spicy food. Eat as usual without it ruining your day.</p></div></div>
-      <div class="gm"><div class="gm-titik"></div><div class="gm-x"><p class="gm-b">LONG TERM</p><p class="gm-t">Better daily fibre and protein intake, and ongoing digestive wellness.</p></div></div>
+<section class="sek" id="dekat">
+  <div class="w">
+    <h2 class="dekat-h">A closer look at GERTRIVA™</h2>
+    <div class="bento">
+      <div class="bk-kol">
+        <div class="kad kad-terang"><img class="kad-img" src="https://cdn.jsdelivr.net/gh/irwanpauzi/gertriva-ladi@7f1ea3db0e7e18b3a0deec46f773e6a670a3b51b/sg/oc/aril-dada.webp" width="900" height="1200" alt="Aril Pilus with his hand on his chest"><p class="besar-h">Chest</p><p class="terang-p">Each sachet is made to calm the <b>burning in your chest</b>, the <b>sour taste in your throat</b> and the <b>bloating in your stomach</b>.</p></div>
+        <div class="kad kad-anat">
+          <div class="anat-atas"><img class="anat-img" src="https://cdn.jsdelivr.net/gh/irwanpauzi/gertriva-ladi@7f1ea3db0e7e18b3a0deec46f773e6a670a3b51b/sg/oc/anatomi.webp" width="900" height="675" alt="3D illustration of stomach acid rising into the oesophagus"><p class="anat-l">ACID REFLUX</p></div>
+          <div class="anat-isi">
+            <p class="anat-p"><b>GERD</b> happens when the valve at the end of your oesophagus is weak and <b>stomach acid rises up</b>. Leave it for years and the oesophagus wall can become <b>wounded, swollen and scarred</b>.</p>
+            <details><summary>The GERD Cycle</summary>
+              <div class="isi">
+                <div class="rantai"><p class="rn">1</p><p class="rt">Morning coffee, a late lunch, a bit of sambal.</p></div>
+                <div class="rantai"><p class="rn">2</p><p class="rt">Afternoon, the burping starts. Your chest feels tight.</p></div>
+                <div class="rantai"><p class="rn">3</p><p class="rt">Night, you lie down. Sour, burning acid rises to your throat.</p></div>
+                <div class="rantai"><p class="rn">4</p><p class="rt">You get up, drink warm water, sit upright till dawn.</p></div>
+                <div class="rantai"><p class="rn">5</p><p class="rt">A week later you feel okay, eat like normal, and it all starts again.</p></div>
+              </div>
+            </details>
+            <details><summary>Why Antacids Aren't Enough</summary><p class="isi-p">Antacids give quick relief, then the acid comes back once it wears off. Ginger or mint water sometimes works, sometimes doesn't. Medicine only when it hurts means your stomach isn't cared for every day.</p></details>
+          </div>
+        </div>
+        <div class="kad kad-foto"><img class="foto-img" src="https://cdn.jsdelivr.net/gh/irwanpauzi/gertriva-ladi@7f1ea3db0e7e18b3a0deec46f773e6a670a3b51b/sg/oc/tangan-perut.webp" width="900" height="675" alt="Man pressing his hand on his upper stomach"><p class="foto-t">Antacids give <b>quick relief</b>, then the acid <b>comes back</b> once it wears off.</p></div>
+        <div class="kad kad-gelap"><img class="kad-img" src="https://cdn.jsdelivr.net/gh/irwanpauzi/gertriva-ladi@7f1ea3db0e7e18b3a0deec46f773e6a670a3b51b/sg/oc/kad-produk.webp" width="900" height="1125" alt="GERTRIVA box with floating green spheres"><p class="kad-teks putih">The daily drink that helps <b>calm the burning</b>, <b>ease acid reflux</b> and <b>settle bloating</b>, so you can <b>eat as usual</b> again.</p></div>
+        <div class="kad kad-bar"><p class="bar-t">Targeted <b>Gut-Comfort</b> Formula</p><img class="bar-img" src="https://cdn.jsdelivr.net/gh/irwanpauzi/gertriva-ladi@7f1ea3db0e7e18b3a0deec46f773e6a670a3b51b/sg/oc/kotak-kecil.webp" width="312" height="400" alt="GERTRIVA box"></div>
+        <div class="dua">
+          <div class="kad kecil"><p class="kc-h biru">Postbiotic</p><p class="kc-h biru">Gastro-AD®</p><p class="kc-p">calms the burn, the acid and the queasy feeling</p><img class="kc-img" src="https://cdn.jsdelivr.net/gh/irwanpauzi/gertriva-ladi@7f1ea3db0e7e18b3a0deec46f773e6a670a3b51b/sg/oc/ikon-soya.webp" width="600" height="600" alt="3D fermented soybeans"></div>
+          <div class="kad kecil"><p class="kc-h hijau">Prebiotic</p><p class="kc-h hijau">Inulin + Oat</p><p class="kc-p">feeds good gut bacteria and keeps you regular</p><img class="kc-img" src="https://cdn.jsdelivr.net/gh/irwanpauzi/gertriva-ladi@7f1ea3db0e7e18b3a0deec46f773e6a670a3b51b/sg/oc/ikon-oat.webp" width="600" height="600" alt="3D oat stalk and chicory root"></div>
+        </div>
+        <div class="kad kad-kaj">
+          <div class="kaj-atas">
+            <p class="kaj-h">Clinically Studied Ingredients,</p>
+            <p class="kaj-h lime">Tested &amp; Proven</p>
+            <img class="kaj-img" src="https://cdn.jsdelivr.net/gh/irwanpauzi/gertriva-ladi@7f1ea3db0e7e18b3a0deec46f773e6a670a3b51b/sg/oc/sachet-satu.webp" width="500" height="698" alt="GERTRIVA sachet">
+            <p class="kaj-l">Learn The Science</p>
+          </div>
+          <div class="kaj-senarai">
+            <details><summary>Heartburn</summary><p class="isi-p"><b>Tan et al., Nutrients 2024.</b> 110 adults with GERD, 12 weeks, 1 g daily of fermented soybean with L. delbrueckii (the Gastro-AD® ingredient type). Heartburn and regurgitation dropped significantly compared with placebo. PMID 39203915.</p></details>
+            <details><summary>Fear Of Eating</summary><p class="isi-p"><b>Fatani et al., BMC Research Notes 2020.</b> 50 adults with frequent heartburn, 3 weeks. Better on "fear of eating" and "after-meal activities disturbed" compared with placebo. PMID 32746904.</p></details>
+            <details><summary>Constipation</summary><p class="isi-p"><b>Puhlmann et al., BMC Gastroenterology 2025.</b> 39 constipated adults, 4 weeks, 12 g inulin daily. Bowel movement frequency increased compared with placebo. PMID 41233756.</p></details>
+          </div>
+        </div>
+        <div class="dua">
+          <div class="kad kecil senarai-ikon">
+            <div class="si"><img class="si-img" src="https://cdn.jsdelivr.net/gh/irwanpauzi/gertriva-ladi@7f1ea3db0e7e18b3a0deec46f773e6a670a3b51b/sg/oc/ikon-api.webp" width="600" height="600" alt="3D flame"><p class="si-t">Eases<br><b>Heartburn</b></p></div>
+            <div class="si"><img class="si-img" src="https://cdn.jsdelivr.net/gh/irwanpauzi/gertriva-ladi@7f1ea3db0e7e18b3a0deec46f773e6a670a3b51b/sg/oc/ikon-perut.webp" width="600" height="600" alt="3D stomach"><p class="si-t">Calms<br><b>Bloating</b></p></div>
+            <div class="si"><img class="si-img" src="https://cdn.jsdelivr.net/gh/irwanpauzi/gertriva-ladi@7f1ea3db0e7e18b3a0deec46f773e6a670a3b51b/sg/oc/ikon-soya.webp" width="600" height="600" alt="3D soybeans"><p class="si-t">Settles<br><b>Nausea</b></p></div>
+          </div>
+          <div class="kad kecil"><img class="kc-img2" src="https://cdn.jsdelivr.net/gh/irwanpauzi/gertriva-ladi@7f1ea3db0e7e18b3a0deec46f773e6a670a3b51b/sg/oc/ikon-perut.webp" width="600" height="600" alt="3D stomach"><p class="kc-p2">GERTRIVA <b>cares for your stomach every day</b>, not only when it hurts. One sachet, once a day.</p></div>
+        </div>
+        <div class="kad kad-jamin"><p class="jamin-h">Pay Only When</p><p class="jamin-h">It Arrives!</p><p class="jamin-p">✓ Cash on Delivery · ✓ Free Delivery · ✓ No Card Needed</p></div>
+      </div>
+      <div class="bk-kol">
+        <div class="kad kad-aril"><img class="kad-img" src="https://cdn.jsdelivr.net/gh/irwanpauzi/gertriva-ladi@7f1ea3db0e7e18b3a0deec46f773e6a670a3b51b/sg/oc/aril-jalan.webp" width="900" height="1125" alt="Aril Pilus walking confidently in a studio"><p class="aril-t">A Breakthrough<br>Gut-Comfort<br>Formula</p><a class="tonton" href="https://www.youtube.com/watch?v=_fnvEnfhjk4" role="button">Watch Video ▷</a></div>
+        <div class="kad kad-sachet"><img class="sachet-img" src="https://cdn.jsdelivr.net/gh/irwanpauzi/gertriva-ladi@7f1ea3db0e7e18b3a0deec46f773e6a670a3b51b/sg/oc/sachet-kipas.webp" width="800" height="546" alt="Five GERTRIVA sachets"><p class="sc-h">Gentle Daily Sachets Designed To</p><p class="sc-p">Ease heartburn &amp; acid reflux in</p><div class="masa"><p class="masa-a">Same day</p><p class="masa-b">1–4 weeks</p></div><div class="garis"><div class="titik"></div><div class="titik hujung"></div></div></div>
+        <div class="kad kad-quote"><p class="q-t">"I tried GERTRIVA yesterday, and my stomach felt comfortable the next day. I've had this GERD and wind problem for 2 years. When it runs out, I want to order again."</p><p class="q-n">GERTRIVA customer · GERD for 2 years</p></div>
+        <div class="kad kad-ungu"><p class="ungu-h">Calmer Stomach,</p><p class="ungu-h">Fewer Burning Nights</p><p class="ungu-s">In just 1–4 weeks*</p>
+          <div class="gelembung"><p class="gb">"No more bloated feeling after meals, even when I eat a lot."</p></div>
+          <div class="gelembung kanan"><p class="gb">"Comfortable by the second night."</p></div>
+          <p class="ungu-n">Real WhatsApp reviews, translated from Malay</p></div>
+        <div class="kad kad-gelap"><img class="kad-img" src="https://cdn.jsdelivr.net/gh/irwanpauzi/gertriva-ladi@7f1ea3db0e7e18b3a0deec46f773e6a670a3b51b/sg/oc/makan-bebas.webp" width="900" height="1125" alt="A man happily eating nasi lemak with sambal at a hawker centre"><p class="kad-besar">Eat Freely<br>Again</p></div>
+        <div class="kad kad-stat">
+          <div class="st"><p class="st-n">3</p><p class="st-t">randomised <b>placebo-controlled studies</b> on GERTRIVA's key ingredient types</p></div>
+          <div class="st"><p class="st-n">199</p><p class="st-t"><b>adults in total</b> across heartburn, fear of eating and constipation</p></div>
+          <div class="st"><p class="st-n">12</p><p class="st-t"><b>weeks</b>, the longest study on fermented soybean for GERD</p></div>
+        </div>
+      </div>
     </div>
   </div>
-  <p class="nota">*Timing and results vary between individuals. GERTRIVA is a food drink and is not intended to diagnose, treat, cure or prevent any disease.</p>
 </section>
 
-<section class="sek" id="video">
-  <div class="vkad">
-    <p class="vk-h">Real people.</p>
-    <p class="vk-h">Real stomachs.</p>
-    <p class="vk-k">Hear it from them. Videos are in Malay.</p>
-    <div class="vdua">
-      <div class="vk"><div class="yt"><iframe src="https://www.youtube.com/embed/_fnvEnfhjk4?rel=0&amp;playsinline=1" title="Aril Pilus shares his story with GERTRIVA" allow="accelerometer; autoplay; encrypted-media; picture-in-picture" allowfullscreen></iframe></div><p class="yt-b">Aril Pilus</p><p class="yt-c">His story · 1:51</p></div>
-      <div class="vk"><div class="yt"><iframe src="https://www.youtube.com/embed/bfMQIlpLLGE?rel=0&amp;playsinline=1" title="Dr Ely Fauziani explains what happens in your stomach" allow="accelerometer; autoplay; encrypted-media; picture-in-picture" allowfullscreen></iframe></div><p class="yt-b">Dr Ely Fauziani, MBBS</p><p class="yt-c">What's really happening in your stomach</p></div>
+<section class="sek" id="kelebihan">
+  <div class="w sempit">
+    <div class="senarai">
+      <details><summary>Eases Heartburn</summary><p class="isi-p">Gastro-AD®, fermented soybean with L. delbrueckii, helps reduce the burning in your chest after heavy, spicy or oily meals.</p></details>
+      <details><summary>Calms Acid Reflux</summary><p class="isi-p">Helps calm the sour acid that rises to your throat, so nights are more comfortable.</p></details>
+      <details><summary>Reduces Bloating</summary><p class="isi-p">Prebiotic + postbiotic support for a calmer gut, with less wind, burping and that tight full feeling.</p></details>
+      <details><summary>Settles Nausea</summary><p class="isi-p">Gastro-AD® helps settle the queasy, about-to-throw-up feeling after a meal.</p></details>
+      <details><summary>Keeps You Regular</summary><p class="isi-p">Inulin and oat fibre help your bowels move more smoothly and regularly.</p></details>
+      <details><summary>Feeds Good Gut Bacteria</summary><p class="isi-p">Inulin is a prebiotic that feeds good bacteria such as Bifidobacteria and Lactobacilli.</p></details>
+      <details><summary>Keeps You Full Longer</summary><p class="isi-p">Soy protein + fibre help you feel satisfied, so it's easier not to overeat.</p></details>
+      <details><summary>Gentle On Sensitive Stomachs</summary><p class="isi-p">Lactose-free with no animal milk, and it tastes good enough to drink every day.</p></details>
     </div>
-    <p class="tonton">Tap to watch ▷</p>
+    <p class="ukur-h">Important</p>
+    <p class="ukur-p">GERTRIVA is a food drink. It is not intended to diagnose, treat, cure or prevent any disease, and it does not replace your doctor's advice or prescribed medicine. Contains soy. If you are pregnant, breastfeeding or have a medical condition, consult your doctor before use. See a doctor if your symptoms are severe, frequent or do not improve.</p>
   </div>
 </section>
 
-<section class="suara" id="testi">
-  <h2 class="suara-h">Voices of GERTRIVA Users</h2>
-  <p class="suara-p">Real WhatsApp messages from people who tried GERTRIVA</p>
-  <div class="rel-w" aria-roledescription="carousel">
-    <div class="rel" id="rel-trek">
-      <div class="tk" aria-roledescription="slide"><p class="tk-h">9 years of GERD. Started with GERTRIVA.</p><p class="tk-p">A user who has lived with GERD for 9 years started trying GERTRIVA on a family member's suggestion, and says it tastes really good.</p><img class="tk-img" src="https://cdn.jsdelivr.net/gh/irwanpauzi/gertriva-ladi@1bbfb2fea9961251ddda889c215221957d70e302/sg/bcl/testi-t6.webp" width="600" height="312" alt="WhatsApp message from a GERTRIVA user (in Malay)"><p class="tk-s">Name withheld · translated from Malay</p></div>
-      <div class="tk" aria-roledescription="slide"><p class="tk-h">Wants to reorder and share it</p><p class="tk-p">Their stomach felt comfortable the next day. They want to buy again and have recommended it to colleagues.</p><img class="tk-img" src="https://cdn.jsdelivr.net/gh/irwanpauzi/gertriva-ladi@1bbfb2fea9961251ddda889c215221957d70e302/sg/bcl/testi-t5.webp" width="600" height="784" alt="WhatsApp message from a GERTRIVA user (in Malay)"><p class="tk-s">Name withheld · translated from Malay</p></div>
-      <div class="tk" aria-roledescription="slide"><p class="tk-h">Tasty, and the wind is gone</p><p class="tk-p">Likes that it isn't too rich, and says the wind in their stomach is gone even after eating boiled tapioca.</p><img class="tk-img" src="https://cdn.jsdelivr.net/gh/irwanpauzi/gertriva-ladi@1bbfb2fea9961251ddda889c215221957d70e302/sg/bcl/testi-atas-4.webp" width="600" height="255" alt="WhatsApp message from a GERTRIVA user (in Malay)"><p class="tk-s">Name withheld · translated from Malay</p></div>
-      <div class="tk" aria-roledescription="slide"><p class="tk-h">Less bloating</p><p class="tk-p">After trying a GERTRIVA sample, the bloating went down and their stomach felt more comfortable.</p><img class="tk-img" src="https://cdn.jsdelivr.net/gh/irwanpauzi/gertriva-ladi@1bbfb2fea9961251ddda889c215221957d70e302/sg/bcl/testi-t4.webp" width="600" height="95" alt="WhatsApp message from a GERTRIVA user (in Malay)"><p class="tk-s">Name withheld · translated from Malay</p></div>
-      <div class="tk" aria-roledescription="slide"><p class="tk-h">Comfortable after 3 days</p><p class="tk-p">After 3 days, their stomach started to feel more comfortable and they needed the toilet less often.</p><img class="tk-img" src="https://cdn.jsdelivr.net/gh/irwanpauzi/gertriva-ladi@1bbfb2fea9961251ddda889c215221957d70e302/sg/bcl/testi-atas-1.webp" width="600" height="180" alt="WhatsApp message from a GERTRIVA user (in Malay)"><p class="tk-s">Name withheld · translated from Malay</p></div>
-      <div class="tk" aria-roledescription="slide"><p class="tk-h">Less of that "full" feeling</p><p class="tk-p">Says GERTRIVA tastes good, is easy to take, and their stomach feels more comfortable and less "full".</p><img class="tk-img" src="https://cdn.jsdelivr.net/gh/irwanpauzi/gertriva-ladi@1bbfb2fea9961251ddda889c215221957d70e302/sg/bcl/testi-atas-2.webp" width="600" height="372" alt="WhatsApp message from a GERTRIVA user (in Malay)"><p class="tk-s">Name withheld · translated from Malay</p></div>
-      <div class="tk" aria-roledescription="slide"><p class="tk-h">Bloating and wind eased a little</p><p class="tk-p">Their stomach felt a bit more comfortable, bloating and wind eased slightly, and it's easy to mix.</p><img class="tk-img" src="https://cdn.jsdelivr.net/gh/irwanpauzi/gertriva-ladi@1bbfb2fea9961251ddda889c215221957d70e302/sg/bcl/testi-t3.webp" width="600" height="165" alt="WhatsApp message from a GERTRIVA user (in Malay)"><p class="tk-s">Name withheld · translated from Malay</p></div>
-      <div class="tk" aria-roledescription="slide"><p class="tk-h">"Feels like it works"</p><p class="tk-p">When asked whether it works, they replied "feels like it works": burping and passing wind.</p><img class="tk-img" src="https://cdn.jsdelivr.net/gh/irwanpauzi/gertriva-ladi@1bbfb2fea9961251ddda889c215221957d70e302/sg/bcl/testi-atas-3.webp" width="540" height="244" alt="WhatsApp message from a GERTRIVA user (in Malay)"><p class="tk-s">Name withheld · translated from Malay</p></div>
-      <div class="tk" aria-roledescription="slide"><p class="tk-h">Tastes really good</p><p class="tk-p">After finishing 3 sachets, they said it really tastes good and they're happy to recommend it.</p><img class="tk-img" src="https://cdn.jsdelivr.net/gh/irwanpauzi/gertriva-ladi@1bbfb2fea9961251ddda889c215221957d70e302/sg/bcl/testi-t2.webp" width="600" height="282" alt="WhatsApp message from a GERTRIVA user (in Malay)"><p class="tk-s">Name withheld · translated from Malay</p></div>
+<section class="suara" id="suara">
+  <div class="w">
+    <h2 class="suara-h">Voices of GERTRIVA Users</h2>
+    <p class="suara-p">Real stories from WhatsApp, shared by our customers</p>
+    <div class="rel-w" aria-roledescription="carousel">
+      <div class="rel" id="rel-trek">
+        <div class="tk" aria-roledescription="slide"><p class="tk-h">Stomach felt comfortable the next day</p><p class="tk-p">I tried Gertriva yesterday, and thank God, my stomach felt comfortable the next day. I've had this GERD and wind problem for 2 years. When it runs out, I want to order again.</p><p class="tk-n">GERTRIVA customer · GERD &amp; wind for 2 years</p></div>
+        <div class="tk" aria-roledescription="slide"><p class="tk-h">9 years of GERD, really tastes good</p><p class="tk-p">It arrived yesterday and I tried it last night. It really tastes good. I'm trying it for my GERD, which I've had for 9 years now, with no solution that has really suited me.</p><p class="tk-n">GERTRIVA customer · GERD for 9 years</p></div>
+        <div class="tk" aria-roledescription="slide"><p class="tk-h">No more bloated feeling after meals</p><p class="tk-p">Very good. For a few days now my stomach hasn't felt bloated and full. Before, it felt uncomfortable every time after I ate. Now it's fine even when I eat a lot.</p><p class="tk-n">GERTRIVA customer</p></div>
+        <div class="tk" aria-roledescription="slide"><p class="tk-h">Bad gastric, stomach more comfortable</p><p class="tk-p">I used to have quite a bad gastric problem, and thank God, I feel this oat drink has really helped make my stomach comfortable.</p><p class="tk-n">GERTRIVA customer · Bad gastric before</p></div>
+        <div class="tk" aria-roledescription="slide"><p class="tk-h">The sting went away right away</p><p class="tk-p">When I drink this product, the stinging pain in my upper stomach goes away right away, and it tastes good too. I've had 3 sachets so far.</p><p class="tk-n">GERTRIVA customer</p></div>
+        <div class="tk" aria-roledescription="slide"><p class="tk-h">Comfortable by the second night</p><p class="tk-p">I drank it for 3 days. I didn't notice much on the first day; on the second night my stomach finally felt comfortable, and I wasn't going to the toilet as often.</p><p class="tk-n">GERTRIVA customer · Drank it for 3 days</p></div>
+        <div class="tk" aria-roledescription="slide"><p class="tk-h">Stomach wind gone, never gets sickly</p><p class="tk-p">It tastes good and doesn't get sickly. After drinking it, the wind in my stomach went away, even when I ate gassy food like boiled sweet potato.</p><p class="tk-n">GERTRIVA customer</p></div>
+        <div class="tk" aria-roledescription="slide"><p class="tk-h">Bloating has eased</p><p class="tk-p">Thank God, after drinking Gertriva my bloating has eased, and I feel more comfortable. Before, I'd often get a bloated stomach.</p><p class="tk-n">GERTRIVA customer · Often bloated</p></div>
+      </div>
     </div>
+    <div class="rel-nav"><button class="rel-b" type="button" aria-controls="rel-trek" data-slide="prev" aria-label="Previous">‹</button><button class="rel-b" type="button" aria-controls="rel-trek" data-slide="next" aria-label="Next">›</button></div>
+    <p class="nota tengah">Real WhatsApp messages from customers in Malaysia, translated from Malay. Names withheld. Results vary by individual.</p>
   </div>
-  <div class="rel-nav"><button class="rel-b" type="button" aria-controls="rel-trek" data-slide="prev" aria-label="Previous">‹</button><button class="rel-b" type="button" aria-controls="rel-trek" data-slide="next" aria-label="Next">›</button></div>
-  <p class="nota tengah">*Individual experiences of GERTRIVA users in Malaysia. Everyone's experience is different. Names withheld.</p>
 </section>
 
 <section class="sek" id="tempah">
@@ -648,32 +505,30 @@ body{margin:0;background:#ffffff;font-family:'Be Vietnam Pro',sans-serif}
 </section>
 
 <section class="sek" id="soalan">
-  <h2 class="h2 tengah">Questions?</h2>
-  <div class="faq">
-    <details><summary>How do I pay?</summary><p class="isi-p">Cash on delivery only. No card or online payment needed. Pay the delivery person when your parcel arrives.</p></details>
-    <details><summary>Is delivery really free?</summary><p class="isi-p">Yes. Delivery is free for every package, anywhere in Singapore. After you order, our team will contact you to arrange your delivery.</p></details>
-    <details><summary>Can I drink it every day?</summary><p class="isi-p">Yes. GERTRIVA is a food drink made to be taken once a day, so your stomach is cared for every day, not only when it hurts. It contains soy, so avoid it if you are allergic to soy.</p></details>
-    <details><summary>Can I take it with my gastric or GERD medicine?</summary><p class="isi-p">GERTRIVA is a food drink, not a medicine. Keep taking your medicine as your doctor prescribed. If you're unsure, ask your doctor or pharmacist first.</p></details>
-    <details><summary>When should I drink it?</summary><p class="isi-p">Once a day, mixed with 150–200 ml of warm water. Many people take it after their biggest meal or before bed, when acid tends to rise. Follow the directions on the label.</p></details>
-    <details><summary>I'm lactose intolerant. Is it okay?</summary><p class="isi-p">GERTRIVA contains no animal milk and uses a non-dairy creamer, so it's suitable for people who are lactose intolerant. It does contain soy.</p></details>
-    <details><summary>How fast will I feel it?</summary><p class="isi-p">Some people feel fuller and more comfortable on the first day. Bowel regularity may improve within a few days, and fewer heartburn episodes may come within 1–4 weeks. Everyone is different.</p></details>
-    <details><summary>Which package should I choose?</summary><p class="isi-p">For a daily routine, 3 boxes is the best value at only $46.33 per box (save 61%). Want to try first? Start with 1 box at $69.</p></details>
+  <div class="w sempit">
+    <h2 class="faq-h">Questions?</h2>
+    <div class="senarai">
+      <details><summary>How do I pay?</summary><p class="isi-p">Cash on delivery only. No card or online payment needed. Pay the delivery person when your parcel arrives.</p></details>
+      <details><summary>Is delivery really free?</summary><p class="isi-p">Yes. Delivery is free for every package, anywhere in Singapore.</p></details>
+      <details><summary>Can I take it with my gastric or GERD medicine?</summary><p class="isi-p">GERTRIVA is a food drink, not a medicine. Keep taking your medicine as your doctor prescribed. If you're unsure, ask your doctor or pharmacist first.</p></details>
+      <details><summary>When should I drink it?</summary><p class="isi-p">Once a day, mixed with 150–200 ml of warm water, before or after meals. Many people take it after their biggest meal or before bed.</p></details>
+      <details><summary>I'm lactose intolerant. Is it okay?</summary><p class="isi-p">GERTRIVA contains no animal milk, so it's suitable for people who are lactose intolerant. It does contain soy.</p></details>
+      <details><summary>How fast will I feel it?</summary><p class="isi-p">Some people feel more comfortable on the first day. Fewer heartburn episodes may come within 1–4 weeks. Everyone is different.</p></details>
+      <details><summary>Which package should I choose?</summary><p class="isi-p">For a daily routine, 3 boxes is the best value at only $46.33 per box (save 61%). Want to try first? Start with 1 box at $69.</p></details>
+    </div>
+    <a class="cta" href="#tempah" role="button">Order Now · Pay on Delivery</a>
   </div>
-  <div class="penting">
-    <p class="penting-h">Important</p>
-    <p class="penting-p">GERTRIVA is a food drink. It is not intended to diagnose, treat, cure or prevent any disease, and it does not replace medical advice or your prescribed medicine.</p>
-    <p class="penting-p">Contains soy. Do not take if you are allergic to soy. If you are pregnant, breastfeeding, or have a medical condition, consult your doctor before use. Seek medical help if your symptoms are severe, frequent or do not improve.</p>
-  </div>
-  <a class="cta" href="#tempah" role="button">Order Now: Pay on Delivery →</a>
-  <p class="cta-nota">Free delivery · <b>Cash on delivery</b> · All of Singapore</p>
 </section>
 
 <section class="kaki" id="kaki">
-  <p class="kaki-l">GERTRIVA™</p>
-  <p class="kaki-p"><b>TOTALMEN (M) SDN. BHD.</b> (202501019434 / 1620847-W)</p>
-  <p class="kaki-p">Made in Malaysia · Delivering to Singapore</p>
-  <p class="kaki-p">Individual results vary. Testimonials are individual experiences. This site is not part of, or endorsed by, Facebook/Meta or Google.</p>
-  <p class="kaki-p">© 2026 TOTALMEN (M) SDN. BHD. All rights reserved.</p>
+  <div class="w sempit">
+    <p class="kaki-l">GERTRIVA™</p>
+    <p class="kaki-p">The daily gut-comfort drink by TOTALMEN. Made in Malaysia, delivered to Singapore.</p>
+    <p class="kaki-garis">ABOUT GERTRIVA</p>
+    <p class="kaki-garis">CASH ON DELIVERY · FREE DELIVERY ISLANDWIDE</p>
+    <p class="kaki-k">Individual results vary. Testimonials are individual experiences. This site is not part of, or endorsed by, Facebook/Meta or Google.</p>
+    <p class="kaki-k">© 2026 TOTALMEN (M) SDN. BHD. (202501019434 / 1620847-W) All rights reserved.</p>
+  </div>
 </section>
 
 </div>
